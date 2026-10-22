@@ -1,0 +1,19 @@
+{
+  "id": "GENERAL_GEOMETRY_UNIFIED_NO_METAL_FLOOR_V1",
+  "bond_and_angle_bounds_factors": [
+    0.75,
+    1.25
+  ],
+  "internal_nonbonded_lower_factor": 0.7,
+  "intermolecular_vdw_lower_factor": 0.75,
+  "flatness_max_A": 0.25,
+  "volume_overlap_max": 0.075,
+  "shape_vdw_scale": 0.8,
+  "ligand_protein_max_distance_A": 5.0,
+  "graph_distance_inference_is_diagnostic_only": true,
+  "energy_test": false,
+  "protein_rmsd_is_not_in_this_package": true,
+  "stage_independent": true,
+  "source_policy_id": "GENERAL_GEOMETRY_V1",
+  "metal_distance_lower_bounds_affect_pass": false
+}

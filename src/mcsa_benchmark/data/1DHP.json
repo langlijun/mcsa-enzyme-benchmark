@@ -1,0 +1,255 @@
+{
+  "case_id": "M0267_1DHP",
+  "pdb_id": "1DHP",
+  "schema_version": 2,
+  "protein_sequence": "MFTGSIVAIVTPMDEKGNVCRASLKKLIDYHVASGTSAIVSVGTTGESATLNHDEHADVVMMTLDLADGRIPVIAGTGANATAEAISLTQRFNDSGIVGCLTVTPYYNRPSQEGLYQHFKAIAEHTDLPQILYNVPSRTGCDLLPETVGRLAKVKNIIGIKEATGNLTRVNQIKELVSDDFVLLSGDDASALDFMQLGGHGVISVTANVAARDMAQMCKLAAEGHFAEARVINQRLMPLHNKLFVEPNPIPVKWACKELGLVATDTLRLPMTPITDSGRETVRAALKHAGLL",
+  "protein_copies": 4,
+  "ligands": {
+    "PYR_1": {
+      "smiles": "CC(=O)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "O2",
+          "O3"
+        ],
+        [
+          "C9",
+          "C8",
+          "O5",
+          "C7",
+          "O4",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "O2_1",
+          "O3_1"
+        ]
+      ],
+      "copy_group": "PYR",
+      "group_copies": 4
+    },
+    "PYR_2": {
+      "smiles": "CC(=O)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "O2",
+          "O3"
+        ],
+        [
+          "C9",
+          "C8",
+          "O5",
+          "C7",
+          "O4",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "O2_1",
+          "O3_1"
+        ]
+      ],
+      "copy_group": "PYR",
+      "group_copies": 4
+    },
+    "PYR_3": {
+      "smiles": "CC(=O)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "O2",
+          "O3"
+        ],
+        [
+          "C9",
+          "C8",
+          "O5",
+          "C7",
+          "O4",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "O2_1",
+          "O3_1"
+        ]
+      ],
+      "copy_group": "PYR",
+      "group_copies": 4
+    },
+    "PYR_4": {
+      "smiles": "CC(=O)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "O2",
+          "O3"
+        ],
+        [
+          "C9",
+          "C8",
+          "O5",
+          "C7",
+          "O4",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "O2_1",
+          "O3_1"
+        ]
+      ],
+      "copy_group": "PYR",
+      "group_copies": 4
+    }
+  },
+  "metals": {},
+  "mechanism_type": "lys_carbonyl_multisite",
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "reaction_atoms": {
+    "protein_sequence_position_1based": 161,
+    "protein_residue_name": "LYS",
+    "anchor_names": [
+      "CA",
+      "CB"
+    ],
+    "nucleophile_name": "NZ",
+    "carbonyl_C_index": 1,
+    "carbonyl_O_index": 2,
+    "nonreactive_indices": [
+      0,
+      3,
+      4,
+      5
+    ]
+  },
+  "mechanism_criteria": {
+    "criteria_id": "M0267_1DHP_LYS_PYR_FOUR_SITE_V1_20261021",
+    "retrospective": true,
+    "target": {
+      "mcsa_proposal": 1,
+      "mcsa_step": 1,
+      "state": "Four noncovalent pyruvate reactants before Lys addition"
+    },
+    "main_axis": {
+      "distance_A": {
+        "min": 2.5,
+        "max": 4.0,
+        "inclusive": true
+      },
+      "angle_deg": {
+        "min": 90.0,
+        "max": 120.0,
+        "inclusive": true
+      },
+      "basis": "Literature-informed author operational window retained from reviewed project criteria, not a directly published enzyme activity threshold."
+    },
+    "site_assignment": {
+      "method": "Exhaustive one-to-one assignment minimizing nonreactive centroid costs",
+      "cost": "Pyruvate atoms 0,3,4,5 centroid to Lys161 CA/CB centroid",
+      "near_tie_margin_A": 0.5,
+      "near_tie_basis": "Existing author diagnostic margin, not a chemical threshold",
+      "scored_atoms_used_for_assignment": false,
+      "ambiguity_policy": "Keep minimum-cost geometry; compare verdicts across all assignments within 0.5 A total cost. If these disagree, report a concrete assignment error; never choose by pass rate."
+    },
+    "aggregation": "All four assigned N-C-O tuples must each satisfy distance AND angle.",
+    "diagnostics": [
+      "Original ketone C=O distance",
+      "All sixteen site/ligand axes",
+      "All twenty-four assignments"
+    ],
+    "source_references": [
+      {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/267/",
+        "use": "Proposal 1 step 1 defines Lys161 NZ and pyruvate ketone; not the carboxylate carbon"
+      },
+      {
+        "doi": "10.1021/bi962272d",
+        "use": "Same-enzyme catalytic mechanism and covalent intermediate; not a free-reactant numerical window"
+      },
+      {
+        "doi": "10.1110/ps.037440.108",
+        "use": "Catalytic Lys161 and Ile203 context; beta-hydroxypyruvate adduct is not the benchmark reactant"
+      },
+      {
+        "doi": "10.1021/ja00796a058",
+        "use": "Carbonyl approach geometry principle; exact project endpoints are author-defined"
+      },
+      {
+        "doi": "10.1002/cphc.202300379",
+        "use": "Physical basis of obtuse carbonyl approach; not a universal enzyme cutoff"
+      }
+    ],
+    "scope": "Initial Lys-pyruvate addition geometry only; no claim of formed Schiff base, downstream C-C bond formation, full reaction, or activity.",
+    "water_required": false
+  },
+  "unified_source": {
+    "source_version": "0.4.1+1dhp",
+    "source_case_sha256": "e9d737ba8a9d9474ba99909048f882b46c91aedd6571ca650fc9f064f1627bca",
+    "source_criteria_id": "M0267_1DHP_LYS_PYR_FOUR_SITE_V1_20261021",
+    "official_variant": "declared_primary"
+  }
+}

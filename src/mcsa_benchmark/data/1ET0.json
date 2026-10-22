@@ -1,0 +1,619 @@
+{
+  "schema_version": 2,
+  "case_id": "M0305_1ET0",
+  "pdb_id": "1ET0",
+  "mechanism_type": "plp_transaldimination",
+  "general_extension": "plp_internal_aldimine",
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "protein_sequence": "MFLINGHKQESLAVSDRATQFGDGCFTTARVIDGKVSLLSAHIQRLQDACQRLMISCDFWPQLEQEMKTLAAEQQNGVLKVVISRGSGGRGYSTLNSGPATRILSVTAYPAHYDRLRNEGITLALSPVRLGRNPHLAGIKHLNRLEQVLIRSHLEQTNADEALVLDSEGWVTECCAANLFWRKGNVVYTPRLDQAGVNGIMRQFCIRLLAQSSYQLVEVQASLEESLQADEMVICNALMPVMPVCACGDVSFSSATLYEYLAPLCERPN",
+  "protein_copies": 2,
+  "metals": {},
+  "polymer_modifications": [
+    {
+      "position": 140,
+      "residue_name": "LLP",
+      "parent_residue_name": "LYS",
+      "atoms": [
+        {
+          "name": "N1",
+          "element": "N",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C2",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C2'",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C3",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "O3",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C4",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C4'",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C5",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C6",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C5'",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "OP4",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "P",
+          "element": "P",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "OP1",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "OP2",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "OP3",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "N",
+          "element": "N",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "CA",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": "S"
+        },
+        {
+          "name": "CB",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "CG",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "CD",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "CE",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "NZ",
+          "element": "N",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "O",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        }
+      ],
+      "bonds": [
+        {
+          "atoms": [
+            "N1",
+            "C2"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "N1",
+            "C6"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C2",
+            "C2'"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C2",
+            "C3"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C3",
+            "O3"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C3",
+            "C4"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C4",
+            "C4'"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C4",
+            "C5"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C4'",
+            "NZ"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C5",
+            "C6"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C5",
+            "C5'"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C5'",
+            "OP4"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "OP4",
+            "P"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "P",
+            "OP1"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "P",
+            "OP2"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "P",
+            "OP3"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "N",
+            "CA"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CA",
+            "CB"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CA",
+            "C"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CB",
+            "CG"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CG",
+            "CD"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CD",
+            "CE"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CE",
+            "NZ"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C",
+            "O"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        }
+      ],
+      "source_CCD_sha256": "3e414b697f7ed70d6f1e2e82563c9c7983e0112c40beffb6fc1d5cb2e74b83a0"
+    }
+  ],
+  "ligands": {
+    "ADC_1": {
+      "smiles": "C=C(O[C@@H]1C=C(C(=O)[O-])C=C[C@H]1[NH3+])C(=O)[O-]",
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "O2",
+          "O3",
+          "C7",
+          "C8",
+          "C9",
+          "N1",
+          "C10",
+          "O4",
+          "O5"
+        ],
+        [
+          "C18",
+          "C20",
+          "O15",
+          "C24",
+          "C22",
+          "C21",
+          "C17",
+          "O12",
+          "O14",
+          "C19",
+          "C23",
+          "C25",
+          "N26",
+          "C16",
+          "O11",
+          "O13"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "C4_1",
+          "C5_1",
+          "C6_1",
+          "O2_1",
+          "O3_1",
+          "C7_1",
+          "C8_1",
+          "C9_1",
+          "N1_1",
+          "C10_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "ADC",
+      "group_copies": 2
+    },
+    "ADC_2": {
+      "smiles": "C=C(O[C@@H]1C=C(C(=O)[O-])C=C[C@H]1[NH3+])C(=O)[O-]",
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "O2",
+          "O3",
+          "C7",
+          "C8",
+          "C9",
+          "N1",
+          "C10",
+          "O4",
+          "O5"
+        ],
+        [
+          "C18",
+          "C20",
+          "O15",
+          "C24",
+          "C22",
+          "C21",
+          "C17",
+          "O12",
+          "O14",
+          "C19",
+          "C23",
+          "C25",
+          "N26",
+          "C16",
+          "O11",
+          "O13"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "C4_1",
+          "C5_1",
+          "C6_1",
+          "O2_1",
+          "O3_1",
+          "C7_1",
+          "C8_1",
+          "C9_1",
+          "N1_1",
+          "C10_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "ADC",
+      "group_copies": 2
+    }
+  },
+  "reaction_atoms": {
+    "ADC_roles": [
+      "ADC_1",
+      "ADC_2"
+    ],
+    "ADC_N_index": 12,
+    "LLP_position": 140,
+    "PLP_C4prime_name": "C4'",
+    "Lys_NZ_name": "NZ",
+    "PLP_ring_names": [
+      "N1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ]
+  },
+  "mechanism_criteria": {
+    "criteria_id": "M0305_1ET0_TWO_SITE_PLP_PRECONTACT_V1_20261021",
+    "retrospective": true,
+    "implementation_date": "2026-10-21",
+    "acceptance": "User accepted the criteria research proposal and requested packaging/testing. Historical outcomes had already been seen.",
+    "target": {
+      "MCSA_id": "M0305",
+      "proposal": 1,
+      "step": 1,
+      "event": "ADC amino-N approach to enzyme-bound PLP C4prime before covalent addition."
+    },
+    "distance_upper_A": 3.5,
+    "distance_lower_A": null,
+    "inclusive": true,
+    "angle_N_C4prime_NZ": "DIAGNOSTIC_ONLY",
+    "N_to_NZ_distance": "DIAGNOSTIC_ONLY",
+    "aggregation": "Both input-declared occupied sites in the same structure must pass.",
+    "site_assignment": {
+      "method": "ADC nonreactive-heavy-atom centroid to PLP six-membered-ring centroid; exhaustive bijection must agree with each ligand nearest site.",
+      "ADC_excluded_indices": [
+        12
+      ],
+      "reactive_distance_used": false,
+      "minimum_total_margin_A": 1e-06,
+      "nearest_tie_tolerance_A": 1e-06,
+      "duplicate_occupancy": "FAIL, not forced matching",
+      "tie": "ERROR with explicit geometric evidence"
+    },
+    "basis": "Literature-guided author operational tolerance. Approximate 3 A productive proximity discussed for another PLP enzyme does not establish an experimental 1ET0 cutoff.",
+    "sensitivity_upper_A": [
+      3.0,
+      3.5,
+      4.0
+    ],
+    "water_required": false,
+    "scope": "Initial heavy-atom approach only; not complete proton transfer, attack face, full reaction or enzyme activity.",
+    "references": [
+      {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/305/",
+        "use": "Detailed initial addition and proton transfer; not numerical windows."
+      },
+      {
+        "doi": "10.1093/oxfordjournals.jbchem.a022727",
+        "use": "Native internal aldimine and dimer; ADC was modeled, not an exact experimental substrate complex."
+      },
+      {
+        "doi": "10.1074/jbc.M113.480335",
+        "use": "ADC lyase mechanism and external-aldimine docking; not incoming amino-N reference distance."
+      },
+      {
+        "doi": "10.1038/s41598-017-11948-w",
+        "use": "Approximate 3 A productive proximity discussed for AGT; Fig7 Lys-C4prime/Calpha distances are not the incoming substrate metric."
+      }
+    ],
+    "intentional_change_from_history": "No 2.4 A lower mechanism gate. Existing C4prime-NZ bond checks belong to general; angle remains diagnostic."
+  },
+  "case_general_requirements": {
+    "existing_C4prime_NZ_A": {
+      "min": 1.15,
+      "max": 1.7,
+      "inclusive": true
+    },
+    "basis": "Retained author broad window; native 1ET0 existing bond measures 1.359940 A, not a distribution of bounds.",
+    "LLP_local_graph": "CCD internal LLP, with previous CA/C/O and next N/CA as peptide caps; use existing general graph-bound tolerances.",
+    "LLP_protein_contacts": "Only noncovalent pairs outside the capped local fragment; covalently near pairs are not intermolecular clashes.",
+    "LLP_volume_overlap": "NOT_APPLICABLE to a polymer residue; ADC volume against full protein including LLP is evaluated.",
+    "sub_1p8_A_reaction_contact": "Diagnostic only; ordinary general noncovalent clash checks still apply without reaction-pair exemptions."
+  },
+  "input_state_contract": {
+    "ADC_amino_group": "NH3+",
+    "mechanism_drawing_amino_group": "NH2",
+    "LLP_formal_charge": 0,
+    "input_changed": false,
+    "observed_electronic_or_protonation_state_verified": false,
+    "limitation": "Geometry of the declared input; activated microstate and proton transfer are not established. No additional waters or unrequested input changes."
+  },
+  "unified_source": {
+    "source_version": "0.5.3+1et0",
+    "source_case_sha256": "aef362ea91a0e4af5d9b2f195c098e140cdc4d014b22de2dfb3e19d642b9b23e",
+    "source_criteria_id": "M0305_1ET0_TWO_SITE_PLP_PRECONTACT_V1_20261021",
+    "official_variant": "declared_primary"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "case_id": "M0036_1QQ5",
+  "pdb_id": "1QQ5",
+  "schema_version": 2,
+  "protein_sequence": "MIKAVVFDAYGTLFDVQSVADATERAYPGRGEYITQVWRQKQLEYSWLRALMGRYADFWSVTREALAYTLGTLGLEPDESFLADMAQAYNRLTPYPDAAQCLAELAPLKRAILSNGAPDMLQALVANAGLTDSFDAVISVDAKRVFKPHPDSYALVEEVLGVTPAEVLFVSSNGFDVGGAKNFGFSVARVARLSQEALARELVSGTIAPLTMFKALRMREETYAEAPDFVVPALGDLPRLVRGMAGAHLAPAV",
+  "protein_copies": 2,
+  "ligands": {
+    "substrate": {
+      "smiles": "C[C@H](Cl)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "Cl",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "CL1",
+          "C3",
+          "O1",
+          "O2"
+        ],
+        [
+          "C9",
+          "C10",
+          "CL7",
+          "C8",
+          "O5",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "CL1_1",
+          "C3_1",
+          "O1_1",
+          "O2_1"
+        ]
+      ]
+    }
+  },
+  "metals": {},
+  "mechanism_type": "haloacid_sn2",
+  "mechanism_criteria": {
+    "case_id": "M0036_1QQ5",
+    "proposal_id": "M0036_1QQ5_PRE_SN2_REVIEW_20261020_DRAFT1",
+    "status": "IMPLEMENTED_LITERATURE_INFORMED_AUTHOR_OPERATIONAL_RULE",
+    "date": "2026-10-20",
+    "retrospective": true,
+    "main_axis": {
+      "nucleophile_candidates": [
+        "Asp8 OD1",
+        "Asp8 OD2"
+      ],
+      "center": "Substrate C2, the carbon bonded to Cl; input SMILES heavy-atom index 1",
+      "leaving_atom": "Substrate Cl; input SMILES heavy-atom index 2",
+      "distance_A": {
+        "min": 2.5,
+        "max": 3.5,
+        "inclusive": true
+      },
+      "angle_deg": {
+        "min": 150.0,
+        "max": 180.0,
+        "inclusive": true
+      },
+      "joint_logic": "At least one oxygen from the independently assigned occupied site must satisfy both distance and angle. Never splice candidates or protein sites.",
+      "distance_upper_basis": "Asp-carboxylate carbon-halogen SN2 literature provides a nearby NAC scale (<3.4 A in DatA). 3.5 A is a slightly relaxed author operational upper bound, not a same-enzyme measured cutoff or an experimental confidence interval.",
+      "distance_lower_basis": "Author operational lower guard for an intact reactant approach, retained from the prior case rule. Not a literature-derived quantile or proof of covalent bond formation.",
+      "angle_basis": "DhlB intermediate structure and mechanism support backside approximately collinear attack; DatA literature defines 157-180 degrees. 150 degrees is an author allowance of up to 30 degrees away from collinearity, not the DatA criterion verbatim.",
+      "reference_ids": [
+        "MCSA36_STEP1",
+        "RIDDER1999",
+        "HASAN2013"
+      ],
+      "other_oxygen_policy": "Both oxygen candidates remain in output. Ordinary short contacts are independently checked; an OR axis pass does not cancel a basic clash."
+    },
+    "occupied_site_assignment": {
+      "algorithm": "Retain existing nonreactive-anchor assignment",
+      "protein_anchor": "Centroid of Asp8 CA, CB and CG for each protein chain",
+      "substrate_anchor": "Centroid of substrate heavy atoms excluding reacting C2 and Cl",
+      "choose": "Unique lower anchor distance; retain both costs and the margin",
+      "historical_tie_tolerance_A": 1e-06,
+      "reactive_distance_used_for_assignment": false,
+      "second_unoccupied_site_required_to_pass": false
+    },
+    "evaluation_reporting": {
+      "clarified_date": "2026-10-21",
+      "step_1": "Mechanism geometry: reaction-axis distance and angle with its own status and failures",
+      "step_2": "General checks: specified chirality, input-bond geometry and physical validity with its own status and failures",
+      "independence": "Run each measurable check regardless of the other category passing or failing",
+      "optional_joint_status": "Intersection only for supplemental aggregation; never label this the mechanism success rate",
+      "thresholds_or_historical_verdicts_changed": false,
+      "implementation_note": "Mechanism and general are independent callable stages; joint result is optional aggregation."
+    },
+    "diagnostic_only": [
+      "Arg39, Asn115 and Phe175 halogen-region contacts",
+      "Ser114, Lys147 and backbone contacts to the carboxylate",
+      "Asp176 and second-step hydrolytic-water network",
+      "Unoccupied second protein copy"
+    ],
+    "not_claimed": [
+      "A complete exact reactant crystal reference has been found",
+      "All homologous structures or model training sets have been searched",
+      "Distance and angle establish enzyme activity, a transition state, or the entire reaction",
+      "DatA and DhlB are the same enzyme family or substrate system",
+      "The 1999 intermediate C-O bond length is a valid reactant-distance cutoff"
+    ],
+    "historical_comparator": {
+      "criteria_id": "ENZYME_NUC_1QQ5_SN2_SAME_O_2P5_4P5_150_V1",
+      "distance_A": [
+        2.5,
+        4.5
+      ],
+      "angle_deg": [
+        150,
+        180
+      ],
+      "use": "Retain unchanged for traceability and sensitivity comparison, not the proposed main proximity window"
+    },
+    "sensitivity_plan": {
+      "distance_upper_A": [
+        3.4,
+        3.5,
+        4.0,
+        4.5
+      ],
+      "angle_lower_deg": [
+        140,
+        150,
+        157,
+        160
+      ],
+      "distance_lower_A": [
+        2.3,
+        2.5,
+        2.7
+      ],
+      "method": "One parameter at a time using archived continuous measurements; no retuning to maximize model pass rate",
+      "new_CIF_replay_before_package_release": true
+    },
+    "references": {
+      "MCSA36_STEP1": {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/36/",
+        "supports": "Asp8 attacks substrate C2 and chloride leaves; water acts in later steps"
+      },
+      "RIDDER1999": {
+        "doi": "10.1074/jbc.274.43.30672",
+        "local_source": "sources/Ridder_1999.pdf",
+        "locators": [
+          "pp.30673-30674 structure state",
+          "p.30676 Fig.3 and mechanism",
+          "p.30677 water discussion"
+        ],
+        "supports": "Same-enzyme covalent intermediate, stereoinversion, chloride direction, binding roles",
+        "does_not_supply": "A reactant 2.5-3.5 A or 150-degree numerical pass/fail threshold"
+      },
+      "HASAN2013": {
+        "doi": "10.1111/febs.12238",
+        "local_source": "sources/Hasan_2013_DatA.pdf",
+        "locator": "p.3153 Molecular modelling",
+        "supports": "Related chemical step: Asp O to halogen-bound carbon NAC distance <3.4 A and angle 157-180 degrees",
+        "limits": "DatA is a haloalkane dehalogenase, not DhlB haloacid dehalogenase. The paper also studies selected non-NAC orientations; its definition is not a universal activity boundary."
+      }
+    },
+    "criteria_id": "M0036_1QQ5_PRE_SN2_2P5_3P5_150_V1_20261021",
+    "implementation_date": "2026-10-21",
+    "decision": "User accepted explicit literature basis and author tolerances before this implementation. Historical results were already visible; not preregistered.",
+    "target": {
+      "mechanism_proposal": 1,
+      "step": 1,
+      "state": "Intact reactant approach before Asp8 carbon-halogen substitution"
+    }
+  },
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "input_contract": {
+    "mechanism_proposal": 1,
+    "step": 1,
+    "state": "Intact (S)-2-chloropropanoate before Asp8 nucleophilic substitution",
+    "protein_copies": 2,
+    "protein_length_per_copy": 253,
+    "substrate_smiles": "C[C@H](Cl)C(=O)[O-]",
+    "substrate_copies": 1,
+    "substrate_formal_charge": -1,
+    "required_input_stereochemistry": {
+      "SMILES_atom_index_1": "S"
+    },
+    "metals": [],
+    "cofactors": [],
+    "input_protein_substrate_covalent_bond": false,
+    "attacking_water_required_for_selected_step": false
+  },
+  "case_general_requirements": {
+    "input_graph": "Intact C-Cl and original substrate connectivity",
+    "stereo": "Preserve S reactant configuration; do not require product R",
+    "bond_length_and_angle": "Use the declared input graph and explicitly versioned basic geometry checks, not a new arbitrary C-Cl cutoff",
+    "clashes_and_volume": "Protein-ligand noncovalent short-contact and 7.5 percent volume-overlap checks remain separate from the reaction axis",
+    "reporting": "Independent general-check status; failures do not overwrite the mechanism status"
+  },
+  "reaction_atoms": {
+    "protein_sequence_position_1based": 8,
+    "protein_residue_name": "ASP",
+    "anchor_names": [
+      "CA",
+      "CB",
+      "CG"
+    ],
+    "nucleophile_names": [
+      "OD1",
+      "OD2"
+    ],
+    "substrate_center_index": 1,
+    "substrate_leaving_index": 2,
+    "substrate_nonreactive_indices": [
+      0,
+      3,
+      4,
+      5
+    ]
+  },
+  "unified_source": {
+    "source_version": "0.5.0",
+    "source_case_sha256": "88f2ea4eaa6f7abb4709eb919b7179bfa01a8d862f4daac2bf5d57f15deea268",
+    "source_criteria_id": "M0036_1QQ5_PRE_SN2_2P5_3P5_150_V1_20261021",
+    "official_variant": "declared_primary"
+  }
+}

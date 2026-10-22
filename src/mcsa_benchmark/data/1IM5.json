@@ -1,0 +1,185 @@
+{
+  "case_id": "M0716_1IM5",
+  "pdb_id": "1IM5",
+  "schema_version": 2,
+  "protein_sequence": "MPEEALIVVDMQRDFMPGGALPVPEGDKIIPKVNEYIRKFKEKGALIVATRDWHPENHISFRERGGPWPRHCVQNTPGAEFVVDLPEDAVIISKATEPDKEAYSGFEGTDLAKILRGNGVKRVYICGVATEYCVRATALDALKHGFEVYLLRDAVKGIKPEDEERALEEMKSRGIKIVQF",
+  "protein_copies": 1,
+  "ligands": {
+    "substrate": {
+      "smiles": "NC(=O)c1cccnc1",
+      "formal_charge": 0,
+      "element_order": [
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "O1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "N2",
+          "C6"
+        ],
+        [
+          "N15",
+          "C9",
+          "O7",
+          "C14",
+          "C13",
+          "C12",
+          "C10",
+          "N8",
+          "C11"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "O1_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "C5_1",
+          "N2_1",
+          "C6_1"
+        ]
+      ]
+    }
+  },
+  "metals": {
+    "Zn": 1
+  },
+  "mechanism_type": "nicotinamidase",
+  "mechanism_criteria": {
+    "criteria_id": "M0716_1IM5_STEP1_BASE_AXIS_ZN_V1_20261021",
+    "status": "USER_ACCEPTED_LITERATURE_INFORMED_AUTHOR_OPERATIONAL_RULE",
+    "retrospective": true,
+    "target": {
+      "mechanism_proposal": 1,
+      "step": 1,
+      "state": "Reactant preorganization, not covalent intermediate"
+    },
+    "cutoffs": {
+      "base_contact_A": {
+        "min": 0.0,
+        "max": 4.0,
+        "inclusive": true,
+        "note": "One-sided proximity test; no chemical lower bound imposed. Does not validate proton transfer or protein-protein clashes."
+      },
+      "reaction_distance_A": {
+        "min": 2.5,
+        "max": 4.5,
+        "inclusive": true
+      },
+      "attack_angle_deg": {
+        "min": 90.0,
+        "max": 120.0,
+        "inclusive": true
+      },
+      "Zn_contact_A": {
+        "min": 1.8,
+        "max": 2.6,
+        "inclusive": true
+      }
+    },
+    "logic": "Seven independent checks must pass within the one declared protein site, one substrate and same Zn. Asp10/Asp52 carboxylate oxygen names may be exchanged; retain both distances and select the nearest oxygen of the specified residue. Never replace His54/His71 with another residue.",
+    "threshold_basis": {
+      "base_contact_A": "1IM5 Cys133 SG to Asp10 OD2 is 3.217/3.464 A in alternate conformers. 4.0 A is an author upper tolerance, not a proton-transfer rate boundary.",
+      "reaction_distance_A": "Legacy sulfur-attack operational window. No same-enzyme reactant-state quantitative validation is claimed.",
+      "attack_angle_deg": "Carbonyl nucleophilic trajectory is literature supported; 90-120 degrees is the legacy author operational window, not a validated activity boundary for 1IM5. Near-boundary failures must retain continuous angle.",
+      "Zn_contact_A": "1IM5 protein donor distances 1.966/2.096/2.176 A; homolog mutant 3O94 substrate-ring N distances 2.257-2.314 A. Existing strict-quality Zn-N 106 contacts from 42 pairs and Zn-O 140 contacts from 41 pairs support the scale, not a universal window. 1.8-2.6 A is an author tolerance (105/106 N and 129/140 O contacts covered)."
+    },
+    "references": {
+      "MCSA716": {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/716/",
+        "locator": "Proposal 1, step 1, catalytic residue roles",
+        "supports": "Chemical roles, not numerical cutoffs"
+      },
+      "DU2001": {
+        "doi": "10.1021/bi0115479",
+        "supports": "Same enzyme and Zn-bound 1IM5; no substrate present",
+        "access": "Abstract and deposited coordinates checked"
+      },
+      "FRENCH2010": {
+        "doi": "10.1021/bi1012436",
+        "supports": "Homolog C136S-nicotinamide complex 3O94; substrate metal anchoring",
+        "limit": "Not wild-type Cys reactant distance reference"
+      },
+      "RODRIGUEZ2023": {
+        "doi": "10.1002/cphc.202300379",
+        "supports": "Carbonyl attack directionality",
+        "limit": "Does not validate the 90-degree lower boundary for this enzyme"
+      },
+      "ZN_PROJECT_REFERENCE": {
+        "package_data": "1IM5_Zn_reference_statistics.json",
+        "supports": "Experimental Zn-N/O descriptive reference",
+        "limit": "Radius-selected and heterogeneous donors; not universal cutoffs"
+      }
+    },
+    "diagnostic_only": [
+      "Ala129 backbone N to substrate carbonyl O",
+      "Cys133 backbone N to substrate carbonyl O",
+      "Original substrate C=O and C-N distances"
+    ],
+    "excluded": [
+      "Water coordination",
+      "Complete six-coordinate shell",
+      "Full hydrolysis cycle",
+      "Protonation or observed proton transfer",
+      "Energetic competence"
+    ],
+    "stage_separation": "Mechanism and general are independently callable. General failure never gates mechanism. Optional joint is intersection only.",
+    "historical_comparison": "Historical mechanism used only S-C distance and S-C-O angle. Added Asp10 and four Zn contacts are new required checks; differences are not automatically implementation regressions.",
+    "implementation_date": "2026-10-21T08:38:09.215101+00:00"
+  },
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "reaction_atoms": {
+    "substrate_carbonyl_C": 1,
+    "substrate_carbonyl_O": 2,
+    "substrate_amide_N": 0,
+    "substrate_ring_N": 7,
+    "cysteine_position": 133,
+    "base_position": 10,
+    "zinc_asp_position": 52,
+    "zinc_histidine_positions": [
+      54,
+      71
+    ],
+    "oxyanion_backbone_positions": [
+      129,
+      133
+    ]
+  },
+  "input_contract": {
+    "state": "Intact nicotinamide reactant, before acyl-enzyme formation",
+    "protein_length": 180,
+    "protein_copies": 1,
+    "substrate_copies": 1,
+    "metal_copies": {
+      "Zn": 1
+    },
+    "water_required": false,
+    "protein_ligand_covalent_link_required": false
+  },
+  "case_general_requirements": {
+    "specified_stereo_centers": 0,
+    "metal_coordination_excluded_from_ordinary_clashes": true,
+    "mechanism_does_not_gate_general": true
+  },
+  "unified_source": {
+    "source_version": "0.3.0",
+    "source_case_sha256": "bbeb12d3fa89071c8d8eeac29ebf53c2e8b780674db0c13071cc80c82370254e",
+    "source_criteria_id": "M0716_1IM5_STEP1_BASE_AXIS_ZN_V1_20261021",
+    "official_variant": "declared_primary"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "case_id": "M0727_1L7N",
+  "pdb_id": "1L7N",
+  "schema_version": 3,
+  "protein_sequence": "MEKKKKLILFDFDSTLVNNETIDEIAREAGVEEEVKKITKEAMEGKLNFEQSLRKRVSLLKDLPIEKVEKAIKRITPTEGAEETIKELKNRGYVVAVVSGGFDIAVNKIKEKLGLDYAFANRLIVKDGKLTGDVEGEVLKENAKGEILEKIAKIEGINLEDTVAVGDGANDISMFKKAGLKIAFCAKPILKEKADICIEKRDLREILKYIK",
+  "protein_copies": 1,
+  "ligands": {
+    "PLS": {
+      "smiles": "[NH3+][C@@H](COP(=O)([O-])[O-])C(=O)[O-]",
+      "formal_charge": -2,
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "O1",
+          "P1",
+          "O2",
+          "O3",
+          "O4",
+          "C3",
+          "O5",
+          "O6"
+        ],
+        [
+          "N16",
+          "C15",
+          "C14",
+          "O12",
+          "P17",
+          "O8",
+          "O10",
+          "O11",
+          "C13",
+          "O7",
+          "O9"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "P1_1",
+          "O2_1",
+          "O3_1",
+          "O4_1",
+          "C3_1",
+          "O5_1",
+          "O6_1"
+        ]
+      ]
+    }
+  },
+  "metals": {
+    "MG": 1
+  },
+  "mechanism_type": "phosphoserine_phosphatase",
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "mechanism_criteria": {
+    "criteria_id": "M0727_1L7N_STEP1_AXIS_ACID_MG_V1_20261022",
+    "status": "USER_APPROVED_OPERATIONAL_STANDARD",
+    "retrospective": true,
+    "selected_event": "M-CSA727 proposal1 step1; Asp11 captures phosphoserine phosphoryl group before phosphoenzyme hydrolysis",
+    "prediction_target_state": "Noncovalent initial phosphoserine reactant, unphosphorylated protein, one Mg",
+    "attack_distance_max_A": 3.5,
+    "attack_angle_min_deg": 150.0,
+    "acid_contact_max_A": 3.5,
+    "Mg_contact_max_A": 2.8,
+    "inclusive_boundaries": true,
+    "distance_lower_bounds_in_mechanism": false,
+    "required_Mg_donors": [
+      "Asp11 carboxyl O different from attacking O",
+      "Asp13 backbone carbonyl O",
+      "Asp167 sidechain carboxyl O",
+      "substrate phosphate nonbridging O"
+    ],
+    "same_variant_required": true,
+    "water_required": false,
+    "Asp171_direct_coordination_required": false,
+    "success_scope": "Passes selected first-half-reaction heavy-atom organization checks; not full catalytic competence, protonation proof or an associative-versus-dissociative mechanism verdict.",
+    "threshold_provenance": {
+      "attack_distance": "Author operational3.5 A inherited from prior phosphoryl screen, not an enzyme-specific experimental cutoff.",
+      "attack_angle": "Author150 degree tolerance around literature-supported inline arrangement, not a measured success boundary.",
+      "acid_contact": "Author3.5 A heavy-atom proximity screen motivated by acid assistance; no hydrogen trajectory inferred.",
+      "Mg_contact": "Author2.8 A upper screen; case protein donor coordinates about1.95-2.25 A and reaction-site topology support it qualitatively, not statistical calibration.",
+      "Mg_short_contact": "Not a pass/fail criterion. Mg is excluded from general by explicit user decision; minimum Mg-O distance is recorded continuously without a hard lower bound."
+    },
+    "references": [
+      {
+        "id": "MCSA727",
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/727/",
+        "supports": "Asp11 phosphoryl attack and Asp13 leaving-group protonation in step1; water attack belongs to step2."
+      },
+      {
+        "id": "WANG2002",
+        "doi": "10.1016/S0022-2836(02)00324-8",
+        "url": "https://www.rcsb.org/structure/1L7N",
+        "supports": "AlF3 analog and reaction-state structures. Not native reactant distance calibration."
+      },
+      {
+        "id": "KRACHTUS2018",
+        "doi": "10.3390/molecules23123342",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6321591/",
+        "locator": "Section3.1/Figure4;Section3.2.1;Table2",
+        "supports": "Inline arrangement, acid role, Asp11/Asp167 sidechains and Asp13 backbone Mg ligation. Protonation-dependent models; intermediate and TS values not used as reactant cutoffs."
+      }
+    ],
+    "coupling_policy": "Enumerate Asp11 OD1/OD2 as attacking O, with the other O as Mg donor; require all checks in one coherent variant. Equivalent oxygens only within their declared chemical groups.",
+    "general_separation": "Mg count and organization belong to mechanism only; Mg does not affect general. Substrate stereochemistry, pre-existing bond lengths, nonmetal clashes and volume remain general. No forming-pair collision exemption for this case.",
+    "sensitivity": {
+      "attack_max_A": [
+        3.3,
+        3.5,
+        4.0
+      ],
+      "angle_min_deg": [
+        150,
+        160
+      ],
+      "acid_max_A": [
+        3.2,
+        3.5,
+        3.8
+      ],
+      "Mg_max_A": [
+        2.6,
+        2.8
+      ]
+    },
+    "decision": "User approved evidence/operational-threshold distinction after historical results were available. Not preregistered; fixed before new package replay."
+  },
+  "reaction_atoms": {
+    "nucleophile_residue_position": 11,
+    "acid_residue_position": 13,
+    "Mg_ligand_residue_position": 167,
+    "diagnostic_residue_position": 171,
+    "P_index": 4,
+    "leaving_O_index": 3,
+    "phosphate_nonbridging_O_indices": [
+      5,
+      6,
+      7
+    ]
+  },
+  "general_excluded_metals": [
+    "MG"
+  ],
+  "reference_scope": "1L7N is AlF3 TS analog;1L7P is D11N substrate complex without Mg. Neither is the complete native reactant complex.",
+  "input_audit_scope": "Sequence and stoichiometry checked for all20 current outputs; AF3 declared SMILES checked. No new four-model MSA/template audit.",
+  "unified_source": {
+    "source_version": "0.6.2+1l7n",
+    "source_case_sha256": "b87e34192cbc097cbc62a13711b80b53b766f72f0103ae59aeb99970e86c360f",
+    "source_criteria_id": "M0727_1L7N_STEP1_AXIS_ACID_MG_V1_20261022",
+    "official_variant": "declared_primary"
+  }
+}

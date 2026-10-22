@@ -1,0 +1,2951 @@
+[
+  {
+    "case_id": "M0290_1ZIO",
+    "code": "1ZIO",
+    "family_id": "TR_PHOSPHORYL",
+    "family_zh": "磷酰基转移",
+    "primary_class": "TRANSFER",
+    "primary_class_zh": "基团转移",
+    "enzyme_zh": "腺苷酸激酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 1,
+    "input_definition": {
+      "protein_copies": 1,
+      "protein_length_each": 217,
+      "protein_sequence_sha256": "bac69ee5fb03134f154123a7204a6df19af506dfa04bc48c839d0aaea9576a0d",
+      "variant_in_configuration": null,
+      "ligands": {
+        "ATP": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+        },
+        "AMP": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+        }
+      },
+      "metals": {
+        "Mg": 1,
+        "Zn": 1
+      },
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "adenylate",
+    "criteria_id": "M0290_1ZIO_REACTANT_AXIS_MG_V1_20261020",
+    "source_version": "0.5.0",
+    "config_file": "1ZIO.json",
+    "config_sha256": "c11dfc69872ba3111c55f323860afbc6a55a3abb7eed8f0105c54ebdb9a364c2",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/290/",
+    "mechanism_criteria": {
+      "criteria_id": "M0290_1ZIO_REACTANT_AXIS_MG_V1_20261020",
+      "case_id": "M0290_1ZIO",
+      "case_number": 1,
+      "date": "2026-10-20",
+      "status": "FIXED_CASE_SPECIFIC_OPERATIONAL_STANDARD",
+      "development_policy": "Retrospective revision after inspection of existing predictions. Not preregistered. Applies to this case only; the main201 ledger is not overwritten.",
+      "target": {
+        "enzyme": "adenylate kinase",
+        "species": "Geobacillus stearothermophilus",
+        "mcsa_proposal": 1,
+        "mcsa_step": 1,
+        "state": "INITIAL_ATP_AMP_REACTANT_PREORGANIZATION",
+        "reaction": "ATP(4-) + AMP(2-) -> 2 ADP(3-)",
+        "components": {
+          "protein": {
+            "copies": 1,
+            "length": 217
+          },
+          "ATP": {
+            "copies": 1,
+            "formal_charge": -4
+          },
+          "AMP": {
+            "copies": 1,
+            "formal_charge": -2
+          },
+          "Mg": {
+            "copies": 1,
+            "formal_charge": 2
+          },
+          "Zn": {
+            "copies": 1,
+            "formal_charge": 2,
+            "role": "STRUCTURAL_NOT_THIS_GEOMETRY_TASK"
+          }
+        }
+      },
+      "atom_policy": {
+        "Nu": "One of the three nonprotonated, nonbridging oxygens on AMP phosphate.",
+        "center": "ATP gamma phosphorus.",
+        "LG": "The oxygen bridging ATP beta and gamma phosphorus atoms.",
+        "Mg_beta_donor": "One of the two nonbridging oxygens on the same ATP beta phosphate.",
+        "Mg_gamma_donor": "One of the three nonbridging oxygens on the same ATP gamma phosphate.",
+        "joint_rule": "Distance and angle must pass for the same AMP oxygen and the same Pgamma/LG pair. Both metal donors must belong to that same ATP and coordinate the same declared Mg.",
+        "too_short_policy": "Any AMP terminal oxygen closer to Pgamma than the reaction-distance lower bound fails the reactant compression guard. For each ATP Mg donor group, its shortest Mg-O distance must satisfy both bounds; a different oxygen cannot hide an excessively short contact.",
+        "equivalence": "Localized P=O versus P-O(-) drawing does not freeze phosphate oxygen identity for the declared unprotonated input. No alternative substrate copy or arbitrary nearest oxygen is permitted.",
+        "canonical_graph_indices_0_based": {
+          "ATP_Pgamma": 23,
+          "ATP_LG": 22,
+          "ATP_beta_O": [
+            20,
+            21
+          ],
+          "ATP_gamma_O": [
+            24,
+            25,
+            26
+          ],
+          "AMP_Nu": [
+            16,
+            17,
+            18
+          ]
+        }
+      },
+      "cutoffs": {
+        "reaction_distance_A": {
+          "min": 2.5,
+          "max": 4.0,
+          "inclusive": true,
+          "basis_type": "HOMOLOG_REACTANT_CRYSTAL_ANCHOR_PLUS_AUTHOR_OPERATIONAL_TOLERANCE",
+          "reference_ids": [
+            "NAM2024_8RJ6_A",
+            "KRISHNAMURTHY2005"
+          ],
+          "upper_basis": "8RJ6 chain A ATP altloc A with AMP has O1P-PG = 3.582868 A. A 4.0 A ceiling retains this observed ground-state arrangement with approximately 0.42 A operational allowance; it is not an experimental confidence interval.",
+          "lower_basis": "2.5 A is an author-defined compression guard for an intact reactant-preorganization task, not a measured lower quantile. It excludes unusually compressed or bond-like approach geometries from this task without claiming they are necessarily chemically impossible.",
+          "failure_tags": [
+            "REACTION_DISTANCE_TOO_SHORT_FOR_REACTANT_TASK",
+            "REACTION_DISTANCE_TOO_LONG"
+          ]
+        },
+        "attack_angle_deg": {
+          "min": 150.0,
+          "max": 180.0,
+          "inclusive": true,
+          "basis_type": "INLINE_MECHANISM_AND_REACTANT_CRYSTAL_PLUS_AUTHOR_ANGULAR_TOLERANCE",
+          "reference_ids": [
+            "MCSA0290_STEP1",
+            "NAM2024_8RJ6_A"
+          ],
+          "basis": "8RJ6 chain A O1P-PG-O3B = 166.957218 degrees, consistent with the paper's 167 degrees. The 150-degree floor allows up to 30 degrees from collinearity. Supplementary Table S3 reports RS MD mean angle 153.0 +/- 7.1 degrees: legitimate dynamics can cross this boundary. This is a screen for the declared preorganized geometry, not a universal activity threshold or a test of all physically possible bound states.",
+          "failure_tags": [
+            "ATTACK_DIRECTION_MISMATCH",
+            "REACTION_AXIS_JOINT_MISMATCH"
+          ]
+        },
+        "Mg_beta_distance_A": {
+          "min": 1.8,
+          "max": 2.6,
+          "inclusive": true,
+          "basis_type": "STATE_MATCHED_HOMOLOG_COORDINATION_TOPOLOGY_PLUS_AUTHOR_DISTANCE_TOLERANCE",
+          "reference_ids": [
+            "NAM2024_8RJ6_A",
+            "BERRY1998_1ZIO",
+            "PROJECT_MG_O_REFERENCE"
+          ],
+          "basis": "8RJ6 Mg-O1B is approximately 2.022 A. Same-species AP5-1ZIO Mg-O2B is approximately 2.222 A. 1.8-2.6 A is a deliberately broad author-defined direct-contact compatibility window, not a full coordination-geometry certificate.",
+          "failure_tags": [
+            "MG_ATP_BETA_CONTACT_TOO_SHORT",
+            "MG_ATP_BETA_CONTACT_TOO_LONG",
+            "MG_ATP_BETA_NO_COMPATIBLE_DONOR"
+          ]
+        },
+        "Mg_gamma_distance_A": {
+          "min": 1.8,
+          "max": 2.6,
+          "inclusive": true,
+          "basis_type": "STATE_MATCHED_HOMOLOG_COORDINATION_TOPOLOGY_PLUS_AUTHOR_DISTANCE_TOLERANCE",
+          "reference_ids": [
+            "NAM2024_8RJ6_A",
+            "BERRY1998_1ZIO",
+            "PROJECT_MG_O_REFERENCE"
+          ],
+          "basis": "8RJ6 Mg-O2G is approximately 1.903 A. Same-species AP5-1ZIO Mg-O2G is approximately 2.176 A. The same 1.8-2.6 A operational window is applied to both ATP donor groups.",
+          "failure_tags": [
+            "MG_ATP_GAMMA_CONTACT_TOO_SHORT",
+            "MG_ATP_GAMMA_CONTACT_TOO_LONG",
+            "MG_ATP_GAMMA_NO_COMPATIBLE_DONOR"
+          ]
+        }
+      },
+      "aggregation": {
+        "sample_task_pass": "One complete legal tuple simultaneously satisfies all four numeric conditions.",
+        "sample_joint_pass": "sample_task_pass AND the separately recorded basic structural checks pass.",
+        "Top1": "The original model-native confidence rank, not a geometry-selected sample.",
+        "Best5": "At least one entire sample passes; never combine conditions across samples.",
+        "missing_required_atom": "Record missing component/atom or mapping failure explicitly; never impute a zero distance or a success."
+      },
+      "not_required_for_task_pass": [
+        "Direct Mg-AMP coordination: retained as a measured diagram-versus-reference discrepancy.",
+        "Four coordinating waters: absent in the prediction input; no complete octahedral-shell verdict.",
+        "Full Zn site restoration: separate structural-metal task.",
+        "All catalytic-residue contacts, catalytic rates, reaction barriers or transition-state stabilization.",
+        "A ligand RMSD to AP5: AP5 is not separate ATP plus AMP."
+      ],
+      "reference_limits": [
+        "8RJ6 is the E. coli homolog, not the same species as 1ZIO.",
+        "Use only chain A ATP altloc A (occupancy 0.62), AMP and compatible blank-altloc Mg. Do not combine the alternate ADP state or chain B.",
+        "Crystal coordinates support heavy-atom geometry but do not certify the protonation of the benchmark input.",
+        "The 2005 MD used a different enzyme and ligand protonation setup and a modeled hydrated Mg site. Its Mg topology is supporting evidence, not a source of numerical pass/fail quantiles.",
+        "Nam 2024 Supplementary Table S3 uses ATP protonated at O1G in RS simulations; its reported mean distance 3.43 +/- 0.06 A and mean angle 153.0 +/- 7.1 degrees are contextual, not distributions fitted to this fully deprotonated input.",
+        "The M-CSA diagram shows a different Mg-AMP contact. The metal criterion is literature-curated, not literal compliance with every diagram line.",
+        "The project Mg-O distribution was preselected and pooled across chemical contexts; it supports distance scale, not a universal coordination cutoff."
+      ],
+      "sensitivity_only": {
+        "reaction_distance_upper_A": [
+          3.5,
+          3.6,
+          4.0,
+          4.5
+        ],
+        "reaction_distance_lower_A": [
+          2.3,
+          2.5,
+          2.7
+        ],
+        "attack_angle_lower_deg": [
+          140.0,
+          150.0,
+          160.0
+        ],
+        "Mg_distance_upper_A": [
+          2.3,
+          2.4,
+          2.6,
+          2.8
+        ]
+      },
+      "references": {
+        "MCSA0290_STEP1": {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/290/",
+          "locator": "Mechanism proposal 1, Step 1",
+          "supports": "Reacting atoms and in-line phosphoryl transfer; original metal diagram discrepancy preserved."
+        },
+        "NAM2024_8RJ6_A": {
+          "citation": "Nam K et al. Magnesium induced structural reorganization in the active site of adenylate kinase. Science Advances 10, eado5504 (2024).",
+          "doi": "10.1126/sciadv.ado5504",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11313852/",
+          "structure_url": "https://www.rcsb.org/structure/8RJ6",
+          "locator": "Figures 1D and 2A; Supplementary Tables S2 and S3; chain A ATP altloc A",
+          "supports": "Reactant-state reaction axis and beta/gamma Mg donor topology."
+        },
+        "KRISHNAMURTHY2005": {
+          "citation": "Krishnamurthy H et al. Associative mechanism for phosphoryl transfer: A molecular dynamics simulation of Escherichia coli adenylate kinase complexed with its substrates. Proteins 58, 88-100 (2005).",
+          "doi": "10.1002/prot.20301",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15521058/",
+          "locator": "Starting Structure; Force Field; Figure 6; Catalytic Mechanism",
+          "supports": "Supporting beta/gamma Mg coordination and distinction between modeled reactant and shorter transition-state/bond geometries, not the proposed cutoff numbers."
+        },
+        "BERRY1998_1ZIO": {
+          "citation": "Berry MB, Phillips GN Jr. Crystal structures of Bacillus stearothermophilus adenylate kinase with bound Ap5A, Mg2+ Ap5A, and Mn2+ Ap5A reveal an intermediate lid position and six coordinate octahedral geometry for bound Mg2+ and Mn2+. Proteins 32, 276-288 (1998).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9715904/",
+          "structure_url": "https://www.rcsb.org/structure/1ZIO",
+          "supports": "Same-species AP5 analog Mg coordination distances and structural Zn role; not a native ATP-plus-AMP distance standard."
+        },
+        "PROJECT_MG_O_REFERENCE": {
+          "supports": "Existing 317 selected Mg-O contacts from 48 M-CSA/PDB pairs; descriptive median 2.153 A and 5th-95th percentiles 1.931-2.503 A.",
+          "source_sha256": "b57ffe59759a8be2e804ce4e1e38aa2e9381ee4996b3834ecedba6d5ff4c450c"
+        }
+      }
+    },
+    "source_config_sha256": "f6a4601aa49d593aba63032d3ca2141697ad4d4e0c8bd869ba86a98f7a197add"
+  },
+  {
+    "case_id": "M0150_1NDP",
+    "code": "1NDP",
+    "family_id": "TR_PHOSPHORYL",
+    "family_zh": "磷酰基转移",
+    "primary_class": "TRANSFER",
+    "primary_class_zh": "基团转移",
+    "enzyme_zh": "核苷二磷酸激酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 6,
+    "input_definition": {
+      "protein_copies": 6,
+      "protein_length_each": 155,
+      "protein_sequence_sha256": "d2ac6dc9b1412078f09f191c32d3fb972930d6d786d9b4f58a548ca5dde4ffce",
+      "variant_in_configuration": null,
+      "ligands": {
+        "ATP_1": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+          "copy_group": "ATP",
+          "group_copies": 6
+        },
+        "ATP_2": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+          "copy_group": "ATP",
+          "group_copies": 6
+        },
+        "ATP_3": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+          "copy_group": "ATP",
+          "group_copies": 6
+        },
+        "ATP_4": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+          "copy_group": "ATP",
+          "group_copies": 6
+        },
+        "ATP_5": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+          "copy_group": "ATP",
+          "group_copies": 6
+        },
+        "ATP_6": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+          "copy_group": "ATP",
+          "group_copies": 6
+        }
+      },
+      "metals": {
+        "MG": 6
+      },
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "ndpk_histidine",
+    "criteria_id": "M0150_1NDP_HIS_ATP_MG_ABG_SIXSITE_V2_20261021",
+    "source_version": "0.5.0",
+    "config_file": "1NDP.json",
+    "config_sha256": "14350c1437ba88d4723d91f1f5cfb02ca12853dbaefabe2c8203576bc600a145",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/150/",
+    "mechanism_criteria": {
+      "criteria_id": "M0150_1NDP_HIS_ATP_MG_ABG_SIXSITE_V2_20261021",
+      "status": "IMPLEMENTED_LITERATURE_INFORMED_AUTHOR_OPERATIONAL_RULE",
+      "retrospective": true,
+      "target": {
+        "mechanism_proposal": 1,
+        "step": 1,
+        "state": "First half-reaction, before phosphohistidine formation"
+      },
+      "main_axis": {
+        "distance_A": {
+          "min": 2.5,
+          "max": 3.5,
+          "inclusive": true
+        },
+        "angle_deg": {
+          "min": 150.0,
+          "max": 180.0,
+          "inclusive": true
+        },
+        "distance_upper_basis": "Author operational: retained historical 3.5 A near-attack screen. NDPK papers establish ND1 attack and positioning, not this numeric limit. Creatine-kinase computed N-to-P pre-reactant distance 3.49 A is cross-system context only.",
+        "distance_lower_basis": "Author operational pre-reactant guard, not a paper-derived NDPK lower limit. Newly excludes an already collapsed N-P contact; general clash testing remains independent.",
+        "angle_basis": "Author operational 30-degree tolerance from the in-line axis, not a literature-calibrated NDPK activity threshold."
+      },
+      "site_assignment": {
+        "method": "Each ATP adenosine-heavy-atom centroid independently chooses the nearest His122 CA/CB/CG centroid.",
+        "tie_tolerance_A": 1e-06,
+        "scored_atoms_excluded": [
+          "His122 ND1",
+          "ATP Pgamma",
+          "ATP O_beta_gamma"
+        ],
+        "requires_one_ATP_per_each_of_six_sites": true,
+        "do_not_force_bijection_or_select_by_reaction_score": true
+      },
+      "aggregation": "Per site: reaction axis AND same-Mg alpha/beta/gamma contacts. All six declared sites must pass. General checks remain a separate stage.",
+      "metal_policy": "Required same-Mg ATP alpha/beta/gamma nonbridging oxygen contacts, each 1.8-2.6 A. Missing Mg fails this subtask without erasing measurable axes. No complete water-shell claim.",
+      "unassessed": [
+        "second half-reaction",
+        "proton transfer and His protonation",
+        "water network",
+        "complete Mg coordination sphere",
+        "reaction rate or transition-state energy"
+      ],
+      "references": [
+        {
+          "id": "MCSA150",
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/150/",
+          "supports": "Proposal 1 step 1, His122 ND1 to ATP gamma P; step 2 requires a different state."
+        },
+        {
+          "id": "Admiraal1999",
+          "doi": "10.1021/bi9827565",
+          "pmid": "10200157",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10200157/",
+          "supports": "Experimental role of nucleophile positioning in NDPK; not a 3.5 A or 150-degree cutoff."
+        },
+        {
+          "id": "Gonin1999",
+          "doi": "10.1021/bi982990v",
+          "pmid": "10353838",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10353838/",
+          "supports": "N-delta of His122 is the attacking atom; altered sugar groups change phosphate positioning."
+        },
+        {
+          "id": "Morera1995",
+          "pmid": "7669763",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7669763/",
+          "supports": "Phosphohistidine phosphorylated on N-delta; an intermediate, not a reactant-state numeric reference.",
+          "bibliography_note": "M-CSA lists the PDB DOI for 1NSP here; it is not used as the article DOI."
+        },
+        {
+          "id": "Li2016",
+          "doi": "10.1038/srep38088",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5133464/",
+          "supports": "Computed creatine N-to-Pgamma pre-reactant separation 3.49 A; different enzyme and nucleophile chemistry, not validation of an NDPK universal cutoff."
+        },
+        {
+          "id": "Xu1997",
+          "doi": "10.1073/pnas.94.8.3579",
+          "pmid": "9108019",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC20482/",
+          "supports": "Same-enzyme phosphoryl-transfer geometry and Mg alpha/beta/gamma-equivalent coordination topology, not the exact operational distance limits."
+        }
+      ],
+      "history": "3.5 A/150 degree historical classifications were already known. Lower guard and independent non-reactive site assignment added before the fresh package replay. This is not preregistration. User approved adding the three-contact Mg rule in this thread before this V2 scoring. All V1 axis thresholds and general checks remain unchanged; historical samples and their diagnostic distances existed beforehand. During initial implementation QA, one-way assignment mislabeled remote Mg ions as additional Mg at restored sites. Reciprocal nearest matching replaces this attribution before final replay, with the initial audit preserved. The 1.8-2.6 A window and all oxygen definitions are unchanged. This refinement is retrospective and is not described as preregistered.",
+      "previous_axis_only_criteria_id": "M0150_1NDP_HIS_ATP_SIXSITE_V1_20261021",
+      "magnesium": {
+        "required": true,
+        "distance_A": {
+          "min": 1.8,
+          "max": 2.6,
+          "inclusive": true
+        },
+        "groups": [
+          "alpha",
+          "beta",
+          "gamma"
+        ],
+        "same_Mg_same_ATP_required": true,
+        "donor_selection": "Minimum distance within the declared nonbridging oxygen set for each phosphate; a shorter-than-minimum oxygen cannot be bypassed by choosing another donor.",
+        "assignment": {
+          "method": "Reciprocal nearest neighbors between Mg atoms and ATP P_alpha/P_beta/P_gamma centroids. Unmatched Mg and ATP sites are reported, not force-matched. Neither donor distances nor threshold pass/fail selects the pairing.",
+          "phosphorus_indices": [
+            15,
+            19,
+            23
+          ],
+          "tie_tolerance_A": 1e-06,
+          "one_Mg_per_ATP": true,
+          "force_bijection": false,
+          "reciprocal_required": true
+        },
+        "topology_basis": "Xu et al. PNAS 1997, DOI 10.1073/pnas.94.8.3579, Figures 1 and 2: Mg contacts ADP alpha/beta oxygen and a metallofluoride F at the gamma-phosphate equivalent. ATP alpha/beta/gamma coordination is an explicitly identified analog-to-reactant interpretation.",
+        "distance_basis": "Author operational 1.8-2.6 A tolerance supported by same-enzyme 2BEF Mg-O contacts and the existing project Mg-O distance scale; not a paper-published pass/fail cutoff or a universal Mg-ATP rule.",
+        "water_shell_required": false,
+        "coordination_angle_gate": false,
+        "failure_scope": "Failure to recover this reference-supported ATP tridentate contact task, not proof of zero enzymatic activity."
+      }
+    },
+    "source_config_sha256": "34b3375443f9cd023a2e6a10e20fa7c9db30e764dad69cab1e9c95f8531f117f"
+  },
+  {
+    "case_id": "M0012_1OTH",
+    "code": "1OTH",
+    "family_id": "TR_ACYL",
+    "family_zh": "酰基与氨甲酰基转移",
+    "primary_class": "TRANSFER",
+    "primary_class_zh": "基团转移",
+    "enzyme_zh": "鸟氨酸氨甲酰基转移酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 3,
+    "input_definition": {
+      "protein_copies": 3,
+      "protein_length_each": 321,
+      "protein_sequence_sha256": "2192e0d6ba954e10b5d9e739ed5f5854863405f1244761e3b598b1a8014ea1e7",
+      "variant_in_configuration": null,
+      "ligands": {
+        "ORN_1": {
+          "smiles": "[NH3+]CCC[C@H]([NH3+])C(=O)[O-]",
+          "copy_group": "ORN",
+          "group_copies": 3
+        },
+        "ORN_2": {
+          "smiles": "[NH3+]CCC[C@H]([NH3+])C(=O)[O-]",
+          "copy_group": "ORN",
+          "group_copies": 3
+        },
+        "ORN_3": {
+          "smiles": "[NH3+]CCC[C@H]([NH3+])C(=O)[O-]",
+          "copy_group": "ORN",
+          "group_copies": 3
+        },
+        "CP_1": {
+          "smiles": "NC(=O)OP(=O)([O-])[O-]",
+          "copy_group": "CP",
+          "group_copies": 3
+        },
+        "CP_2": {
+          "smiles": "NC(=O)OP(=O)([O-])[O-]",
+          "copy_group": "CP",
+          "group_copies": 3
+        },
+        "CP_3": {
+          "smiles": "NC(=O)OP(=O)([O-])[O-]",
+          "copy_group": "CP",
+          "group_copies": 3
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "ornithine_carbamoyl",
+    "criteria_id": "M0012_1OTH_NCO_THREE_SITE_V1_20261021",
+    "source_version": "0.5.2+1oth",
+    "config_file": "1OTH.json",
+    "config_sha256": "d86fd7962526e8d241d227a24c235b66fac418845718d23f506ec28a7f3fb432",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/12/",
+    "mechanism_criteria": {
+      "criteria_id": "M0012_1OTH_NCO_THREE_SITE_V1_20261021",
+      "legacy_criteria_id": "ON_ACYL_DISTANCE_ANGLE_AUTHOR_V1",
+      "status": "USER_APPROVED_EXISTING_RULE_IMPLEMENTED",
+      "retrospective": true,
+      "target": {
+        "internal_mechanism_id": 2,
+        "step": 1,
+        "current_MCSA_display": "Mechanism Proposal 1 (three stars)",
+        "state": "Heavy-atom preorganization of the declared, protonated ornithine input; deprotonation is not assessed"
+      },
+      "main_axis": {
+        "distance_A": {
+          "min": 2.5,
+          "max": 4.0,
+          "inclusive": true
+        },
+        "angle_deg": {
+          "min": 90.0,
+          "max": 120.0,
+          "inclusive": true
+        },
+        "angle_vertex": "CP carbonyl C; direction atom is carbonyl O, not the C-O-P bridge O",
+        "basis": "Reaction atoms from M-CSA; distance and angular windows are explicitly author-operational, informed by carbonyl-attack geometry rather than directly published hOTC success cutoffs."
+      },
+      "site_assignment": {
+        "method": "Each complete ligand independently chooses the protein copy with minimum full-ligand heavy-atom to full-protein-copy heavy-atom distance, reproducing the existing whole-ligand pocket audit.",
+        "tie_tolerance_A": 1e-06,
+        "force_bijection": false,
+        "reaction_N_C_distance_or_angle_used": false
+      },
+      "aggregation": "Exactly one ORN and one CP at each of the three declared protein-site labels; each same-atom N-C-O tuple must pass. Do not select the best of nine ligand pairs.",
+      "scope": "Selected N-C-O heavy-atom geometry only. No added Cys303, Asp263, metal, water, hydrogen transfer or enzyme-activity gate. General input chemistry and stereochemistry remain independent.",
+      "water_required": false,
+      "metal_required": false,
+      "new_residue_contact_gates": false,
+      "input_state_note": "The fixed native input has protonated terminal NH3+. The selected MRV depicts terminal NH2. User accepted heavy-atom preorganization without verifying deprotonation; no input replacement or new inference.",
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/12/",
+          "supports": "Selected carbonyl-addition event; internal ID 2, step 1"
+        },
+        {
+          "doi": "10.1074/jbc.273.51.34247",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9852088/",
+          "supports": "Human OTC with a bisubstrate analog, not free-reactant distance thresholds"
+        },
+        {
+          "pmid": "10813810",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10813810/",
+          "supports": "CP and norvaline analog structural context; norvaline lacks the attacking terminal N"
+        },
+        {
+          "doi": "10.1021/acs.biochem.4c00206",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11256359/",
+          "supports": "Human OTC activation and D263/C303 interpretation; not a compulsory contact cutoff"
+        },
+        {
+          "doi": "10.1021/ja00796a058",
+          "url": "https://doi.org/10.1021/ja00796a058",
+          "supports": "Carbonyl nucleophilic approach principle, not this full numerical success window"
+        }
+      ],
+      "decision": "User explicitly approved retaining the existing distance/angle rules and current inputs before this package replay. Historical outcomes were already visible; not preregistered."
+    },
+    "source_config_sha256": "eeba836fc0b7d1722a6a69327f2f0693e008c230eda16f716b1abe7535aa18f3"
+  },
+  {
+    "case_id": "M0022_1B6B",
+    "code": "1B6B",
+    "family_id": "TR_ACYL",
+    "family_zh": "酰基与氨甲酰基转移",
+    "primary_class": "TRANSFER",
+    "primary_class_zh": "基团转移",
+    "enzyme_zh": "芳烷基胺N乙酰转移酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 1,
+    "input_definition": {
+      "protein_copies": 1,
+      "protein_length_each": 174,
+      "protein_sequence_sha256": "91206c0090524f1c4e0030d1ec31544dc4dba0209b78a65e7181cd12ef2c38a0",
+      "variant_in_configuration": null,
+      "ligands": {
+        "acetyl_CoA": {
+          "smiles": "CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)([O-])[O-]"
+        },
+        "serotonin": {
+          "smiles": "[NH3+]CCc1c[nH]c2ccc(O)cc12"
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": {
+        "serotonin_charge": 1,
+        "acetyl_CoA_charge": -4,
+        "input_changed": false,
+        "observed_electronic_or_protonation_state_verified": false,
+        "limitation": "Declared serotonin ammonium and acetyl-CoA input preserved. Heavy-atom geometry does not demonstrate the active neutral amine or proton transport through water."
+      }
+    },
+    "mechanism_type": "aanat_acyl",
+    "criteria_id": "M0022_1B6B_NCO_AXIS_V2_20261021",
+    "source_version": "0.5.4+1b6b",
+    "config_file": "1B6B.json",
+    "config_sha256": "91863da9682bd3f76235b4d974aaf30b96ad50d11021637c1b7caf81881c8d86",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/22/",
+    "mechanism_criteria": {
+      "criteria_id": "M0022_1B6B_NCO_AXIS_V2_20261021",
+      "retrospective": true,
+      "implementation_date": "2026-10-21",
+      "acceptance": "User confirmed N-C<=4.0 A AND N-C-O 90-120 degrees; His/Tyr context auxiliary, general independent. Historical outcomes already seen.",
+      "target": {
+        "MCSA_id": "M0022",
+        "proposal": 1,
+        "step": 1
+      },
+      "distance_upper_A": 4.0,
+      "distance_lower_A": null,
+      "angle_deg": {
+        "min": 90.0,
+        "max": 120.0,
+        "inclusive": true
+      },
+      "aggregation": "One unique input pair; same N-C-O tuple must pass distance AND direction.",
+      "basis": "Literature-guided author operational distance and angle windows, not a same-state experimental distribution or activity classifier",
+      "auxiliary_contacts": [
+        {
+          "id": "His120_NE2_to_serotonin_N",
+          "position": 93,
+          "residue": "HIS",
+          "atom": "NE2",
+          "target_role": "serotonin",
+          "target_index": 0
+        },
+        {
+          "id": "His122_ND1_to_serotonin_N",
+          "position": 95,
+          "residue": "HIS",
+          "atom": "ND1",
+          "target_role": "serotonin",
+          "target_index": 0
+        },
+        {
+          "id": "Tyr168_OH_to_CoA_S",
+          "position": 141,
+          "residue": "TYR",
+          "atom": "OH",
+          "target_role": "acetyl_CoA",
+          "target_index": 3
+        },
+        {
+          "id": "Leu124_backbone_N_to_carbonyl_O",
+          "position": 97,
+          "residue": "LEU",
+          "atom": "N",
+          "target_role": "acetyl_CoA",
+          "target_index": 2
+        }
+      ],
+      "auxiliary_affects_status": false,
+      "His122_direct_contact_required": false,
+      "His_policy": "Auxiliary only. Primary sources discuss a water-filled proton pathway, remote-base/hydrogen-bond contributions, and overlapping His120/His122 functions.",
+      "sensitivity_distance_upper_A": [
+        3.5,
+        4.0,
+        4.5
+      ],
+      "sensitivity_angle_windows_deg": [
+        [
+          85,
+          125
+        ],
+        [
+          90,
+          120
+        ],
+        [
+          100,
+          120
+        ]
+      ],
+      "water_required_for_scored_axis": false,
+      "scope": "Initial heavy-atom carbonyl approach/direction only; no claim of water-mediated deprotonation, exact pose, complete reaction or activity.",
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/22/",
+          "supports": "N-C-O event and residue roles, not literal 3D direct contact for every schematic arrow"
+        },
+        {
+          "doi": "10.1074/jbc.M200595200",
+          "supports": "Remote/water-mediated base and hydrogen-bond roles; not compulsory His122-N distance 2.4-3.5 A"
+        },
+        {
+          "doi": "10.1016/S0092-8674(00)80745-X",
+          "supports": "Water-filled proton pathway and active conformation in a covalent bisubstrate analog structure"
+        },
+        {
+          "doi": "10.1002/cphc.202300379",
+          "supports": "Obtuse carbonyl attack trajectory; cyanide/acetone model, not AANAT-specific success boundaries"
+        }
+      ],
+      "intentional_change_from_history": "Remove compulsory His122 direct-contact gate and 2.5 A lower mechanism bound. This changes historical task scope, not the input or measurements."
+    },
+    "source_config_sha256": "96ea49661e11b96eeae542cdd7993847917726806ddc56c52c3e050278b2faf1"
+  },
+  {
+    "case_id": "M0023_1XVA",
+    "code": "1XVA",
+    "family_id": "TR_SAM_METHYL",
+    "family_zh": "SAM依赖甲基转移",
+    "primary_class": "TRANSFER",
+    "primary_class_zh": "基团转移",
+    "enzyme_zh": "甘氨酸N甲基转移酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 4,
+    "input_definition": {
+      "protein_copies": 4,
+      "protein_length_each": 292,
+      "protein_sequence_sha256": "24fc7e190da33ba1e36d3a384990cd44a8b1696a7b85209c25ccaa5ef3425d9b",
+      "variant_in_configuration": null,
+      "ligands": {
+        "SAM": {
+          "smiles": "C[S@@+](CC[C@H]([NH3+])C(=O)[O-])C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O"
+        },
+        "glycine": {
+          "smiles": "NCC(=O)[O-]"
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "sam_n_methyl",
+    "criteria_id": "M0023_1XVA_NCS_SINGLE_OCCUPANCY_V1_20261021",
+    "source_version": "0.5.1+1xva",
+    "config_file": "1XVA.json",
+    "config_sha256": "5402aff4c0bf51754f39443120658beb5b0aa747563573c7b1d95b7bfaddc8ac",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/23/",
+    "mechanism_criteria": {
+      "criteria_id": "M0023_1XVA_NCS_SINGLE_OCCUPANCY_V1_20261021",
+      "retrospective": true,
+      "implementation_date": "2026-10-21",
+      "human_acceptance": "User accepted the reviewed standard before packaging; existing outcomes were already visible.",
+      "target": {
+        "mcsa_id": "M0023",
+        "proposal": 1,
+        "step": 1,
+        "state": "Glycinate plus intact SAM before methyl transfer"
+      },
+      "main_axis": {
+        "distance_A": {
+          "min": 2.5,
+          "max": 3.5,
+          "inclusive": true
+        },
+        "angle_deg": {
+          "min": 140.0,
+          "max": 180.0,
+          "inclusive": true
+        }
+      },
+      "basis": "Literature-informed author operational bounds, not a directly published GNMT success cutoff.",
+      "distance_basis": "Fu et al. modeled glycine N within 3.0 A of the SAM methyl. This was modeling based on SAM/acetate crystals, not a measured glycine cocrystal. Both endpoints here are author tolerances.",
+      "angle_basis": "SN2 alignment; Swiderek et al. report reactant-state mean angles of 162-168 degrees across enzyme simulations. These means are not an acceptance interval; 140 degrees is an author tolerance.",
+      "aggregation": "One complete N-C-S tuple; do not require four occupied sites when only one SAM and one glycine were supplied.",
+      "separation_diagnostic_A": 10.0,
+      "separation_note": "Distance-based diagnostic, not proof of a particular protein pocket assignment.",
+      "water_required": false,
+      "scope": "Single-pair reactant geometry in a tetramer, not full four-site occupancy, protonation dynamics or catalytic activity.",
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/23/",
+          "use": "Proposal 1 step 1 identifies the reacting atoms and selected basic glycine state"
+        },
+        {
+          "doi": "10.1021/bi961068n",
+          "use": "Same-enzyme SAM/acetate crystal and modeled glycine proximity; not exact glycine pose truth"
+        },
+        {
+          "doi": "10.1021/bi061319k",
+          "use": "SN2 and stabilization of glycine basic form"
+        },
+        {
+          "doi": "10.1021/jacs.7b13655",
+          "url": "https://purehost.bath.ac.uk/ws/files/188638360/finalversion.pdf",
+          "use": "Reactant-state directionality, author manuscript p.10; neither simulated mean angles nor TS distances become hard experimental cutoffs"
+        }
+      ],
+      "reporting_change": "Old three-condition geometry included C-S bond intactness. The axis is now reported separately from that general/state check; legacy conjunction remains diagnostic."
+    },
+    "source_config_sha256": "89bd37f255cb01a038c826e2041e39303f1594f897f1b425038853e195122177"
+  },
+  {
+    "case_id": "M0199_1GSA",
+    "code": "1GSA",
+    "family_id": "AD_NTP_CARBOXYLATE_LIGATION",
+    "family_zh": "核苷三磷酸活化的羧酸连接",
+    "primary_class": "ADDITION_LIGATION",
+    "primary_class_zh": "加成与连接",
+    "enzyme_zh": "谷胱甘肽合成酶",
+    "official_variant": "dimer_two_sets_4Mg",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 316,
+      "protein_sequence_sha256": "2fd7df97dbc332c14539dfc428c41de41427d2af38ef9bd9e35a0e33b5ed91c8",
+      "variant_in_configuration": null,
+      "ligands": {
+        "ATP_1": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+          "copy_group": "ATP",
+          "group_copies": 2
+        },
+        "ATP_2": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+          "copy_group": "ATP",
+          "group_copies": 2
+        },
+        "GGC_1": {
+          "smiles": "[NH3+][C@@H](CCC(=O)N[C@@H](CS)C(=O)[O-])C(=O)[O-]",
+          "copy_group": "GGC",
+          "group_copies": 2
+        },
+        "GGC_2": {
+          "smiles": "[NH3+][C@@H](CCC(=O)N[C@@H](CS)C(=O)[O-])C(=O)[O-]",
+          "copy_group": "GGC",
+          "group_copies": 2
+        },
+        "GLY_1": {
+          "smiles": "[NH3+]CC(=O)[O-]",
+          "copy_group": "GLY",
+          "group_copies": 2
+        },
+        "GLY_2": {
+          "smiles": "[NH3+]CC(=O)[O-]",
+          "copy_group": "GLY",
+          "group_copies": 2
+        }
+      },
+      "metals": {
+        "MG": 4
+      },
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "glutathione_synthesis",
+    "criteria_id": "M0199_1GSA_DIMER_ORGANIZATION_V3_20261021",
+    "source_version": "0.6.1",
+    "config_file": "1GSA.json",
+    "config_sha256": "f3cb319385976c15b23a637f72bbbba8f29b9249fbc1d58c076384ae8ec88878",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/199/",
+    "mechanism_criteria": {
+      "criteria_id": "M0199_1GSA_DIMER_ORGANIZATION_V3_20261021",
+      "retrospective": true,
+      "mcsa": {
+        "entry": 199,
+        "proposal": 1,
+        "web_step": 1,
+        "legacy_step_label": 2,
+        "correction": "Web alpha-phosphate text conflicts with ADP release and gamma-phosphoryl transfer literature. Evaluate terminal Pgamma. Legacy step label is not used as the executable event."
+      },
+      "target_state": "UNLINKED_ATP_GAMMA_GLU_CYS_GLYCINE_REACTANTS_TWO_DECLARED_SITES",
+      "assembly_scope": "Two complete declared sites in a homodimer condition. PISA A2 is listed alongside author-assigned A4; this is not a claim that tetrameric assembly is dispensable.",
+      "main_axis": {
+        "distance_max_A": 3.5,
+        "angle_min_deg": 150.0,
+        "distance_min_A": null,
+        "inclusive": true
+      },
+      "metal_core": {
+        "required_edges": [
+          "Mg1_Glu",
+          "Mg1_Asp",
+          "Mg2_Glu",
+          "Mg2_Asn"
+        ],
+        "same_physical_Glu_oxygen_bridges_both_Mg": true,
+        "long_Glu_contact_is_gate": false,
+        "Mg_Mg_is_gate": false,
+        "maximum_positive_deviation_A": 0.35,
+        "maximum_Mg_O_A": 2.8,
+        "two_sided_reference_deviation_is_diagnostic_only": true
+      },
+      "metal_atp": {
+        "each_Mg_any_of_groups": [
+          "alpha",
+          "beta",
+          "gamma"
+        ],
+        "analog_topology_diagnostic": {
+          "Mg1_required_groups": [
+            "alpha",
+            "beta"
+          ],
+          "Mg2_any_of_groups": [
+            "beta",
+            "gamma"
+          ],
+          "affects_primary_pass": false
+        },
+        "same_ATP_copy_as_reaction_axis": true,
+        "only_nonbridging_phosphate_oxygens": true,
+        "basis": "Each metal must contact a nonbridging phosphate oxygen of the same ATP. This is a minimal operational metal-nucleotide coupling test, not a calibrated complete reactant topology. Exact ADP-state alpha/beta patterns are diagnostic only; SO4 is not an exact ATP gamma atom reference.",
+        "maximum_Mg_O_A": 2.8
+      },
+      "revision_note": "Unified0.7.0 removes the general metal-distance lower gate by user request. Mechanism geometry and cutoffs are unchanged.",
+      "aggregate": "Both declared sites satisfy reaction axis, two-Mg organization and same-ATP proximity; general is reported independently.",
+      "site_assignment": {
+        "ligand_margin_A": 1.0,
+        "Mg_role_cost_tie_A2": 0.1,
+        "basis": "Protein-fitted analog anchors, not reaction distances or pass scores. No forced ligand/site occupancy."
+      },
+      "numerical_evidence": "AUTHOR_OPERATIONAL_WINDOWS_GUIDED_BY_MECHANISM_AND_ANALOG_STRUCTURE",
+      "matched_reactant_calibration": false,
+      "full_six_coordination_or_water_required": false,
+      "glycine_attack_evaluated": false,
+      "energy_or_activity_evaluated": false,
+      "sensitivity": {
+        "axis_max_A": [
+          3.5,
+          4.0
+        ],
+        "axis_min_deg": [
+          150,
+          140
+        ],
+        "Mg_O_max_A": [
+          2.6,
+          2.8,
+          3.0
+        ],
+        "donor_delta_A": [
+          0.25,
+          0.35,
+          0.6
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/199/",
+          "supports": "Reacting components, metal donor residues and event order; text P label needs correction."
+        },
+        {
+          "url": "https://doi.org/10.1021/bi9605245",
+          "supports": "Same enzyme ADP/GSH/SO4/Mg architecture, not complete forward-reactant state."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3065366/",
+          "supports": "Gamma-phosphoryl transfer and acyl-phosphate in human GS; not bacterial GS geometry calibration."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3902929/",
+          "supports": "Another enzyme D38N Michaelis structure: O-P 3.0 A / 168 degrees. Not GS-specific cutoff."
+        },
+        {
+          "url": "https://doi.org/10.1371/journal.pone.0022767",
+          "supports": "Another phosphatase structure: O-P 2.6 A / 170 degrees; cross-system direction anchor only."
+        }
+      ],
+      "stage_ownership": "Required metal organization remains mechanism. Metal lower-distance diagnostics cannot fail general or joint by themselves.",
+      "source_stage_ownership_before_unification": {
+        "revision_note": "V3 follows the explicit user request to classify metal-O overcompression in general only. The 1.7 A lower bound is unchanged. Mechanism is now organization/contact assessment, not two-sided reference-distance recovery. Old v0.6.0 release preserved.",
+        "stage_ownership": "Mechanism: required site/partners and proximity upper limits. General: metal-O compression below 1.7 A. Signed reference deviations and legacy symmetric recovery remain diagnostics; compression is not a second mechanism veto.",
+        "general_metal_policy_id": "M0199_MG_O_SHORT_CONTACT_GENERAL_V1"
+      }
+    },
+    "source_config_sha256": "6067222103851cb824f367a9b50f6bb8a29d443745c92e22977d2f30441907f6"
+  },
+  {
+    "case_id": "M0200_1KQP",
+    "code": "1KQP",
+    "family_id": "AD_NTP_CARBOXYLATE_LIGATION",
+    "family_zh": "核苷三磷酸活化的羧酸连接",
+    "primary_class": "ADDITION_LIGATION",
+    "primary_class_zh": "加成与连接",
+    "enzyme_zh": "NAD合成酶",
+    "official_variant": "dimer_2ATP_2NaAD_2NH4_4Mg",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 271,
+      "protein_sequence_sha256": "af76cac5999becd050b7ea79d38d93007a04fc32daff6263374178326f257ea5",
+      "variant_in_configuration": "dimer_two_sets",
+      "ligands": {
+        "atp_1": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+        },
+        "atp_2": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O"
+        },
+        "naad_1": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]2O[C@@H]([n+]3cccc(C(=O)[O-])c3)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O"
+        },
+        "naad_2": {
+          "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]2O[C@@H]([n+]3cccc(C(=O)[O-])c3)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O"
+        },
+        "ammonium_1": {
+          "smiles": "[NH4+]"
+        },
+        "ammonium_2": {
+          "smiles": "[NH4+]"
+        }
+      },
+      "metals": {
+        "Mg": 4
+      },
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "nad_synthetase",
+    "criteria_id": "1KQP_ADENYLATION_TWO_MG_V1_20261021",
+    "source_version": "0.5.0",
+    "config_file": "1KQP.json",
+    "config_sha256": "b9167ae6b5b45c30590d60c7362db5c52f2f764e6759896acc48db913f287743",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/200/",
+    "mechanism_criteria": {
+      "criteria_id": "1KQP_ADENYLATION_TWO_MG_V1_20261021",
+      "retrospective": true,
+      "user_accepted": true,
+      "selected_event": "Current M-CSA proposal 1 step 1: NaAD carboxylate O attacks ATP alpha P; not the subsequent ammonia attack",
+      "cutoffs": {
+        "reaction_distance_A": {
+          "max": 3.5
+        },
+        "attack_angle_deg": {
+          "min": 150.0,
+          "max": 180.0
+        },
+        "Mg_O_A": {
+          "min": 1.8,
+          "max": 2.6
+        }
+      },
+      "equivalent_oxygen_policy": "Either NaAD carboxylate O may pass only as one complete distance-angle tuple. Phosphate terminal oxygens may permute; the two gamma donors must be distinct in one coherent assignment.",
+      "short_contact_policy": "No mechanism lower bound for reaction distance; general independently checks ordinary clashes. For each required Mg O-group, any sub-1.8 A minimum cannot be hidden by choosing another equivalent O.",
+      "author_operational_not_activity_boundaries": true,
+      "metal_topology": "Mg1: Asp50, Glu162, ATP beta O and gamma O; Mg2: same ATP alpha O and a distinct gamma O.",
+      "site_pairing": "One-to-one nonreactive-centroid ATP/NaAD pairing, excluding both carboxylate O and alpha P/alpha-beta bridge O. ATP adenosine scaffold contacts assign protein chain. Metals assigned once by backbone-aligned reference Mg positions, without scoring ligand or sidechain O distances.",
+      "reference_state_limit": "1KQP is ADJ/PPi intermediate, not an intact ATP/NaAD reactant structure. Its protein-anchored Mg positions label metal roles only; no intermediate covalent O-P bond used as a preattack cutoff.",
+      "scope": "Selected reactant O-P-O axis and six named non-water Mg contacts; no complete water shell, full reaction, ammonium attack or activity claim.",
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/200/",
+          "supports": "Graph-derived alpha P event and six non-water Mg contact roles; gamma wording is not followed"
+        },
+        {
+          "doi": "10.1107/S0907444902006698",
+          "supports": "Same-enzyme dimeric ADJ/PPi intermediate with two catalytic Mg per site; not numerical reactant cutoffs"
+        },
+        {
+          "doi": "10.1016/S0969-2126(98)00114-2",
+          "supports": "Adenylation mechanism and intersubunit NaAD binding"
+        },
+        {
+          "doi": "10.1371/journal.pone.0022767",
+          "supports": "Cross-system inline phosphoryl geometry context, not a 1KQP-specific cutoff"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3902929/",
+          "supports": "Cross-system Michaelis geometry context, not a 1KQP-specific cutoff"
+        }
+      ],
+      "mrv_sha256": "b5687e30bcab986f766f69672fcea438d9ad056164a737bb8a3e5fcd355ffb64",
+      "reference_sha256": "44ad08b0f9b87fcf9733cdf1184483fbc96f53caaa059dfc0bb25a7a47a4615a"
+    },
+    "source_config_sha256": "f15dc8cfaa0ee6d839e162b17669af32382260a4770421840822efbff6f135de"
+  },
+  {
+    "case_id": "M0267_1DHP",
+    "code": "1DHP",
+    "family_id": "AD_CC",
+    "family_zh": "C–C键形成",
+    "primary_class": "ADDITION_LIGATION",
+    "primary_class_zh": "加成与连接",
+    "enzyme_zh": "二氢吡啶二羧酸合成酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 4,
+    "input_definition": {
+      "protein_copies": 4,
+      "protein_length_each": 292,
+      "protein_sequence_sha256": "0bce3fd79a982684b8d419fd1cde86994d086490a61928430ffe1c134192d731",
+      "variant_in_configuration": null,
+      "ligands": {
+        "PYR_1": {
+          "smiles": "CC(=O)C(=O)[O-]",
+          "copy_group": "PYR",
+          "group_copies": 4
+        },
+        "PYR_2": {
+          "smiles": "CC(=O)C(=O)[O-]",
+          "copy_group": "PYR",
+          "group_copies": 4
+        },
+        "PYR_3": {
+          "smiles": "CC(=O)C(=O)[O-]",
+          "copy_group": "PYR",
+          "group_copies": 4
+        },
+        "PYR_4": {
+          "smiles": "CC(=O)C(=O)[O-]",
+          "copy_group": "PYR",
+          "group_copies": 4
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "lys_carbonyl_multisite",
+    "criteria_id": "M0267_1DHP_LYS_PYR_FOUR_SITE_V1_20261021",
+    "source_version": "0.4.1+1dhp",
+    "config_file": "1DHP.json",
+    "config_sha256": "9f2784c0ee2da3c89a569f3facd93c74624af7d24a9af964beaa3b78b97ee50f",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/267/",
+    "mechanism_criteria": {
+      "criteria_id": "M0267_1DHP_LYS_PYR_FOUR_SITE_V1_20261021",
+      "retrospective": true,
+      "target": {
+        "mcsa_proposal": 1,
+        "mcsa_step": 1,
+        "state": "Four noncovalent pyruvate reactants before Lys addition"
+      },
+      "main_axis": {
+        "distance_A": {
+          "min": 2.5,
+          "max": 4.0,
+          "inclusive": true
+        },
+        "angle_deg": {
+          "min": 90.0,
+          "max": 120.0,
+          "inclusive": true
+        },
+        "basis": "Literature-informed author operational window retained from reviewed project criteria, not a directly published enzyme activity threshold."
+      },
+      "site_assignment": {
+        "method": "Exhaustive one-to-one assignment minimizing nonreactive centroid costs",
+        "cost": "Pyruvate atoms 0,3,4,5 centroid to Lys161 CA/CB centroid",
+        "near_tie_margin_A": 0.5,
+        "near_tie_basis": "Existing author diagnostic margin, not a chemical threshold",
+        "scored_atoms_used_for_assignment": false,
+        "ambiguity_policy": "Keep minimum-cost geometry; compare verdicts across all assignments within 0.5 A total cost. If these disagree, report a concrete assignment error; never choose by pass rate."
+      },
+      "aggregation": "All four assigned N-C-O tuples must each satisfy distance AND angle.",
+      "diagnostics": [
+        "Original ketone C=O distance",
+        "All sixteen site/ligand axes",
+        "All twenty-four assignments"
+      ],
+      "source_references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/267/",
+          "use": "Proposal 1 step 1 defines Lys161 NZ and pyruvate ketone; not the carboxylate carbon"
+        },
+        {
+          "doi": "10.1021/bi962272d",
+          "use": "Same-enzyme catalytic mechanism and covalent intermediate; not a free-reactant numerical window"
+        },
+        {
+          "doi": "10.1110/ps.037440.108",
+          "use": "Catalytic Lys161 and Ile203 context; beta-hydroxypyruvate adduct is not the benchmark reactant"
+        },
+        {
+          "doi": "10.1021/ja00796a058",
+          "use": "Carbonyl approach geometry principle; exact project endpoints are author-defined"
+        },
+        {
+          "doi": "10.1002/cphc.202300379",
+          "use": "Physical basis of obtuse carbonyl approach; not a universal enzyme cutoff"
+        }
+      ],
+      "scope": "Initial Lys-pyruvate addition geometry only; no claim of formed Schiff base, downstream C-C bond formation, full reaction, or activity.",
+      "water_required": false
+    },
+    "source_config_sha256": "e9d737ba8a9d9474ba99909048f882b46c91aedd6571ca650fc9f064f1627bca"
+  },
+  {
+    "case_id": "M0252_1IGS",
+    "code": "1IGS",
+    "family_id": "AD_CYCLIZATION",
+    "family_zh": "成环",
+    "primary_class": "ADDITION_LIGATION",
+    "primary_class_zh": "加成与连接",
+    "enzyme_zh": "吲哚甘油磷酸合成酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 1,
+    "input_definition": {
+      "protein_copies": 1,
+      "protein_length_each": 248,
+      "protein_sequence_sha256": "a5678301cecc2d1e42270d7e64a76f678362100308cd5657af6effe43adc8e9c",
+      "variant_in_configuration": null,
+      "ligands": {
+        "substrate": {
+          "smiles": "O=C([O-])c1ccccc1NCC(=O)[C@H](O)[C@H](O)COP(=O)([O-])[O-]"
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "igps_nac",
+    "criteria_id": "M0252_1IGS_PUBLISHED_NAC_V1_20261021",
+    "source_version": "0.5.0",
+    "config_file": "1IGS.json",
+    "config_sha256": "fa6e5a8a0e152d2feea147c07f0ce78e48e1b525bf6c70ba89fc6c88eed740f4",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/252/",
+    "mechanism_criteria": {
+      "criteria_id": "M0252_1IGS_PUBLISHED_NAC_V1_20261021",
+      "retrospective": true,
+      "implementation_date": "2026-10-21",
+      "target": {
+        "mcsa_proposal": 1,
+        "mcsa_step": 1,
+        "state": "CdRP reactant before ring closure"
+      },
+      "primary_rule": "Both C1-C2prime distance and C2prime-C1-C6 angle must pass.",
+      "distance_A": {
+        "max": 3.5,
+        "inclusive": true,
+        "basis": "Same-enzyme published NAC definition"
+      },
+      "angle_deg": {
+        "min": 100.0,
+        "max": 140.0,
+        "inclusive": true,
+        "basis": "Same-enzyme published 120 +/- 20 degrees; vertex is aromatic C1"
+      },
+      "source": {
+        "doi": "10.1073/pnas.0406002101",
+        "pmcid": "PMC521968",
+        "title": "Molecular dynamics studies of ground state and intermediate of the hyperthermophilic indole-3-glycerol phosphate synthase",
+        "authors": "Mazumder-Shivakumar D; Bruice TC",
+        "year": 2004,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC521968/",
+        "locator": "NAC definition, Fig. 1; Results: Contribution of NAC to the general acid catalyzed intramolecular ring formation"
+      },
+      "lys110_support": {
+        "hard_gate": false,
+        "atom_pair": "Lys110 NZ / CdRP O2prime",
+        "reported_mean_A": 2.8,
+        "reported_plus_minus_A": 0.2,
+        "temperature_K": 385,
+        "basis": "Same-enzyme MD reported contact; mean +/- dispersion is not a pass/fail interval"
+      },
+      "legacy_operational_sensitivity": {
+        "reaction_distance_A": {
+          "min": 2.2,
+          "max": 3.5
+        },
+        "lys110_distance_A": {
+          "min": 2.2,
+          "max": 3.5
+        },
+        "basis": "Historical author operational windows, not published NAC cutoffs",
+        "changes_primary_verdict": false
+      },
+      "scope": "Screens a static near-attack conformation, not binding validity, enzyme activity, reaction rate, or temperature-dependent NAC population.",
+      "water_required": false,
+      "policy_change": "Compared with legacy three-gate screening, the published two-condition NAC is primary; legacy lower bound and Lys contact remain explicit sensitivity diagnostics. No old ledger is overwritten."
+    },
+    "source_config_sha256": "7f30329f1ca8eb4794d351cd27d76dfce56878af9a4b3a17e17e798ea8c4fcf9"
+  },
+  {
+    "case_id": "M0007_5ICD",
+    "code": "5ICD",
+    "family_id": "RX_GENERAL",
+    "family_zh": "一般氧化还原",
+    "primary_class": "REDOX",
+    "primary_class_zh": "氧化还原",
+    "enzyme_zh": "异柠檬酸脱氢酶",
+    "official_variant": "corrected_stereo_dimer_two_sets",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 414,
+      "protein_sequence_sha256": "7dce06a06e9c8c742af803f3a7c0d4a372c40f303a76fd88605019bbd84b88fa",
+      "variant_in_configuration": "dimer_two_sets",
+      "ligands": {
+        "nadp_1": {
+          "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@](=O)([O-])OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)OP(=O)([O-])[O-])O)O)O)C(=O)N"
+        },
+        "nadp_2": {
+          "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@](=O)([O-])OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)OP(=O)([O-])[O-])O)O)O)C(=O)N"
+        },
+        "isocitrate_1": {
+          "smiles": "[O-]C(=O)C[C@H](C(=O)[O-])[C@@H](O)C(=O)[O-]"
+        },
+        "isocitrate_2": {
+          "smiles": "[O-]C(=O)C[C@H](C(=O)[O-])[C@@H](O)C(=O)[O-]"
+        }
+      },
+      "metals": {
+        "Mg": 2
+      },
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "isocitrate",
+    "criteria_id": "5ICD_INITIAL_OXIDATION_V1_20261021",
+    "source_version": "0.4.1",
+    "config_file": "5ICD.json",
+    "config_sha256": "e6dd74e938f4ddaacfcf523345220dc467949c993b92760f25cde7a0a836cbd8",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/7/",
+    "mechanism_criteria": {
+      "criteria_id": "5ICD_INITIAL_OXIDATION_V1_20261021",
+      "retrospective": true,
+      "user_accepted": true,
+      "scope": "Initial hydride proximity and acceptor face, Lys contact, named non-water Mg organization",
+      "cutoffs": {
+        "hydride_distance_A": {
+          "max": 4.0
+        },
+        "lys_OH_distance_A": {
+          "max": 3.5
+        },
+        "Mg_O_distance_A": {
+          "min": 1.8,
+          "max": 2.6
+        },
+        "re_face_height_A": {
+          "strict_min": 1e-06
+        }
+      },
+      "distance_lower_policy": "No mechanism lower bound on C-C or Lys-O. General independently checks noncovalent compression.",
+      "author_operational_not_activity_boundaries": true,
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/7/",
+          "supports": "Proposal 1 initial oxidation; no full proton relay imposed"
+        },
+        {
+          "doi": "10.1021/bi300483w",
+          "supports": "Lys230 prime hydroxyl contact and nicotinamide re-face; Ca pseudo-Michaelis state"
+        },
+        {
+          "doi": "10.1021/bi00099a026",
+          "supports": "Mg/ICT, Asp307 local and Asp283 opposite, A-side hydride specificity"
+        }
+      ],
+      "reference_values": {
+        "local_chain": "A",
+        "opposite_chain": "A-2",
+        "state": "WT Ca pseudo-Michaelis, not an exact Mg complex",
+        "ICT_C2_NAP_C4N_A": 2.9688632504714665,
+        "ICT_O7_Lys230_prime_NZ_A": 3.1632908497322854,
+        "re_face_height_A": 2.8059634289418414,
+        "approach_to_re_normal_deg_diagnostic_only": 19.068165458598926,
+        "mirror_control_height_A": -2.8059634289418423,
+        "Lys230_prime_to_Asp283_prime_min_O_A": 3.005344073479773,
+        "Lys230_prime_to_Asp307_local_min_O_A": 2.684109908330878
+      },
+      "not_scored": [
+        "water shell or octahedral angles",
+        "later decarboxylation",
+        "Tyr protonation",
+        "full upstream proton relay",
+        "numerical C-H-C transfer angle"
+      ],
+      "pairing_policy": {
+        "ligands": "Minimum-sum one-to-one nonreactive heavy-centroid distances; excludes hydride C2/C4 only, preserving legacy pairing",
+        "protein": "NADP non-nicotinamide atoms to non-scored protein residues; 4.5 A residue contact count, bounded nearest distance tiebreak; one-to-one",
+        "Mg": "One-to-one distance to mean of local Asp307 CA and opposite Asp283 CA; no scored O distances used",
+        "tie_tolerance": 1e-06
+      }
+    },
+    "source_config_sha256": "38175daa9b57cbd316bf522f3081c0d33481d681a1016baf2207cadc64bba998"
+  },
+  {
+    "case_id": "M0584_1LDM",
+    "code": "1LDM",
+    "family_id": "RX_GENERAL",
+    "family_zh": "一般氧化还原",
+    "primary_class": "REDOX",
+    "primary_class_zh": "氧化还原",
+    "enzyme_zh": "L乳酸脱氢酶",
+    "official_variant": "tetramer_four_pairs",
+    "protein_copies": 4,
+    "input_definition": {
+      "protein_copies": 4,
+      "protein_length_each": 329,
+      "protein_sequence_sha256": "d3957a2609e269ee850c1a9519ee24d92b4f3f616bd3c705480c00d4f5c375cf",
+      "variant_in_configuration": "tetramer_four_pairs",
+      "ligands": {
+        "NAD_1": {
+          "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)O)O)O)O)C(=O)N",
+          "copy_group": "NAD",
+          "group_copies": 4
+        },
+        "NAD_2": {
+          "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)O)O)O)O)C(=O)N",
+          "copy_group": "NAD",
+          "group_copies": 4
+        },
+        "NAD_3": {
+          "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)O)O)O)O)C(=O)N",
+          "copy_group": "NAD",
+          "group_copies": 4
+        },
+        "NAD_4": {
+          "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)O)O)O)O)C(=O)N",
+          "copy_group": "NAD",
+          "group_copies": 4
+        },
+        "lactate_1": {
+          "smiles": "C[C@H](O)C(=O)[O-]",
+          "copy_group": "lactate",
+          "group_copies": 4
+        },
+        "lactate_2": {
+          "smiles": "C[C@H](O)C(=O)[O-]",
+          "copy_group": "lactate",
+          "group_copies": 4
+        },
+        "lactate_3": {
+          "smiles": "C[C@H](O)C(=O)[O-]",
+          "copy_group": "lactate",
+          "group_copies": 4
+        },
+        "lactate_4": {
+          "smiles": "C[C@H](O)C(=O)[O-]",
+          "copy_group": "lactate",
+          "group_copies": 4
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "ldh_tetramer",
+    "criteria_id": "M0584_1LDM_TETRAMER_HYDRIDE_HIS_CONTACT_V2_20261021",
+    "source_version": "0.5.3+1ldm",
+    "config_file": "1LDM.json",
+    "config_sha256": "cd3d93e09c6f2de595fc8ef2f3e58eb3b9389d63496aeaf933c8bc996feea2a9",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/584/",
+    "mechanism_criteria": {
+      "hydride_distance": {
+        "atoms": [
+          "lactate C2",
+          "NAD nicotinamide C4"
+        ],
+        "min_A": 3.0,
+        "max_A": 4.0,
+        "inclusive": true,
+        "basis": "Retained literature-informed author operational window",
+        "source_doi": "10.1021/acs.jpcb.5b01840"
+      },
+      "catalytic_base_contact": {
+        "atoms": [
+          "lactate hydroxyl O",
+          "His193 NE2 of assigned protein subunit"
+        ],
+        "min_A": null,
+        "max_A": 3.5,
+        "inclusive": true,
+        "basis": "Author operational contact tolerance; M-CSA direct proton-acceptor role and 1LDM OXM analog contact at 2.702 A",
+        "short_contact_handling": "Independent General check",
+        "new_relative_to_old_distance_only_rule": true
+      },
+      "site_pass": "Both conditions pass within the same assigned site",
+      "sample_pass": "All four assigned sites pass both conditions",
+      "report_counts_separately": [
+        "hydride_sites_passed",
+        "His_contact_sites_passed",
+        "both_sites_passed"
+      ],
+      "angles_or_hydride_faces_scored": false,
+      "other_catalytic_residue_contacts_scored": false,
+      "scope": "Local reactant geometry at four sites; not full enzyme activity, protonation-state validation, or global tetramer-interface validation",
+      "lower_bound_interpretation": "Below 3.0 A means outside the declared reactant window, not universally noncatalytic or a clash. General checks classify clashes independently.",
+      "criteria_id": "M0584_1LDM_TETRAMER_HYDRIDE_HIS_CONTACT_V2_20261021",
+      "target": {
+        "mcsa_entry": 584,
+        "proposal": 1,
+        "step": 1,
+        "state": "L-lactate plus oxidized NAD before hydride and proton transfer"
+      },
+      "retrospective": true,
+      "whole_study_preregistered": false,
+      "water_required": false,
+      "atom_pair_reference": {
+        "doi": "10.1021/jp1071296",
+        "pmid": "21077591",
+        "pmcid": "PMC3018068",
+        "system": "Human heart LDH with modeled lactate and NAD; not dogfish 1LDM",
+        "same_reported_atom_pairs": [
+          "His193 NE2-LAC O1",
+          "NAD NC4-LAC C2"
+        ],
+        "TS_based_sampling_restraint_targets_A": {
+          "His193_NE2_LAC_O1": 2.78,
+          "NAD_NC4_LAC_C2": 2.95
+        },
+        "allowed_use": "Supports the selection of two mechanistic coordinates; not our exact acceptance cutoffs",
+        "not_used_as_ground_state_cutoffs": true
+      }
+    },
+    "source_config_sha256": "f8d249572dbc71722f7e842579172cc935ce4cf8d9cb2e93ef65229bda8587b0"
+  },
+  {
+    "case_id": "M0211_1IDT",
+    "code": "1IDT",
+    "family_id": "RX_GENERAL",
+    "family_zh": "一般氧化还原",
+    "primary_class": "REDOX",
+    "primary_class_zh": "氧化还原",
+    "enzyme_zh": "氧不敏感硝基还原酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 217,
+      "protein_sequence_sha256": "29f206447ee4cb553476ef8479bd5f34ccc179bcab186c8fe1f03e0c46569e62",
+      "variant_in_configuration": null,
+      "ligands": {
+        "NADH_1": {
+          "smiles": "NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1",
+          "copy_group": "NADH",
+          "group_copies": 2
+        },
+        "NADH_2": {
+          "smiles": "NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1",
+          "copy_group": "NADH",
+          "group_copies": 2
+        },
+        "FMN_1": {
+          "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)C[C@@H]([C@@H]([C@@H](COP(=O)(O)O)O)O)O",
+          "copy_group": "FMN",
+          "group_copies": 2
+        },
+        "FMN_2": {
+          "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)C[C@@H]([C@@H]([C@@H](COP(=O)(O)O)O)O)O",
+          "copy_group": "FMN",
+          "group_copies": 2
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "nitroreductase_hydride",
+    "criteria_id": "M0211_1IDT_C4_N5_PROXIMITY_V2_20261021",
+    "source_version": "0.5.4+1idt",
+    "config_file": "1IDT.json",
+    "config_sha256": "1a3d9deac447b890e0e2a103b3f39a64a1f00bdf8e7d4d8392e8bdef920cb861",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/211/",
+    "mechanism_criteria": {
+      "criteria_id": "M0211_1IDT_C4_N5_PROXIMITY_V2_20261021",
+      "status": "IMPLEMENTED_OPERATIONAL_CRITERION",
+      "retrospective": true,
+      "selected_event": "M-CSA211 proposal1 step1, NADH-to-FMN reductive half reaction",
+      "prediction_target_state": "Reduced NADH plus oxidized FMN, noncovalent reactants",
+      "distance_A": {
+        "min": null,
+        "max": 3.8,
+        "inclusive": true
+      },
+      "basis": "Literature-supported author operational proximity screen; <=3.8 A is a favorable-distance guideline, not a case-calibrated catalytic boundary.",
+      "aggregation": "Both declared sites must pass, with distinct independent nearest-pocket occupancy matching the bijections. Two ligand pairs at one pocket cannot satisfy two sites. No cross-site minima or mixing samples.",
+      "pairing": "Protein CA Kabsch to 1IDT reference; NADH nonreactive whole-heavy centroid and FMN ring centroid excluding N5 separately assigned bijectively to reference FMN pocket centroids excluding N5. No donor C4, acceptor N5 or success value used for site assignment.",
+      "tie_tolerance_A": 1e-06,
+      "lower_bound_applied": false,
+      "clashes_in_general_only": true,
+      "sensitivity_upper_A": [
+        3.5,
+        3.8,
+        4.0,
+        4.5,
+        5.0
+      ],
+      "legacy_window_A": [
+        3.3,
+        5.0
+      ],
+      "scope": "Hydride donor-acceptor heavy-atom proximity only. Not full catalytic competence, barrier, rate, explicit H trajectory or pro-R/pro-S certification.",
+      "orientation_policy": "Ring approach and ring-plane geometry reported continuously; no uncalibrated numeric angle gate. Literature re-face requirement acknowledged; stereospecific H transfer not certified by distance.",
+      "no_water_or_metal_required": true,
+      "references": [
+        {
+          "id": "MCSA211_STEP1",
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/211/",
+          "supports": "NADH C4 hydride donor and oxidized FMN N5 acceptor; first half reaction only."
+        },
+        {
+          "id": "LOVERING_2001",
+          "doi": "10.1006/jmbi.2001.4653",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11491290/",
+          "state": "Same-enzyme nicotinic-acid fragment analog, not full NADH",
+          "supports": "re-face binding and C4-to-N5 approach. Reported 3.6 A is an analog anchor, not a validated enzyme pass interval."
+        },
+        {
+          "id": "PITSAWONG_2017",
+          "doi": "10.1016/j.str.2017.05.002",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5560098/",
+          "state": "Related E. cloacae enzyme, NAAD analog crystal and NADH KIE evidence",
+          "supports": "3.0 A C4-N5 analog distance in Fig2A/TableS2, Discussion; Introduction describes <=3.8 A favorable distance citing Fraaije/Mattevi2000. Not an empirical binary boundary for E.coli."
+        },
+        {
+          "id": "JOHANSSON_2003",
+          "doi": "10.1021/jm030843b",
+          "url": "https://www.rcsb.org/structure/1IDT",
+          "state": "FMN plus CB1954, no NADH",
+          "supports": "Two-site dimer and flavin environment only; cannot supply a native C4-N5 reactant distribution."
+        },
+        {
+          "id": "DELGADO_2017",
+          "doi": "10.1021/acscatal.7b00201",
+          "state": "Different enzyme morphinone reductase, QM/MM",
+          "use": "Background only; reactant and TS separated, not case calibration."
+        },
+        {
+          "id": "MAXEL_2021",
+          "doi": "10.1021/acssynbio.1c00258",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362907/",
+          "state": "Different enzyme CHMO, modeled dynamic ensemble",
+          "use": "Excluded as primary 1IDT cutoff evidence; old wide-envelope provenance only."
+        }
+      ],
+      "decision": "Evidence audit rejects 3.3 A as a hard lower limit and 5.0 A as the primary near-attack cutoff. Changes declared before new package replay, with historical results already known; not preregistered."
+    },
+    "source_config_sha256": "41109684d9ffb145584a7e4cc8529d8f17f8860606693e692e70d43a7d952091"
+  },
+  {
+    "case_id": "M0188_1XEL",
+    "code": "1XEL",
+    "family_id": "IS_STEREO",
+    "family_zh": "立体异构化",
+    "primary_class": "ISOMERIZATION_REARRANGEMENT",
+    "primary_class_zh": "异构化与重排",
+    "enzyme_zh": "UDP葡萄糖4差向异构酶",
+    "official_variant": "monomer",
+    "protein_copies": 1,
+    "input_definition": {
+      "protein_copies": 1,
+      "protein_length_each": 338,
+      "protein_sequence_sha256": "c69eaa0f4135008b1389c57f5040ac0b7eab951a0380d2c5e9ea49edf8da76bb",
+      "variant_in_configuration": "monomer",
+      "ligands": {
+        "NAD_1": {
+          "smiles": "c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO[P@@](=O)([O-])O[P@@](=O)([O-])OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4ncnc5N)O)O)O)O)C(=O)N",
+          "copy_group": "NAD",
+          "group_copies": 1
+        },
+        "sugar_1": {
+          "smiles": "O=c1ccn([C@@H]2O[C@H](COP(=O)([O-])OP(=O)([O-])O[C@H]3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1",
+          "copy_group": "sugar",
+          "group_copies": 1
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "gale_hydride",
+    "criteria_id": "M0188_1XEL_MONOMER_HYDRIDE_DISTANCE_V1_20261021",
+    "source_version": "0.5.2+1xel",
+    "config_file": "1XEL.json",
+    "config_sha256": "0689b8f474faccd32b0e01ae4e48542c1845d0b3d5376374fa9ffc28d226f832",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/188/",
+    "mechanism_criteria": {
+      "criteria_id": "M0188_1XEL_MONOMER_HYDRIDE_DISTANCE_V1_20261021",
+      "target": {
+        "mcsa_id": 188,
+        "proposals": [
+          1,
+          2
+        ],
+        "step": 1,
+        "state": "One intact 338-aa protein, oxidized NAD, and UDP-galactose before initial hydride transfer"
+      },
+      "main_axis": {
+        "distance_A": {
+          "min": 3.0,
+          "max": 4.0,
+          "inclusive": true
+        }
+      },
+      "basis": "Literature-informed author operational window; not a directly published universal acceptance cutoff.",
+      "distance_basis": "Nam et al. report sugar C4 to nicotinamide C4 separations of 3.4 and 3.5 A in B. longum GalE complexes and summarize productive GalE structures at 3.0-3.7 A. Different species and substrates; 4.0 A is the retained author tolerance, not an experimental percentile.",
+      "selection": "Shared hydride atom pair of both M-CSA proposals. Their different Tyr149/Ser124 proton-transfer routes are not combined as simultaneous hard requirements.",
+      "scope": "Initial reactant hydride donor-acceptor proximity only; not a forming C-C bond, full epimerization mechanism, proton relay, hydride face, dynamics, or activity.",
+      "water_required": false,
+      "angles_scored": false,
+      "residue_contacts_scored": false,
+      "retrospective": true,
+      "registered_before_monomer_inference": true,
+      "whole_study_preregistered": false,
+      "monomer_analysis_policy_sha256": "e105b1f0ffecbff7ddaee5aafac6d2e6cf6e2664e8f2704399f68b9bc0aac616",
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/188/",
+          "use": "Atom roles and shared first-step hydride event; the displayed NADP-type component is not substituted for the reviewed NAD input"
+        },
+        {
+          "doi": "10.1038/s41598-019-47591-w",
+          "pmid": "31366978",
+          "pmcid": "PMC6668579",
+          "citation": "Nam YW, Nishimoto M, Arakawa T, Kitaoka M, Fushinobu S. Scientific Reports 9, 11081 (2019).",
+          "use": "GalE-family distance evidence; author tolerance remains separately identified"
+        },
+        {
+          "doi": "10.1021/bi9601114",
+          "use": "1XEL is an NADH/UDP-glucose abortive complex, not exact oxidized-NAD/UDP-galactose reactant truth"
+        }
+      ],
+      "reference_state": "1XEL experimental NADH/UDP-glucose differs from the defined input; no reference PDB required at runtime",
+      "assembly_policy": "Exactly one full protein subunit and one pair. Dimer predictions must not be silently truncated or scored as monomers."
+    },
+    "source_config_sha256": "60a0985c361ddae1963cc37dc09b361760293477a45210e7f415a3a0b3593a77"
+  },
+  {
+    "case_id": "M0368_1I8T",
+    "code": "1I8T",
+    "family_id": "IS_RING_REORGANIZATION",
+    "family_zh": "环重组",
+    "primary_class": "ISOMERIZATION_REARRANGEMENT",
+    "primary_class_zh": "异构化与重排",
+    "enzyme_zh": "UDP半乳糖吡喃糖变位酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 367,
+      "protein_sequence_sha256": "780fa5a1733a70b8d70d99798d3850f7a74e77ebd1c0af65c0480d4122e56473",
+      "variant_in_configuration": null,
+      "ligands": {
+        "FAD_1": {
+          "smiles": "Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])OP(=O)([O-])OC[C@H]1O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]1O)c1[nH]c(=O)[nH]c(=O)c1N2",
+          "copy_group": "FAD",
+          "group_copies": 2
+        },
+        "FAD_2": {
+          "smiles": "Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)([O-])OP(=O)([O-])OC[C@H]1O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]1O)c1[nH]c(=O)[nH]c(=O)c1N2",
+          "copy_group": "FAD",
+          "group_copies": 2
+        },
+        "UDP_Galp_1": {
+          "smiles": "O=c1ccn([C@@H]2O[C@H](COP(=O)([O-])OP(=O)([O-])O[C@H]3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1",
+          "copy_group": "UDP_Galp",
+          "group_copies": 2
+        },
+        "UDP_Galp_2": {
+          "smiles": "O=c1ccn([C@@H]2O[C@H](COP(=O)([O-])OP(=O)([O-])O[C@H]3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1",
+          "copy_group": "UDP_Galp",
+          "group_copies": 2
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": {
+        "mode": "DECLARED_NEUTRAL_RING_FADH2_GEOMETRY",
+        "FAD_total_charge": -2,
+        "FAD_N1_formal_charge": 0,
+        "FAD_N1_H": 1,
+        "FAD_N5_H": 1,
+        "mechanism_drawing_N1_charge": -1,
+        "limitation": "Existing input is reduced FADH2 with neutral N1-H, while the mechanism drawing uses N1 anion. Input was not changed. Geometry PASS does not verify the catalytically active anionic microstate.",
+        "observed_electronic_or_protonation_state_verified": false,
+        "charged_state_difference_is_model_failure": false
+      }
+    },
+    "mechanism_type": "ugm_n5",
+    "criteria_id": "M0368_1I8T_TWO_SITE_N5_AXIS_V2_20261021",
+    "source_version": "0.5.2+1i8t",
+    "config_file": "1I8T.json",
+    "config_sha256": "bb6b8b8a504089bed6a3bec339bc9c917bd885c888d18e3d2b29178236070065",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/368/",
+    "mechanism_criteria": {
+      "criteria_id": "M0368_1I8T_TWO_SITE_N5_AXIS_V2_20261021",
+      "retrospective": true,
+      "implementation_date": "2026-10-21",
+      "acceptance": "User accepted two independent N5-C1-OUDP axes as the mechanism verdict; Arg/pocket contacts are auxiliary, C1-O bond is general. Historical outputs had already been seen.",
+      "target": {
+        "MCSA_id": "M0368",
+        "current_proposal": 1,
+        "step": 1,
+        "archived_source": "mechanism_4_step1",
+        "semantic_event": "Reduced flavin N5 approaches intact UDP-Galp C1 before covalent addition."
+      },
+      "main_axis": {
+        "distance_A": {
+          "min": 2.5,
+          "max": 4.0,
+          "inclusive": true
+        },
+        "angle_deg": {
+          "min": 135.0,
+          "max": 180.0,
+          "inclusive": true
+        }
+      },
+      "aggregation": "Both independently located sites must each satisfy the same N5-C1-OUDP tuple distance AND angle.",
+      "basis": "Literature-informed author operational windows. Homologous reduced structure 3INT reports about 3.6 A, not a cutoff distribution.",
+      "site_assignment": {
+        "method": "Each ligand type separately: nonreactive heavy-atom centroid to seven-residue pocket CA centroid; exhaustive bijection must agree with individual nearest pockets.",
+        "FAD_excluded_indices": [
+          52
+        ],
+        "UDP_excluded_indices": [
+          17,
+          18
+        ],
+        "minimum_total_margin_A": 2.0,
+        "nearest_tie_tolerance_A": 1e-06,
+        "reactive_distance_used": false,
+        "duplicate_nearest_occupancy": "FAIL: required site organization not recovered. Never force-match both ligands into a better-scoring pair.",
+        "uncertain_assignment": "ERROR with explicit margin/tie evidence, while general remains independent."
+      },
+      "auxiliary": {
+        "Arg_contact_A": {
+          "min": 2.2,
+          "max": 4.0
+        },
+        "FAD_pocket_contact_A": {
+          "min": 2.0,
+          "max": 4.5
+        },
+        "UDP_pocket_contact_A": {
+          "min": 2.0,
+          "max": 4.5
+        },
+        "affects_mechanism_status": false,
+        "Arg_rule": "Minimum across Arg170/278 NE,NH1,NH2 and all UDP oxygens directly bonded to P, within the assigned chain; not two independently required Arg networks."
+      },
+      "water_required": false,
+      "scope": "Selected reactant heavy-atom preorganization in two sites; not whole sugar-ring conversion, electron/proton dynamics or enzyme activity.",
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/368/",
+          "use": "Direct N5 nucleophilic event and residue roles; current versus archived proposal numbering distinguished."
+        },
+        {
+          "doi": "10.1021/bi901437v",
+          "use": "Homologous K. pneumoniae reduced substrate complex, approximately 3.6 A N5-C1; not exact E. coli input or calibrated population."
+        },
+        {
+          "doi": "10.1038/nsmb772",
+          "use": "Covalent catalysis by reduced anionic flavin; input microstate limitation remains explicit."
+        }
+      ],
+      "intentional_change_from_history": "The old six-check conjunction is kept only as a diagnostic. Arg/pocket and C1-O checks no longer overwrite axis status."
+    },
+    "source_config_sha256": "5fdd4dcce8872f6219a02cd5a308eb517557137daefce67baf87d4efc8193337"
+  },
+  {
+    "case_id": "M0054_1QFE",
+    "code": "1QFE",
+    "family_id": "CL_ELIMINATION",
+    "family_zh": "消除与脱水",
+    "primary_class": "CLEAVAGE_ELIMINATION",
+    "primary_class_zh": "非水解裂解与消除",
+    "enzyme_zh": "I型3脱氢奎尼酸脱水酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 252,
+      "protein_sequence_sha256": "2f417e9f7e19d88e0617b05fe5c8ce65457d7d86a923bd57cb4d5b5e872f6fe7",
+      "variant_in_configuration": null,
+      "ligands": {
+        "DHQ_1": {
+          "smiles": "O=C1C[C@@](O)(C(=O)[O-])C[C@@H](O)[C@@H]1O",
+          "copy_group": "DHQ",
+          "group_copies": 2
+        },
+        "DHQ_2": {
+          "smiles": "O=C1C[C@@](O)(C(=O)[O-])C[C@@H](O)[C@@H]1O",
+          "copy_group": "DHQ",
+          "group_copies": 2
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "dhqd_lys_carbonyl",
+    "criteria_id": "M0054_1QFE_NCO_TWO_SITE_V2_20261021",
+    "source_version": "0.5.3+1qfe",
+    "config_file": "1QFE.json",
+    "config_sha256": "4bde2c61ea385cb52cc7c45a4aa6db80e8a8bd57120fefdaed97998367233f88",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/54/",
+    "mechanism_criteria": {
+      "criteria_id": "M0054_1QFE_NCO_TWO_SITE_V2_20261021",
+      "status": "USER_APPROVED_IMPLEMENTATION",
+      "retrospective": true,
+      "selected_event": "M-CSA 54, mechanism proposal 1, displayed step 2; Lys170 attacks DHQ chemical C3 ketone before covalent addition",
+      "main_axis": {
+        "distance_A": {
+          "min": null,
+          "max": 4.0,
+          "inclusive": true
+        },
+        "angle_deg": {
+          "min": 90.0,
+          "max": 120.0,
+          "inclusive": true
+        },
+        "angle_vertex": "DHQ ketone carbon, not carboxyl carbon",
+        "basis": "Author operational tolerances, supported by carbonyl-addition chemistry and DHQD-specific substrate-reorientation literature; not experimentally calibrated 1QFE reactant limits."
+      },
+      "site_assignment": {
+        "method": "Minimum-total-distance bijection: ligand heavy-atom centroid excluding ketone C/O to the centroid of Lys170 CA/CB. No reaction NZ, ketone C/O, angle or pass score used to select the assignment.",
+        "tie_tolerance_A": 1e-06,
+        "require_unique_assignment": true,
+        "note": "A comparison assignment is not proof of biological occupancy. Report nearest-site occupancy and every alternative."
+      },
+      "aggregation": "Both assigned sites must satisfy the distance and angle on the same N-C-O tuple.",
+      "scope": "Initial heavy-atom approach geometry only; not full dehydration, protonation, reaction face or enzyme activity. General checks are independent.",
+      "legacy_relay_is_hard_gate": false,
+      "distance_lower_bound_is_hard_gate": false,
+      "general_state_note": "Two free DHQ molecules and unmodified Lys170; no preformed protein-substrate bond, no reaction-pair clash exemption.",
+      "water_required": false,
+      "metal_required": false,
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/54/",
+          "supports": "Selected step and reaction-atom roles"
+        },
+        {
+          "doi": "10.1002/pro.2218",
+          "supports": "Evidence against treating Glu86 as an essential universal triad gate"
+        },
+        {
+          "doi": "10.1021/bi4015506",
+          "supports": "DHQD substrate reorientation; does not supply the numeric pass window"
+        },
+        {
+          "doi": "10.1021/ja00796a058",
+          "supports": "General nucleophilic carbonyl approach, not a validated case-specific cutoff"
+        },
+        {
+          "doi": "10.1042/BJ20140614",
+          "supports": "4CNO substrate analog; not a catalytic positive control"
+        }
+      ],
+      "decision": "User approved the reviewed NCO-only task and packaging after historical results were available. Fixed before package replay; not preregistered."
+    },
+    "source_config_sha256": "5507fe3f49cbce0d796d8f397a7d43b255b06fbe0750a1ad9704d8dfb7e42e8a"
+  },
+  {
+    "case_id": "M0305_1ET0",
+    "code": "1ET0",
+    "family_id": "CL_ELIMINATION",
+    "family_zh": "消除与脱水",
+    "primary_class": "CLEAVAGE_ELIMINATION",
+    "primary_class_zh": "非水解裂解与消除",
+    "enzyme_zh": "氨基脱氧分支酸裂解酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 269,
+      "protein_sequence_sha256": "70f8ec00c033327b4c57a0f8daefe1ddd45643856e0c4a744c9eb89938c6fd5f",
+      "variant_in_configuration": null,
+      "ligands": {
+        "ADC_1": {
+          "smiles": "C=C(O[C@@H]1C=C(C(=O)[O-])C=C[C@H]1[NH3+])C(=O)[O-]",
+          "copy_group": "ADC",
+          "group_copies": 2
+        },
+        "ADC_2": {
+          "smiles": "C=C(O[C@@H]1C=C(C(=O)[O-])C=C[C@H]1[NH3+])C(=O)[O-]",
+          "copy_group": "ADC",
+          "group_copies": 2
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [
+        {
+          "position": 140,
+          "residue_name": "LLP",
+          "parent_residue_name": "LYS",
+          "atoms": [
+            {
+              "name": "N1",
+              "element": "N",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C2",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C2'",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C3",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "O3",
+              "element": "O",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C4",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C4'",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C5",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C6",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C5'",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "OP4",
+              "element": "O",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "P",
+              "element": "P",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "OP1",
+              "element": "O",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "OP2",
+              "element": "O",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "OP3",
+              "element": "O",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "N",
+              "element": "N",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "CA",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": "S"
+            },
+            {
+              "name": "CB",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "CG",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "CD",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "CE",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "NZ",
+              "element": "N",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "C",
+              "element": "C",
+              "formal_charge": 0,
+              "CIP": null
+            },
+            {
+              "name": "O",
+              "element": "O",
+              "formal_charge": 0,
+              "CIP": null
+            }
+          ],
+          "bonds": [
+            {
+              "atoms": [
+                "N1",
+                "C2"
+              ],
+              "order": "DOUB",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "N1",
+                "C6"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C2",
+                "C2'"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C2",
+                "C3"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C3",
+                "O3"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C3",
+                "C4"
+              ],
+              "order": "DOUB",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C4",
+                "C4'"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C4",
+                "C5"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C4'",
+                "NZ"
+              ],
+              "order": "DOUB",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C5",
+                "C6"
+              ],
+              "order": "DOUB",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C5",
+                "C5'"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C5'",
+                "OP4"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "OP4",
+                "P"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "P",
+                "OP1"
+              ],
+              "order": "DOUB",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "P",
+                "OP2"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "P",
+                "OP3"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "N",
+                "CA"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "CA",
+                "CB"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "CA",
+                "C"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "CB",
+                "CG"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "CG",
+                "CD"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "CD",
+                "CE"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "CE",
+                "NZ"
+              ],
+              "order": "SING",
+              "stereo": "N"
+            },
+            {
+              "atoms": [
+                "C",
+                "O"
+              ],
+              "order": "DOUB",
+              "stereo": "N"
+            }
+          ],
+          "source_CCD_sha256": "3e414b697f7ed70d6f1e2e82563c9c7983e0112c40beffb6fc1d5cb2e74b83a0"
+        }
+      ],
+      "input_state_contract": {
+        "ADC_amino_group": "NH3+",
+        "mechanism_drawing_amino_group": "NH2",
+        "LLP_formal_charge": 0,
+        "input_changed": false,
+        "observed_electronic_or_protonation_state_verified": false,
+        "limitation": "Geometry of the declared input; activated microstate and proton transfer are not established. No additional waters or unrequested input changes."
+      }
+    },
+    "mechanism_type": "plp_transaldimination",
+    "criteria_id": "M0305_1ET0_TWO_SITE_PLP_PRECONTACT_V1_20261021",
+    "source_version": "0.5.3+1et0",
+    "config_file": "1ET0.json",
+    "config_sha256": "199177658fda6317e83d36966c3f29cebd76a0b388ce1433d03d46d2573d77fc",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/305/",
+    "mechanism_criteria": {
+      "criteria_id": "M0305_1ET0_TWO_SITE_PLP_PRECONTACT_V1_20261021",
+      "retrospective": true,
+      "implementation_date": "2026-10-21",
+      "acceptance": "User accepted the criteria research proposal and requested packaging/testing. Historical outcomes had already been seen.",
+      "target": {
+        "MCSA_id": "M0305",
+        "proposal": 1,
+        "step": 1,
+        "event": "ADC amino-N approach to enzyme-bound PLP C4prime before covalent addition."
+      },
+      "distance_upper_A": 3.5,
+      "distance_lower_A": null,
+      "inclusive": true,
+      "angle_N_C4prime_NZ": "DIAGNOSTIC_ONLY",
+      "N_to_NZ_distance": "DIAGNOSTIC_ONLY",
+      "aggregation": "Both input-declared occupied sites in the same structure must pass.",
+      "site_assignment": {
+        "method": "ADC nonreactive-heavy-atom centroid to PLP six-membered-ring centroid; exhaustive bijection must agree with each ligand nearest site.",
+        "ADC_excluded_indices": [
+          12
+        ],
+        "reactive_distance_used": false,
+        "minimum_total_margin_A": 1e-06,
+        "nearest_tie_tolerance_A": 1e-06,
+        "duplicate_occupancy": "FAIL, not forced matching",
+        "tie": "ERROR with explicit geometric evidence"
+      },
+      "basis": "Literature-guided author operational tolerance. Approximate 3 A productive proximity discussed for another PLP enzyme does not establish an experimental 1ET0 cutoff.",
+      "sensitivity_upper_A": [
+        3.0,
+        3.5,
+        4.0
+      ],
+      "water_required": false,
+      "scope": "Initial heavy-atom approach only; not complete proton transfer, attack face, full reaction or enzyme activity.",
+      "references": [
+        {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/305/",
+          "use": "Detailed initial addition and proton transfer; not numerical windows."
+        },
+        {
+          "doi": "10.1093/oxfordjournals.jbchem.a022727",
+          "use": "Native internal aldimine and dimer; ADC was modeled, not an exact experimental substrate complex."
+        },
+        {
+          "doi": "10.1074/jbc.M113.480335",
+          "use": "ADC lyase mechanism and external-aldimine docking; not incoming amino-N reference distance."
+        },
+        {
+          "doi": "10.1038/s41598-017-11948-w",
+          "use": "Approximate 3 A productive proximity discussed for AGT; Fig7 Lys-C4prime/Calpha distances are not the incoming substrate metric."
+        }
+      ],
+      "intentional_change_from_history": "No 2.4 A lower mechanism gate. Existing C4prime-NZ bond checks belong to general; angle remains diagnostic."
+    },
+    "source_config_sha256": "aef362ea91a0e4af5d9b2f195c098e140cdc4d014b22de2dfb3e19d642b9b23e"
+  },
+  {
+    "case_id": "M0036_1QQ5",
+    "code": "1QQ5",
+    "family_id": "HY_OTHER",
+    "family_zh": "其他水解",
+    "primary_class": "HYDROLYSIS",
+    "primary_class_zh": "水解",
+    "enzyme_zh": "L型2卤代酸脱卤酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 253,
+      "protein_sequence_sha256": "d8bceb39e1f6d8a566a6ecadfbd793c0fdb13af3bdfd584f51132d0687ccfa64",
+      "variant_in_configuration": null,
+      "ligands": {
+        "substrate": {
+          "smiles": "C[C@H](Cl)C(=O)[O-]"
+        }
+      },
+      "metals": {},
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "haloacid_sn2",
+    "criteria_id": "M0036_1QQ5_PRE_SN2_2P5_3P5_150_V1_20261021",
+    "source_version": "0.5.0",
+    "config_file": "1QQ5.json",
+    "config_sha256": "d8951cfaad3896488d4dbaaf92b3103c905a55ea200dbf6e5335d5e24d8ddd09",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/36/",
+    "mechanism_criteria": {
+      "case_id": "M0036_1QQ5",
+      "proposal_id": "M0036_1QQ5_PRE_SN2_REVIEW_20261020_DRAFT1",
+      "status": "IMPLEMENTED_LITERATURE_INFORMED_AUTHOR_OPERATIONAL_RULE",
+      "date": "2026-10-20",
+      "retrospective": true,
+      "main_axis": {
+        "nucleophile_candidates": [
+          "Asp8 OD1",
+          "Asp8 OD2"
+        ],
+        "center": "Substrate C2, the carbon bonded to Cl; input SMILES heavy-atom index 1",
+        "leaving_atom": "Substrate Cl; input SMILES heavy-atom index 2",
+        "distance_A": {
+          "min": 2.5,
+          "max": 3.5,
+          "inclusive": true
+        },
+        "angle_deg": {
+          "min": 150.0,
+          "max": 180.0,
+          "inclusive": true
+        },
+        "joint_logic": "At least one oxygen from the independently assigned occupied site must satisfy both distance and angle. Never splice candidates or protein sites.",
+        "distance_upper_basis": "Asp-carboxylate carbon-halogen SN2 literature provides a nearby NAC scale (<3.4 A in DatA). 3.5 A is a slightly relaxed author operational upper bound, not a same-enzyme measured cutoff or an experimental confidence interval.",
+        "distance_lower_basis": "Author operational lower guard for an intact reactant approach, retained from the prior case rule. Not a literature-derived quantile or proof of covalent bond formation.",
+        "angle_basis": "DhlB intermediate structure and mechanism support backside approximately collinear attack; DatA literature defines 157-180 degrees. 150 degrees is an author allowance of up to 30 degrees away from collinearity, not the DatA criterion verbatim.",
+        "reference_ids": [
+          "MCSA36_STEP1",
+          "RIDDER1999",
+          "HASAN2013"
+        ],
+        "other_oxygen_policy": "Both oxygen candidates remain in output. Ordinary short contacts are independently checked; an OR axis pass does not cancel a basic clash."
+      },
+      "occupied_site_assignment": {
+        "algorithm": "Retain existing nonreactive-anchor assignment",
+        "protein_anchor": "Centroid of Asp8 CA, CB and CG for each protein chain",
+        "substrate_anchor": "Centroid of substrate heavy atoms excluding reacting C2 and Cl",
+        "choose": "Unique lower anchor distance; retain both costs and the margin",
+        "historical_tie_tolerance_A": 1e-06,
+        "reactive_distance_used_for_assignment": false,
+        "second_unoccupied_site_required_to_pass": false
+      },
+      "evaluation_reporting": {
+        "clarified_date": "2026-10-21",
+        "step_1": "Mechanism geometry: reaction-axis distance and angle with its own status and failures",
+        "step_2": "General checks: specified chirality, input-bond geometry and physical validity with its own status and failures",
+        "independence": "Run each measurable check regardless of the other category passing or failing",
+        "optional_joint_status": "Intersection only for supplemental aggregation; never label this the mechanism success rate",
+        "thresholds_or_historical_verdicts_changed": false,
+        "implementation_note": "Mechanism and general are independent callable stages; joint result is optional aggregation."
+      },
+      "diagnostic_only": [
+        "Arg39, Asn115 and Phe175 halogen-region contacts",
+        "Ser114, Lys147 and backbone contacts to the carboxylate",
+        "Asp176 and second-step hydrolytic-water network",
+        "Unoccupied second protein copy"
+      ],
+      "not_claimed": [
+        "A complete exact reactant crystal reference has been found",
+        "All homologous structures or model training sets have been searched",
+        "Distance and angle establish enzyme activity, a transition state, or the entire reaction",
+        "DatA and DhlB are the same enzyme family or substrate system",
+        "The 1999 intermediate C-O bond length is a valid reactant-distance cutoff"
+      ],
+      "historical_comparator": {
+        "criteria_id": "ENZYME_NUC_1QQ5_SN2_SAME_O_2P5_4P5_150_V1",
+        "distance_A": [
+          2.5,
+          4.5
+        ],
+        "angle_deg": [
+          150,
+          180
+        ],
+        "use": "Retain unchanged for traceability and sensitivity comparison, not the proposed main proximity window"
+      },
+      "sensitivity_plan": {
+        "distance_upper_A": [
+          3.4,
+          3.5,
+          4.0,
+          4.5
+        ],
+        "angle_lower_deg": [
+          140,
+          150,
+          157,
+          160
+        ],
+        "distance_lower_A": [
+          2.3,
+          2.5,
+          2.7
+        ],
+        "method": "One parameter at a time using archived continuous measurements; no retuning to maximize model pass rate",
+        "new_CIF_replay_before_package_release": true
+      },
+      "references": {
+        "MCSA36_STEP1": {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/36/",
+          "supports": "Asp8 attacks substrate C2 and chloride leaves; water acts in later steps"
+        },
+        "RIDDER1999": {
+          "doi": "10.1074/jbc.274.43.30672",
+          "local_source": "sources/Ridder_1999.pdf",
+          "locators": [
+            "pp.30673-30674 structure state",
+            "p.30676 Fig.3 and mechanism",
+            "p.30677 water discussion"
+          ],
+          "supports": "Same-enzyme covalent intermediate, stereoinversion, chloride direction, binding roles",
+          "does_not_supply": "A reactant 2.5-3.5 A or 150-degree numerical pass/fail threshold"
+        },
+        "HASAN2013": {
+          "doi": "10.1111/febs.12238",
+          "local_source": "sources/Hasan_2013_DatA.pdf",
+          "locator": "p.3153 Molecular modelling",
+          "supports": "Related chemical step: Asp O to halogen-bound carbon NAC distance <3.4 A and angle 157-180 degrees",
+          "limits": "DatA is a haloalkane dehalogenase, not DhlB haloacid dehalogenase. The paper also studies selected non-NAC orientations; its definition is not a universal activity boundary."
+        }
+      },
+      "criteria_id": "M0036_1QQ5_PRE_SN2_2P5_3P5_150_V1_20261021",
+      "implementation_date": "2026-10-21",
+      "decision": "User accepted explicit literature basis and author tolerances before this implementation. Historical results were already visible; not preregistered.",
+      "target": {
+        "mechanism_proposal": 1,
+        "step": 1,
+        "state": "Intact reactant approach before Asp8 carbon-halogen substitution"
+      }
+    },
+    "source_config_sha256": "88f2ea4eaa6f7abb4709eb919b7179bfa01a8d862f4daac2bf5d57f15deea268"
+  },
+  {
+    "case_id": "M0727_1L7N",
+    "code": "1L7N",
+    "family_id": "HY_PHOSPHATE",
+    "family_zh": "磷酸相关水解",
+    "primary_class": "HYDROLYSIS",
+    "primary_class_zh": "水解",
+    "enzyme_zh": "磷酸丝氨酸磷酸酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 1,
+    "input_definition": {
+      "protein_copies": 1,
+      "protein_length_each": 211,
+      "protein_sequence_sha256": "1b783ad3977c22dc636e1d2e14227686ee95f7e4b57a482b8e34ace3b60db277",
+      "variant_in_configuration": null,
+      "ligands": {
+        "PLS": {
+          "smiles": "[NH3+][C@@H](COP(=O)([O-])[O-])C(=O)[O-]"
+        }
+      },
+      "metals": {
+        "MG": 1
+      },
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "phosphoserine_phosphatase",
+    "criteria_id": "M0727_1L7N_STEP1_AXIS_ACID_MG_V1_20261022",
+    "source_version": "0.6.2+1l7n",
+    "config_file": "1L7N.json",
+    "config_sha256": "4c671dfc10625f5d0ac0fcbf768a075dfe7a797407701b499030606018ac8c3b",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/727/",
+    "mechanism_criteria": {
+      "criteria_id": "M0727_1L7N_STEP1_AXIS_ACID_MG_V1_20261022",
+      "status": "USER_APPROVED_OPERATIONAL_STANDARD",
+      "retrospective": true,
+      "selected_event": "M-CSA727 proposal1 step1; Asp11 captures phosphoserine phosphoryl group before phosphoenzyme hydrolysis",
+      "prediction_target_state": "Noncovalent initial phosphoserine reactant, unphosphorylated protein, one Mg",
+      "attack_distance_max_A": 3.5,
+      "attack_angle_min_deg": 150.0,
+      "acid_contact_max_A": 3.5,
+      "Mg_contact_max_A": 2.8,
+      "inclusive_boundaries": true,
+      "distance_lower_bounds_in_mechanism": false,
+      "required_Mg_donors": [
+        "Asp11 carboxyl O different from attacking O",
+        "Asp13 backbone carbonyl O",
+        "Asp167 sidechain carboxyl O",
+        "substrate phosphate nonbridging O"
+      ],
+      "same_variant_required": true,
+      "water_required": false,
+      "Asp171_direct_coordination_required": false,
+      "success_scope": "Passes selected first-half-reaction heavy-atom organization checks; not full catalytic competence, protonation proof or an associative-versus-dissociative mechanism verdict.",
+      "threshold_provenance": {
+        "attack_distance": "Author operational3.5 A inherited from prior phosphoryl screen, not an enzyme-specific experimental cutoff.",
+        "attack_angle": "Author150 degree tolerance around literature-supported inline arrangement, not a measured success boundary.",
+        "acid_contact": "Author3.5 A heavy-atom proximity screen motivated by acid assistance; no hydrogen trajectory inferred.",
+        "Mg_contact": "Author2.8 A upper screen; case protein donor coordinates about1.95-2.25 A and reaction-site topology support it qualitatively, not statistical calibration.",
+        "Mg_short_contact": "Not a pass/fail criterion. Mg is excluded from general by explicit user decision; minimum Mg-O distance is recorded continuously without a hard lower bound."
+      },
+      "references": [
+        {
+          "id": "MCSA727",
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/727/",
+          "supports": "Asp11 phosphoryl attack and Asp13 leaving-group protonation in step1; water attack belongs to step2."
+        },
+        {
+          "id": "WANG2002",
+          "doi": "10.1016/S0022-2836(02)00324-8",
+          "url": "https://www.rcsb.org/structure/1L7N",
+          "supports": "AlF3 analog and reaction-state structures. Not native reactant distance calibration."
+        },
+        {
+          "id": "KRACHTUS2018",
+          "doi": "10.3390/molecules23123342",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6321591/",
+          "locator": "Section3.1/Figure4;Section3.2.1;Table2",
+          "supports": "Inline arrangement, acid role, Asp11/Asp167 sidechains and Asp13 backbone Mg ligation. Protonation-dependent models; intermediate and TS values not used as reactant cutoffs."
+        }
+      ],
+      "coupling_policy": "Enumerate Asp11 OD1/OD2 as attacking O, with the other O as Mg donor; require all checks in one coherent variant. Equivalent oxygens only within their declared chemical groups.",
+      "general_separation": "Mg count and organization belong to mechanism only; Mg does not affect general. Substrate stereochemistry, pre-existing bond lengths, nonmetal clashes and volume remain general. No forming-pair collision exemption for this case.",
+      "sensitivity": {
+        "attack_max_A": [
+          3.3,
+          3.5,
+          4.0
+        ],
+        "angle_min_deg": [
+          150,
+          160
+        ],
+        "acid_max_A": [
+          3.2,
+          3.5,
+          3.8
+        ],
+        "Mg_max_A": [
+          2.6,
+          2.8
+        ]
+      },
+      "decision": "User approved evidence/operational-threshold distinction after historical results were available. Not preregistered; fixed before new package replay."
+    },
+    "source_config_sha256": "b87e34192cbc097cbc62a13711b80b53b766f72f0103ae59aeb99970e86c360f"
+  },
+  {
+    "case_id": "M0716_1IM5",
+    "code": "1IM5",
+    "family_id": "HY_ACYL",
+    "family_zh": "酰基键水解",
+    "primary_class": "HYDROLYSIS",
+    "primary_class_zh": "水解",
+    "enzyme_zh": "烟酰胺酶",
+    "official_variant": "declared_primary",
+    "protein_copies": 1,
+    "input_definition": {
+      "protein_copies": 1,
+      "protein_length_each": 180,
+      "protein_sequence_sha256": "d21328d8eed9f652f13e00dbc2da9d75a8c518344c59edcc3b0c647f929b2e7c",
+      "variant_in_configuration": null,
+      "ligands": {
+        "substrate": {
+          "smiles": "NC(=O)c1cccnc1"
+        }
+      },
+      "metals": {
+        "Zn": 1
+      },
+      "atom_profile_required": false,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "nicotinamidase",
+    "criteria_id": "M0716_1IM5_STEP1_BASE_AXIS_ZN_V1_20261021",
+    "source_version": "0.3.0",
+    "config_file": "1IM5.json",
+    "config_sha256": "9f9ac9ad9d670f1bd55c8410338a3af6bcc14307d719e9e7027c14a95b25731f",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/716/",
+    "mechanism_criteria": {
+      "criteria_id": "M0716_1IM5_STEP1_BASE_AXIS_ZN_V1_20261021",
+      "status": "USER_ACCEPTED_LITERATURE_INFORMED_AUTHOR_OPERATIONAL_RULE",
+      "retrospective": true,
+      "target": {
+        "mechanism_proposal": 1,
+        "step": 1,
+        "state": "Reactant preorganization, not covalent intermediate"
+      },
+      "cutoffs": {
+        "base_contact_A": {
+          "min": 0.0,
+          "max": 4.0,
+          "inclusive": true,
+          "note": "One-sided proximity test; no chemical lower bound imposed. Does not validate proton transfer or protein-protein clashes."
+        },
+        "reaction_distance_A": {
+          "min": 2.5,
+          "max": 4.5,
+          "inclusive": true
+        },
+        "attack_angle_deg": {
+          "min": 90.0,
+          "max": 120.0,
+          "inclusive": true
+        },
+        "Zn_contact_A": {
+          "min": 1.8,
+          "max": 2.6,
+          "inclusive": true
+        }
+      },
+      "logic": "Seven independent checks must pass within the one declared protein site, one substrate and same Zn. Asp10/Asp52 carboxylate oxygen names may be exchanged; retain both distances and select the nearest oxygen of the specified residue. Never replace His54/His71 with another residue.",
+      "threshold_basis": {
+        "base_contact_A": "1IM5 Cys133 SG to Asp10 OD2 is 3.217/3.464 A in alternate conformers. 4.0 A is an author upper tolerance, not a proton-transfer rate boundary.",
+        "reaction_distance_A": "Legacy sulfur-attack operational window. No same-enzyme reactant-state quantitative validation is claimed.",
+        "attack_angle_deg": "Carbonyl nucleophilic trajectory is literature supported; 90-120 degrees is the legacy author operational window, not a validated activity boundary for 1IM5. Near-boundary failures must retain continuous angle.",
+        "Zn_contact_A": "1IM5 protein donor distances 1.966/2.096/2.176 A; homolog mutant 3O94 substrate-ring N distances 2.257-2.314 A. Existing strict-quality Zn-N 106 contacts from 42 pairs and Zn-O 140 contacts from 41 pairs support the scale, not a universal window. 1.8-2.6 A is an author tolerance (105/106 N and 129/140 O contacts covered)."
+      },
+      "references": {
+        "MCSA716": {
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/716/",
+          "locator": "Proposal 1, step 1, catalytic residue roles",
+          "supports": "Chemical roles, not numerical cutoffs"
+        },
+        "DU2001": {
+          "doi": "10.1021/bi0115479",
+          "supports": "Same enzyme and Zn-bound 1IM5; no substrate present",
+          "access": "Abstract and deposited coordinates checked"
+        },
+        "FRENCH2010": {
+          "doi": "10.1021/bi1012436",
+          "supports": "Homolog C136S-nicotinamide complex 3O94; substrate metal anchoring",
+          "limit": "Not wild-type Cys reactant distance reference"
+        },
+        "RODRIGUEZ2023": {
+          "doi": "10.1002/cphc.202300379",
+          "supports": "Carbonyl attack directionality",
+          "limit": "Does not validate the 90-degree lower boundary for this enzyme"
+        },
+        "ZN_PROJECT_REFERENCE": {
+          "package_data": "1IM5_Zn_reference_statistics.json",
+          "supports": "Experimental Zn-N/O descriptive reference",
+          "limit": "Radius-selected and heterogeneous donors; not universal cutoffs"
+        }
+      },
+      "diagnostic_only": [
+        "Ala129 backbone N to substrate carbonyl O",
+        "Cys133 backbone N to substrate carbonyl O",
+        "Original substrate C=O and C-N distances"
+      ],
+      "excluded": [
+        "Water coordination",
+        "Complete six-coordinate shell",
+        "Full hydrolysis cycle",
+        "Protonation or observed proton transfer",
+        "Energetic competence"
+      ],
+      "stage_separation": "Mechanism and general are independently callable. General failure never gates mechanism. Optional joint is intersection only.",
+      "historical_comparison": "Historical mechanism used only S-C distance and S-C-O angle. Added Asp10 and four Zn contacts are new required checks; differences are not automatically implementation regressions.",
+      "implementation_date": "2026-10-21T08:38:09.215101+00:00"
+    },
+    "source_config_sha256": "bbeb12d3fa89071c8d8eeac29ebf53c2e8b780674db0c13071cc80c82370254e"
+  },
+  {
+    "case_id": "M0195_2GSA",
+    "code": "2GSA",
+    "family_id": "IS_OTHER",
+    "family_zh": "其他异构化与重排",
+    "primary_class": "ISOMERIZATION_REARRANGEMENT",
+    "primary_class_zh": "异构化与重排",
+    "enzyme_zh": "谷氨酸半醛氨基变位酶",
+    "official_variant": "dimer_2PMP_2GSA",
+    "protein_copies": 2,
+    "input_definition": {
+      "protein_copies": 2,
+      "protein_length_each": 427,
+      "protein_sequence_sha256": "d844224383c266d802113ca2ad6ffb5eeb56d08ef7dc5200f19c544a5f0e4402",
+      "variant_in_configuration": null,
+      "ligands": {
+        "PMP_1": {
+          "smiles": "Cc1ncc(COP(=O)(O)O)c(CN)c1O",
+          "copy_group": "PMP",
+          "group_copies": 2
+        },
+        "PMP_2": {
+          "smiles": "Cc1ncc(COP(=O)(O)O)c(CN)c1O",
+          "copy_group": "PMP",
+          "group_copies": 2
+        },
+        "GSA_1": {
+          "smiles": "[NH3+][C@H](C=O)CCC(=O)[O-]",
+          "copy_group": "GSA",
+          "group_copies": 2
+        },
+        "GSA_2": {
+          "smiles": "[NH3+][C@H](C=O)CCC(=O)[O-]",
+          "copy_group": "GSA",
+          "group_copies": 2
+        }
+      },
+      "metals": {},
+      "atom_profile_required": true,
+      "polymer_modifications": [],
+      "input_state_contract": null
+    },
+    "mechanism_type": "pmp_carbonyl",
+    "criteria_id": "M0195_2GSA_DIMER_STEP1_TWO_STAGE_V3_20261021",
+    "source_version": "0.5.0",
+    "config_file": "2GSA.json",
+    "config_sha256": "49a1001ff55096fbd80a8ab7db7ae2f1e2203f5018aba992056f0e7eeb86415c",
+    "mcsa_url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/195/",
+    "mechanism_criteria": {
+      "id": "M0195_2GSA_DIMER_STEP1_TWO_STAGE_V3_20261021",
+      "admission": "INCLUDED_OPERATIONAL_GEOMETRY_CASE",
+      "numerical_evidence": "LITERATURE_INFORMED_AUTHOR_OPERATIONAL_THRESHOLDS",
+      "exact_cutoffs_literature_validated": false,
+      "matched_reactant_experimental_calibration": false,
+      "retrospective_rule_revision": true,
+      "case_id": "M0195_2GSA",
+      "mechanism": 1,
+      "step": 1,
+      "input": {
+        "protein_copies": 2,
+        "protein_length_each": 427,
+        "PMP_copies": 2,
+        "S_GSA_copies": 2,
+        "water_input": false,
+        "preformed_PMP_GSA_bond": false,
+        "occupancy_policy": "Declared two-site occupancy challenge, not a claim of obligatory simultaneous native catalysis."
+      },
+      "target": "FREE_PMP_PLUS_S_GSA_INITIAL_REACTANT_ORGANIZATION",
+      "primary_task": "PMP aminomethyl N approaches the GSA aldehyde carbonyl C along an N-C-O axis.",
+      "cutoffs": {
+        "distance_A": {
+          "max": 4,
+          "min": null
+        },
+        "angle_deg": {
+          "min": 90,
+          "max": 120
+        },
+        "boundaries_inclusive": true
+      },
+      "mechanism_pass": "Both declared sites meet distance and angle. No general-check veto. Finite coordinates and verified site/atom mapping are prerequisites.",
+      "general_pass": "No failure in the implemented input-graph, stereochemistry, bond/1-3 geometry, planarity, nonreactive contact, volume-overlap and protein-proximity checks. Not all conceivable physical checks.",
+      "general_parameters": {
+        "bond_and_1_3_lower_factor": 0.75,
+        "bond_and_1_3_upper_factor": 1.25,
+        "internal_nonbonded_lower_factor": 0.7,
+        "aromatic_plane_deviation_max_A": 0.25,
+        "nonreactive_intergroup_vdw_factor": 0.75,
+        "protein_volume_overlap_max": 0.075,
+        "nearest_protein_max_A": 5,
+        "energy_computed": false
+      },
+      "reaction_center_exemption": "Prospective forming N-C and its prospective 1-3 neighbors are reported as reaction-center diagnostics, not independent nonreactive clashes. This is a mechanism-adapted general check, not an unmodified PoseBusters result.",
+      "tight_center_policy": "N-C below 2.5 A and other reactive-center short contacts remain explicit flags. They do not alone veto distance/angle PASS or prove a correct reactant, covalent state or TS.",
+      "optional_joint": "Intersection of mechanism PASS and general PASS; no extra uncalibrated state veto. Not proof of complete enzyme catalysis or correct electronic state.",
+      "not_assessed": [
+        "complete catalytic cycle",
+        "reaction barrier or activity",
+        "protonation correctness",
+        "experimentally validated attack face",
+        "GSA native pose RMSD",
+        "electron density or bond formation"
+      ],
+      "aggregation": {
+        "primary": "Native confidence-ranked Top1, both declared sites",
+        "supplementary": "Best of 5, all conditions satisfied within the same complete sample",
+        "site_rows": "Two correlated site observations per structure, not independent cases",
+        "monomer": "Separate sensitivity condition, excluded from primary benchmark denominator"
+      },
+      "sensitivity_source": "validation/2GSA/installed/sensitivity_geometry.csv",
+      "implementation_source": "mcsa_benchmark.mechanisms.pmp_carbonyl",
+      "policy_transition": "Previous additional state veto removed from the two independent stage statuses; tight centers remain explicit diagnostics.",
+      "independent_reference_calibration_pending": true,
+      "literature_evidence": [
+        {
+          "id": "MCSA_M0195_STEP1",
+          "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/195/",
+          "evidence": "本酶机制1第1步：PMP胺对GSA醛羰基亲核加成。",
+          "supports": "反应原子和初始状态",
+          "does_not_support": "数值端点或完整催化成功"
+        },
+        {
+          "id": "HENNIG_1997",
+          "url": "https://doi.org/10.1073/pnas.94.10.4866",
+          "evidence": "同源二聚体，辅因子和活性位点状态不对称。",
+          "supports": "组装和辅因子背景",
+          "does_not_support": "游离PMP+GSA的完整实验正对照"
+        },
+        {
+          "id": "STETEFELD_2006",
+          "url": "https://doi.org/10.1073/pnas.0600306103",
+          "evidence": "亚基间作用、门控环及不对称反应状态。",
+          "supports": "保留邻亚基口袋贡献",
+          "does_not_support": "两个位点必须同时执行同一化学步骤"
+        },
+        {
+          "id": "BURGI_1973",
+          "url": "https://doi.org/10.1021/ja00796a058",
+          "evidence": "胺与羰基的几何相关性，后续原始研究概述约105±5°。",
+          "supports": "羰基进攻具有方向偏好",
+          "does_not_support": "90–120°是本酶验证范围；本轮未重读原始全文"
+        },
+        {
+          "id": "RODRIGUEZ_2023",
+          "url": "https://doi.org/10.1002/cphc.202300379",
+          "evidence": "Introduction和Results解释钝角进攻；模型TS最优111.6°。",
+          "supports": "选择N–C–O方向指标的物理依据",
+          "does_not_support": "普通反应物阈值或将TS键长移植至本酶"
+        },
+        {
+          "id": "ZHANG_2021",
+          "url": "https://doi.org/10.1186/s12896-021-00713-7",
+          "evidence": "另一转氨酶中模型PMP N与羰基C距离4.420→3.455 Å，配合突变体实验研究。",
+          "supports": "同类官能团接近程度值得测量",
+          "does_not_support": "4.0 Å是直接测得的边界或X-ray距离"
+        },
+        {
+          "id": "LIGHT_2014",
+          "url": "https://doi.org/10.1107/S1399004713030666",
+          "evidence": "Transaldolase noncovalent and Schiff-base structures show carbonyl repositioning; preattack structures use K135M.",
+          "supports": "Relevance of attack direction and state-specific geometry in an enzyme.",
+          "does_not_support": "Directly observed complete nucleophile trajectory, or calibrated 2GSA cutoff.",
+          "locator": "Section 3.3 and Discussion, Figure 7"
+        }
+      ]
+    },
+    "source_config_sha256": "6279ccfc2cd6c1823f4a350c3a7d939b815718af3d8921fe60d558b88ac0e093"
+  }
+]

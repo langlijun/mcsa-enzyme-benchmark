@@ -1,0 +1,1334 @@
+{
+  "case_id": "M0200_1KQP",
+  "variant": "dimer_two_sets",
+  "mechanism_type": "nad_synthetase",
+  "protein_sequence": "SMQEKIMRELHVKPSIDPKQEIEDRVNFLKQYVKKTGAKGFVLGISGGQDSTLAGRLAQLAVESIREEGGDAQFIAVRLPHGTQQDEDDAQLALKFIKPDKSWKFDIKSTVSAFSDQYQQETGDQLTDFNKGNVKARTRMIAQYAIGGQEGLLVLGTDHAAEAVTGFFTKYGDGGADLLPLTGLTKRQGRTLLKELGAPERLYLKEPTADLLDEKPQQSDETELGISYDEIDDYLEGKEVSAKVSEALEKRYSMTEHKRQVPASMFDDWWK",
+  "protein_copies": 2,
+  "copy_aware": true,
+  "ligands": {
+    "atp_1": {
+      "chemical_role": "atp",
+      "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "element_order": [
+        "N",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "N2",
+          "C2",
+          "N3",
+          "C3",
+          "C4",
+          "N4",
+          "C5",
+          "N5",
+          "C6",
+          "O1",
+          "C7",
+          "C8",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5",
+          "P2",
+          "O6",
+          "O7",
+          "O8",
+          "P3",
+          "O9",
+          "O10",
+          "O11",
+          "C9",
+          "O12",
+          "C10",
+          "O13"
+        ],
+        [
+          "N34",
+          "C30",
+          "N20",
+          "C29",
+          "N22",
+          "C33",
+          "C32",
+          "N21",
+          "C31",
+          "N35",
+          "C39",
+          "O25",
+          "C40",
+          "C36",
+          "O26",
+          "P42",
+          "O14",
+          "O18",
+          "O28",
+          "P43",
+          "O15",
+          "O19",
+          "O27",
+          "P41",
+          "O13",
+          "O16",
+          "O17",
+          "C37",
+          "O23",
+          "C38",
+          "O24"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "N2_1",
+          "C2_1",
+          "N3_1",
+          "C3_1",
+          "C4_1",
+          "N4_1",
+          "C5_1",
+          "N5_1",
+          "C6_1",
+          "O1_1",
+          "C7_1",
+          "C8_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1",
+          "P2_1",
+          "O6_1",
+          "O7_1",
+          "O8_1",
+          "P3_1",
+          "O9_1",
+          "O10_1",
+          "O11_1",
+          "C9_1",
+          "O12_1",
+          "C10_1",
+          "O13_1"
+        ]
+      ]
+    },
+    "atp_2": {
+      "chemical_role": "atp",
+      "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "element_order": [
+        "N",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "N2",
+          "C2",
+          "N3",
+          "C3",
+          "C4",
+          "N4",
+          "C5",
+          "N5",
+          "C6",
+          "O1",
+          "C7",
+          "C8",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5",
+          "P2",
+          "O6",
+          "O7",
+          "O8",
+          "P3",
+          "O9",
+          "O10",
+          "O11",
+          "C9",
+          "O12",
+          "C10",
+          "O13"
+        ],
+        [
+          "N34",
+          "C30",
+          "N20",
+          "C29",
+          "N22",
+          "C33",
+          "C32",
+          "N21",
+          "C31",
+          "N35",
+          "C39",
+          "O25",
+          "C40",
+          "C36",
+          "O26",
+          "P42",
+          "O14",
+          "O18",
+          "O28",
+          "P43",
+          "O15",
+          "O19",
+          "O27",
+          "P41",
+          "O13",
+          "O16",
+          "O17",
+          "C37",
+          "O23",
+          "C38",
+          "O24"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "N2_1",
+          "C2_1",
+          "N3_1",
+          "C3_1",
+          "C4_1",
+          "N4_1",
+          "C5_1",
+          "N5_1",
+          "C6_1",
+          "O1_1",
+          "C7_1",
+          "C8_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1",
+          "P2_1",
+          "O6_1",
+          "O7_1",
+          "O8_1",
+          "P3_1",
+          "O9_1",
+          "O10_1",
+          "O11_1",
+          "C9_1",
+          "O12_1",
+          "C10_1",
+          "O13_1"
+        ]
+      ]
+    },
+    "naad_1": {
+      "chemical_role": "naad",
+      "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]2O[C@@H]([n+]3cccc(C(=O)[O-])c3)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O",
+      "element_order": [
+        "N",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "N2",
+          "C2",
+          "N3",
+          "C3",
+          "C4",
+          "N4",
+          "C5",
+          "N5",
+          "C6",
+          "O1",
+          "C7",
+          "C8",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5",
+          "P2",
+          "O6",
+          "O7",
+          "O8",
+          "C9",
+          "C10",
+          "O9",
+          "C11",
+          "N6",
+          "C12",
+          "C13",
+          "C14",
+          "C15",
+          "C16",
+          "O10",
+          "O11",
+          "C17",
+          "C18",
+          "O12",
+          "C19",
+          "O13",
+          "C20",
+          "O14",
+          "C21",
+          "O15"
+        ],
+        [
+          "N54",
+          "C48",
+          "N31",
+          "C44",
+          "N33",
+          "C53",
+          "C52",
+          "N32",
+          "C49",
+          "N55",
+          "C63",
+          "O38",
+          "C65",
+          "C57",
+          "O40",
+          "P67",
+          "O26",
+          "O29",
+          "O42",
+          "P68",
+          "O27",
+          "O30",
+          "O41",
+          "C58",
+          "C66",
+          "O39",
+          "C64",
+          "N56",
+          "C50",
+          "C46",
+          "C45",
+          "C47",
+          "C43",
+          "O25",
+          "O28",
+          "C51",
+          "C62",
+          "O37",
+          "C60",
+          "O35",
+          "C59",
+          "O34",
+          "C61",
+          "O36"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "N2_1",
+          "C2_1",
+          "N3_1",
+          "C3_1",
+          "C4_1",
+          "N4_1",
+          "C5_1",
+          "N5_1",
+          "C6_1",
+          "O1_1",
+          "C7_1",
+          "C8_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1",
+          "P2_1",
+          "O6_1",
+          "O7_1",
+          "O8_1",
+          "C9_1",
+          "C10_1",
+          "O9_1",
+          "C11_1",
+          "N6_1",
+          "C12_1",
+          "C13_1",
+          "C14_1",
+          "C15_1",
+          "C16_1",
+          "O10_1",
+          "O11_1",
+          "C17_1",
+          "C18_1",
+          "O12_1",
+          "C19_1",
+          "O13_1",
+          "C20_1",
+          "O14_1",
+          "C21_1",
+          "O15_1"
+        ]
+      ]
+    },
+    "naad_2": {
+      "chemical_role": "naad",
+      "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OC[C@H]2O[C@@H]([n+]3cccc(C(=O)[O-])c3)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O",
+      "element_order": [
+        "N",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "N2",
+          "C2",
+          "N3",
+          "C3",
+          "C4",
+          "N4",
+          "C5",
+          "N5",
+          "C6",
+          "O1",
+          "C7",
+          "C8",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5",
+          "P2",
+          "O6",
+          "O7",
+          "O8",
+          "C9",
+          "C10",
+          "O9",
+          "C11",
+          "N6",
+          "C12",
+          "C13",
+          "C14",
+          "C15",
+          "C16",
+          "O10",
+          "O11",
+          "C17",
+          "C18",
+          "O12",
+          "C19",
+          "O13",
+          "C20",
+          "O14",
+          "C21",
+          "O15"
+        ],
+        [
+          "N54",
+          "C48",
+          "N31",
+          "C44",
+          "N33",
+          "C53",
+          "C52",
+          "N32",
+          "C49",
+          "N55",
+          "C63",
+          "O38",
+          "C65",
+          "C57",
+          "O40",
+          "P67",
+          "O26",
+          "O29",
+          "O42",
+          "P68",
+          "O27",
+          "O30",
+          "O41",
+          "C58",
+          "C66",
+          "O39",
+          "C64",
+          "N56",
+          "C50",
+          "C46",
+          "C45",
+          "C47",
+          "C43",
+          "O25",
+          "O28",
+          "C51",
+          "C62",
+          "O37",
+          "C60",
+          "O35",
+          "C59",
+          "O34",
+          "C61",
+          "O36"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "N2_1",
+          "C2_1",
+          "N3_1",
+          "C3_1",
+          "C4_1",
+          "N4_1",
+          "C5_1",
+          "N5_1",
+          "C6_1",
+          "O1_1",
+          "C7_1",
+          "C8_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1",
+          "P2_1",
+          "O6_1",
+          "O7_1",
+          "O8_1",
+          "C9_1",
+          "C10_1",
+          "O9_1",
+          "C11_1",
+          "N6_1",
+          "C12_1",
+          "C13_1",
+          "C14_1",
+          "C15_1",
+          "C16_1",
+          "O10_1",
+          "O11_1",
+          "C17_1",
+          "C18_1",
+          "O12_1",
+          "C19_1",
+          "O13_1",
+          "C20_1",
+          "O14_1",
+          "C21_1",
+          "O15_1"
+        ]
+      ]
+    },
+    "ammonium_1": {
+      "chemical_role": "ammonium",
+      "smiles": "[NH4+]",
+      "element_order": [
+        "N"
+      ],
+      "atom_name_templates": [
+        [
+          "N1"
+        ],
+        [
+          "N5"
+        ],
+        [
+          "N1_1"
+        ]
+      ],
+      "mechanism_required": false
+    },
+    "ammonium_2": {
+      "chemical_role": "ammonium",
+      "smiles": "[NH4+]",
+      "element_order": [
+        "N"
+      ],
+      "atom_name_templates": [
+        [
+          "N1"
+        ],
+        [
+          "N5"
+        ],
+        [
+          "N1_1"
+        ]
+      ],
+      "mechanism_required": false
+    }
+  },
+  "metals": {
+    "Mg": 4
+  },
+  "reaction_atoms": {
+    "NaAD_carboxylate_C": 32,
+    "NaAD_oxygen_indices": [
+      33,
+      34
+    ],
+    "ATP_alpha_P": 15,
+    "ATP_alpha_beta_O": 18,
+    "ATP_nonbridging_O": {
+      "alpha": [
+        16,
+        17
+      ],
+      "beta": [
+        20,
+        21
+      ],
+      "gamma": [
+        24,
+        25,
+        26
+      ]
+    },
+    "ATP_scaffold_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      27,
+      28,
+      29,
+      30
+    ],
+    "asp_position": 50,
+    "glu_position": 162
+  },
+  "metal_assignment_reference": {
+    "anchors": [
+      {
+        "sequence_position": 44,
+        "residue": "GLY",
+        "xyz": [
+          5.329,
+          62.053,
+          48.665
+        ]
+      },
+      {
+        "sequence_position": 45,
+        "residue": "ILE",
+        "xyz": [
+          6.953,
+          62.335,
+          52.119
+        ]
+      },
+      {
+        "sequence_position": 46,
+        "residue": "SER",
+        "xyz": [
+          9.721,
+          59.739,
+          52.374
+        ]
+      },
+      {
+        "sequence_position": 47,
+        "residue": "GLY",
+        "xyz": [
+          11.332,
+          60.545,
+          55.713
+        ]
+      },
+      {
+        "sequence_position": 48,
+        "residue": "GLY",
+        "xyz": [
+          14.342,
+          61.96,
+          53.887
+        ]
+      },
+      {
+        "sequence_position": 49,
+        "residue": "GLN",
+        "xyz": [
+          15.701,
+          65.487,
+          53.953
+        ]
+      },
+      {
+        "sequence_position": 50,
+        "residue": "ASP",
+        "xyz": [
+          14.419,
+          66.78,
+          50.62
+        ]
+      },
+      {
+        "sequence_position": 51,
+        "residue": "SER",
+        "xyz": [
+          10.786,
+          65.841,
+          50.885
+        ]
+      },
+      {
+        "sequence_position": 52,
+        "residue": "THR",
+        "xyz": [
+          10.8,
+          67.09,
+          54.479
+        ]
+      },
+      {
+        "sequence_position": 53,
+        "residue": "LEU",
+        "xyz": [
+          11.999,
+          70.497,
+          53.27
+        ]
+      },
+      {
+        "sequence_position": 54,
+        "residue": "ALA",
+        "xyz": [
+          9.737,
+          70.707,
+          50.226
+        ]
+      },
+      {
+        "sequence_position": 79,
+        "residue": "LEU",
+        "xyz": [
+          4.363,
+          55.889,
+          49.646
+        ]
+      },
+      {
+        "sequence_position": 80,
+        "residue": "PRO",
+        "xyz": [
+          5.923,
+          52.802,
+          51.273
+        ]
+      },
+      {
+        "sequence_position": 84,
+        "residue": "GLN",
+        "xyz": [
+          9.451,
+          50.83,
+          54.952
+        ]
+      },
+      {
+        "sequence_position": 85,
+        "residue": "GLN",
+        "xyz": [
+          12.318,
+          50.362,
+          57.329
+        ]
+      },
+      {
+        "sequence_position": 86,
+        "residue": "ASP",
+        "xyz": [
+          12.503,
+          54.092,
+          58.269
+        ]
+      },
+      {
+        "sequence_position": 87,
+        "residue": "GLU",
+        "xyz": [
+          8.741,
+          54.605,
+          58.62
+        ]
+      },
+      {
+        "sequence_position": 89,
+        "residue": "ASP",
+        "xyz": [
+          11.442,
+          58.982,
+          60.28
+        ]
+      },
+      {
+        "sequence_position": 90,
+        "residue": "ALA",
+        "xyz": [
+          8.631,
+          59.495,
+          57.744
+        ]
+      },
+      {
+        "sequence_position": 136,
+        "residue": "ALA",
+        "xyz": [
+          9.903,
+          55.207,
+          41.524
+        ]
+      },
+      {
+        "sequence_position": 156,
+        "residue": "GLY",
+        "xyz": [
+          9.011,
+          67.486,
+          42.978
+        ]
+      },
+      {
+        "sequence_position": 157,
+        "residue": "THR",
+        "xyz": [
+          12.044,
+          67.49,
+          45.239
+        ]
+      },
+      {
+        "sequence_position": 158,
+        "residue": "ASP",
+        "xyz": [
+          14.839,
+          67.834,
+          42.727
+        ]
+      },
+      {
+        "sequence_position": 159,
+        "residue": "HIS",
+        "xyz": [
+          17.65,
+          70.135,
+          43.819
+        ]
+      },
+      {
+        "sequence_position": 160,
+        "residue": "ALA",
+        "xyz": [
+          21.13,
+          70.872,
+          42.521
+        ]
+      },
+      {
+        "sequence_position": 161,
+        "residue": "ALA",
+        "xyz": [
+          22.909,
+          68.072,
+          44.377
+        ]
+      },
+      {
+        "sequence_position": 162,
+        "residue": "GLU",
+        "xyz": [
+          20.683,
+          65.476,
+          42.657
+        ]
+      },
+      {
+        "sequence_position": 163,
+        "residue": "ALA",
+        "xyz": [
+          20.462,
+          67.372,
+          39.364
+        ]
+      },
+      {
+        "sequence_position": 165,
+        "residue": "THR",
+        "xyz": [
+          24.498,
+          63.645,
+          38.995
+        ]
+      },
+      {
+        "sequence_position": 166,
+        "residue": "GLY",
+        "xyz": [
+          21.157,
+          62.867,
+          37.427
+        ]
+      },
+      {
+        "sequence_position": 167,
+        "residue": "PHE",
+        "xyz": [
+          20.324,
+          60.969,
+          40.584
+        ]
+      },
+      {
+        "sequence_position": 168,
+        "residue": "PHE",
+        "xyz": [
+          16.583,
+          60.55,
+          40.057
+        ]
+      },
+      {
+        "sequence_position": 169,
+        "residue": "THR",
+        "xyz": [
+          14.432,
+          58.28,
+          37.925
+        ]
+      },
+      {
+        "sequence_position": 173,
+        "residue": "ASP",
+        "xyz": [
+          10.579,
+          61.215,
+          41.016
+        ]
+      },
+      {
+        "sequence_position": 174,
+        "residue": "GLY",
+        "xyz": [
+          11.822,
+          63.387,
+          38.124
+        ]
+      },
+      {
+        "sequence_position": 181,
+        "residue": "LEU",
+        "xyz": [
+          14.189,
+          73.212,
+          45.79
+        ]
+      },
+      {
+        "sequence_position": 182,
+        "residue": "THR",
+        "xyz": [
+          15.902,
+          73.997,
+          42.461
+        ]
+      },
+      {
+        "sequence_position": 184,
+        "residue": "LEU",
+        "xyz": [
+          19.942,
+          74.218,
+          46.519
+        ]
+      },
+      {
+        "sequence_position": 185,
+        "residue": "THR",
+        "xyz": [
+          22.955,
+          72.103,
+          47.444
+        ]
+      },
+      {
+        "sequence_position": 186,
+        "residue": "LYS",
+        "xyz": [
+          22.49,
+          69.327,
+          49.989
+        ]
+      },
+      {
+        "sequence_position": 189,
+        "residue": "GLY",
+        "xyz": [
+          18.887,
+          72.26,
+          52.253
+        ]
+      },
+      {
+        "sequence_position": 202,
+        "residue": "LEU",
+        "xyz": [
+          15.871,
+          64.069,
+          59.146
+        ]
+      },
+      {
+        "sequence_position": 203,
+        "residue": "TYR",
+        "xyz": [
+          18.982,
+          65.764,
+          57.83
+        ]
+      },
+      {
+        "sequence_position": 205,
+        "residue": "LYS",
+        "xyz": [
+          20.637,
+          60.431,
+          58.264
+        ]
+      },
+      {
+        "sequence_position": 206,
+        "residue": "GLU",
+        "xyz": [
+          22.185,
+          59.182,
+          55.06
+        ]
+      },
+      {
+        "sequence_position": 207,
+        "residue": "PRO",
+        "xyz": [
+          20.357,
+          60.166,
+          51.863
+        ]
+      },
+      {
+        "sequence_position": 208,
+        "residue": "THR",
+        "xyz": [
+          18.87,
+          57.07,
+          50.267
+        ]
+      },
+      {
+        "sequence_position": 209,
+        "residue": "ALA",
+        "xyz": [
+          16.581,
+          56.293,
+          47.33
+        ]
+      },
+      {
+        "sequence_position": 210,
+        "residue": "ASP",
+        "xyz": [
+          15.702,
+          52.957,
+          49.007
+        ]
+      },
+      {
+        "sequence_position": 211,
+        "residue": "LEU",
+        "xyz": [
+          14.559,
+          51.326,
+          45.758
+        ]
+      },
+      {
+        "sequence_position": 216,
+        "residue": "PRO",
+        "xyz": [
+          17.504,
+          48.223,
+          50.901
+        ]
+      },
+      {
+        "sequence_position": 217,
+        "residue": "GLN",
+        "xyz": [
+          18.335,
+          51.687,
+          52.246
+        ]
+      },
+      {
+        "sequence_position": 218,
+        "residue": "GLN",
+        "xyz": [
+          21.526,
+          51.795,
+          50.177
+        ]
+      },
+      {
+        "sequence_position": 219,
+        "residue": "SER",
+        "xyz": [
+          23.08,
+          55.211,
+          50.632
+        ]
+      },
+      {
+        "sequence_position": 220,
+        "residue": "ASP",
+        "xyz": [
+          23.341,
+          57.465,
+          47.65
+        ]
+      },
+      {
+        "sequence_position": 228,
+        "residue": "TYR",
+        "xyz": [
+          27.481,
+          65.071,
+          49.226
+        ]
+      }
+    ],
+    "Mg1_xyz": [
+      16.045,
+      63.345,
+      47.437
+    ],
+    "Mg2_xyz": [
+      15.245,
+      59.391,
+      50.039
+    ],
+    "selection": "Blank-altloc chain A CA within 12 A of either reference catalytic Mg, chosen without prediction scores"
+  },
+  "mechanism_criteria": {
+    "criteria_id": "1KQP_ADENYLATION_TWO_MG_V1_20261021",
+    "retrospective": true,
+    "user_accepted": true,
+    "selected_event": "Current M-CSA proposal 1 step 1: NaAD carboxylate O attacks ATP alpha P; not the subsequent ammonia attack",
+    "cutoffs": {
+      "reaction_distance_A": {
+        "max": 3.5
+      },
+      "attack_angle_deg": {
+        "min": 150.0,
+        "max": 180.0
+      },
+      "Mg_O_A": {
+        "min": 1.8,
+        "max": 2.6
+      }
+    },
+    "equivalent_oxygen_policy": "Either NaAD carboxylate O may pass only as one complete distance-angle tuple. Phosphate terminal oxygens may permute; the two gamma donors must be distinct in one coherent assignment.",
+    "short_contact_policy": "No mechanism lower bound for reaction distance; general independently checks ordinary clashes. For each required Mg O-group, any sub-1.8 A minimum cannot be hidden by choosing another equivalent O.",
+    "author_operational_not_activity_boundaries": true,
+    "metal_topology": "Mg1: Asp50, Glu162, ATP beta O and gamma O; Mg2: same ATP alpha O and a distinct gamma O.",
+    "site_pairing": "One-to-one nonreactive-centroid ATP/NaAD pairing, excluding both carboxylate O and alpha P/alpha-beta bridge O. ATP adenosine scaffold contacts assign protein chain. Metals assigned once by backbone-aligned reference Mg positions, without scoring ligand or sidechain O distances.",
+    "reference_state_limit": "1KQP is ADJ/PPi intermediate, not an intact ATP/NaAD reactant structure. Its protein-anchored Mg positions label metal roles only; no intermediate covalent O-P bond used as a preattack cutoff.",
+    "scope": "Selected reactant O-P-O axis and six named non-water Mg contacts; no complete water shell, full reaction, ammonium attack or activity claim.",
+    "references": [
+      {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/200/",
+        "supports": "Graph-derived alpha P event and six non-water Mg contact roles; gamma wording is not followed"
+      },
+      {
+        "doi": "10.1107/S0907444902006698",
+        "supports": "Same-enzyme dimeric ADJ/PPi intermediate with two catalytic Mg per site; not numerical reactant cutoffs"
+      },
+      {
+        "doi": "10.1016/S0969-2126(98)00114-2",
+        "supports": "Adenylation mechanism and intersubunit NaAD binding"
+      },
+      {
+        "doi": "10.1371/journal.pone.0022767",
+        "supports": "Cross-system inline phosphoryl geometry context, not a 1KQP-specific cutoff"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3902929/",
+        "supports": "Cross-system Michaelis geometry context, not a 1KQP-specific cutoff"
+      }
+    ],
+    "mrv_sha256": "b5687e30bcab986f766f69672fcea438d9ad056164a737bb8a3e5fcd355ffb64",
+    "reference_sha256": "44ad08b0f9b87fcf9733cdf1184483fbc96f53caaa059dfc0bb25a7a47a4615a"
+  },
+  "case_general_requirements": {
+    "excluded_stereochemistry_elements": [
+      "P"
+    ],
+    "ammonium": "Required monatomic component; bond/angle/stereo NA, general nonmetal contacts/proximity/overlap still evaluated. No NH4 attack trajectory imposed."
+  },
+  "unified_source": {
+    "source_version": "0.5.0",
+    "source_case_sha256": "f15dc8cfaa0ee6d839e162b17669af32382260a4770421840822efbff6f135de",
+    "source_criteria_id": "1KQP_ADENYLATION_TWO_MG_V1_20261021",
+    "official_variant": "dimer_2ATP_2NaAD_2NH4_4Mg"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "case_id": "M0252_1IGS",
+  "pdb_id": "1IGS",
+  "schema_version": 2,
+  "protein_sequence": "MPRYLKGWLKDVVQLSLRRPSFRASRQRPIISLNERILEFNKRNITAIIAEYKRKSPSGLDVERDPIEYSKFMERYAVGLSILTEEKYFNGSYETLRKIASSVSIPILMKDFIVKESQIDDAYNLGADTVLLIVKILTERELESLLEYARSYGMEPLIEINDENDLDIALRIGARFIGINSRDLETLEINKENQRKLISMIPSNVVKVAESGISERNEIEELRKLGVNAFLIGSSLMRNPEKIKEFIL",
+  "protein_copies": 1,
+  "ligands": {
+    "substrate": {
+      "smiles": "O=C([O-])c1ccccc1NCC(=O)[C@H](O)[C@H](O)COP(=O)([O-])[O-]",
+      "formal_charge": -3,
+      "element_order": [
+        "O",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "O1",
+          "C1",
+          "O2",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "N1",
+          "C8",
+          "C9",
+          "O3",
+          "C10",
+          "O4",
+          "C11",
+          "O5",
+          "C12",
+          "O6",
+          "P1",
+          "O7",
+          "O8",
+          "O9"
+        ],
+        [
+          "O14",
+          "C23",
+          "O17",
+          "C29",
+          "C27",
+          "C25",
+          "C26",
+          "C28",
+          "C30",
+          "N31",
+          "C32",
+          "C24",
+          "O15",
+          "C34",
+          "O20",
+          "C35",
+          "O21",
+          "C33",
+          "O22",
+          "P36",
+          "O16",
+          "O18",
+          "O19"
+        ],
+        [
+          "O1_1",
+          "C1_1",
+          "O2_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "C5_1",
+          "C6_1",
+          "C7_1",
+          "N1_1",
+          "C8_1",
+          "C9_1",
+          "O3_1",
+          "C10_1",
+          "O4_1",
+          "C11_1",
+          "O5_1",
+          "C12_1",
+          "O6_1",
+          "P1_1",
+          "O7_1",
+          "O8_1",
+          "O9_1"
+        ]
+      ]
+    }
+  },
+  "metals": {},
+  "mechanism_type": "igps_nac",
+  "mechanism_criteria": {
+    "criteria_id": "M0252_1IGS_PUBLISHED_NAC_V1_20261021",
+    "retrospective": true,
+    "implementation_date": "2026-10-21",
+    "target": {
+      "mcsa_proposal": 1,
+      "mcsa_step": 1,
+      "state": "CdRP reactant before ring closure"
+    },
+    "primary_rule": "Both C1-C2prime distance and C2prime-C1-C6 angle must pass.",
+    "distance_A": {
+      "max": 3.5,
+      "inclusive": true,
+      "basis": "Same-enzyme published NAC definition"
+    },
+    "angle_deg": {
+      "min": 100.0,
+      "max": 140.0,
+      "inclusive": true,
+      "basis": "Same-enzyme published 120 +/- 20 degrees; vertex is aromatic C1"
+    },
+    "source": {
+      "doi": "10.1073/pnas.0406002101",
+      "pmcid": "PMC521968",
+      "title": "Molecular dynamics studies of ground state and intermediate of the hyperthermophilic indole-3-glycerol phosphate synthase",
+      "authors": "Mazumder-Shivakumar D; Bruice TC",
+      "year": 2004,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC521968/",
+      "locator": "NAC definition, Fig. 1; Results: Contribution of NAC to the general acid catalyzed intramolecular ring formation"
+    },
+    "lys110_support": {
+      "hard_gate": false,
+      "atom_pair": "Lys110 NZ / CdRP O2prime",
+      "reported_mean_A": 2.8,
+      "reported_plus_minus_A": 0.2,
+      "temperature_K": 385,
+      "basis": "Same-enzyme MD reported contact; mean +/- dispersion is not a pass/fail interval"
+    },
+    "legacy_operational_sensitivity": {
+      "reaction_distance_A": {
+        "min": 2.2,
+        "max": 3.5
+      },
+      "lys110_distance_A": {
+        "min": 2.2,
+        "max": 3.5
+      },
+      "basis": "Historical author operational windows, not published NAC cutoffs",
+      "changes_primary_verdict": false
+    },
+    "scope": "Screens a static near-attack conformation, not binding validity, enzyme activity, reaction rate, or temperature-dependent NAC population.",
+    "water_required": false,
+    "policy_change": "Compared with legacy three-gate screening, the published two-condition NAC is primary; legacy lower bound and Lys contact remain explicit sensitivity diagnostics. No old ledger is overwritten."
+  },
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "reaction_atoms": {
+    "C1_index": 3,
+    "C2prime_index": 11,
+    "C6_index": 4,
+    "O2prime_index": 12,
+    "N_substituted_aromatic_C2_index": 8,
+    "protein_sequence_position_1based": 110,
+    "protein_residue_name": "LYS",
+    "protein_atom_name": "NZ"
+  },
+  "reference_context": {
+    "reference_pdb_1IGS": "PO4 only; not an exact CdRP complex",
+    "same_protein_CdRP_complex": "1LBL",
+    "structure_paper_doi": "10.1016/S0022-2836(02)00378-9",
+    "no_training_novelty_claim": true,
+    "caveat": "Published room-temperature substrate complexes can be extended and non-NAC; not all legitimate binding states should pass this task."
+  },
+  "unified_source": {
+    "source_version": "0.5.0",
+    "source_case_sha256": "7f30329f1ca8eb4794d351cd27d76dfce56878af9a4b3a17e17e798ea8c4fcf9",
+    "source_criteria_id": "M0252_1IGS_PUBLISHED_NAC_V1_20261021",
+    "official_variant": "declared_primary"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-21",
+  "kind": "Descriptive existing experimental reference, not scoring data",
+  "groups": {
+    "N": {
+      "unit": "angstrom",
+      "pairs": {
+        "n": 42,
+        "mean_A": 2.1161904761904764,
+        "sample_sd_A": 0.10452132192214696,
+        "min_A": 1.925,
+        "p05_A": 1.9993,
+        "q25_A": 2.0477499999999997,
+        "median_A": 2.0927499999999997,
+        "q75_A": 2.16825,
+        "p95_A": 2.3247,
+        "max_A": 2.4074999999999998,
+        "within_proposed_1p8_2p6_A": 42,
+        "below_proposed_1p8_A": 0,
+        "above_proposed_2p6_A": 0
+      },
+      "contacts": {
+        "n": 106,
+        "mean_A": 2.11938679245283,
+        "sample_sd_A": 0.12641975213020026,
+        "min_A": 1.816,
+        "p05_A": 1.9337499999999999,
+        "q25_A": 2.049,
+        "median_A": 2.101,
+        "q75_A": 2.1775,
+        "p95_A": 2.3235,
+        "max_A": 2.717,
+        "within_proposed_1p8_2p6_A": 105,
+        "below_proposed_1p8_A": 0,
+        "above_proposed_2p6_A": 1
+      },
+      "contact_origins": {
+        "protein_or_polymer": 104,
+        "nonpolymer_ligand": 2
+      },
+      "exclude_1IM5_pair_sensitivity": {
+        "n": 41,
+        "mean_A": 2.115707317073171,
+        "sample_sd_A": 0.10577227753585507,
+        "min_A": 1.925,
+        "p05_A": 1.999,
+        "q25_A": 2.045,
+        "median_A": 2.0905,
+        "q75_A": 2.171,
+        "p95_A": 2.325,
+        "max_A": 2.4074999999999998,
+        "within_proposed_1p8_2p6_A": 41,
+        "below_proposed_1p8_A": 0,
+        "above_proposed_2p6_A": 0
+      }
+    },
+    "O": {
+      "unit": "angstrom",
+      "pairs": {
+        "n": 41,
+        "mean_A": 2.17609756097561,
+        "sample_sd_A": 0.16623154858179728,
+        "min_A": 1.844,
+        "p05_A": 1.901,
+        "q25_A": 2.0575,
+        "median_A": 2.159,
+        "q75_A": 2.2649999999999997,
+        "p95_A": 2.5075,
+        "max_A": 2.569,
+        "within_proposed_1p8_2p6_A": 41,
+        "below_proposed_1p8_A": 0,
+        "above_proposed_2p6_A": 0
+      },
+      "contacts": {
+        "n": 140,
+        "mean_A": 2.2025642857142858,
+        "sample_sd_A": 0.23165324529011666,
+        "min_A": 1.764,
+        "p05_A": 1.9002000000000001,
+        "q25_A": 2.04,
+        "median_A": 2.1485,
+        "q75_A": 2.32575,
+        "p95_A": 2.6444999999999976,
+        "max_A": 2.827,
+        "within_proposed_1p8_2p6_A": 129,
+        "below_proposed_1p8_A": 2,
+        "above_proposed_2p6_A": 9
+      },
+      "contact_origins": {
+        "water": 50,
+        "protein_or_polymer": 70,
+        "nonpolymer_ligand": 20
+      },
+      "exclude_1IM5_pair_sensitivity": {
+        "n": 40,
+        "mean_A": 2.1764875,
+        "sample_sd_A": 0.16833024194292626,
+        "min_A": 1.844,
+        "p05_A": 1.89865,
+        "q25_A": 2.0575,
+        "median_A": 2.1565,
+        "q75_A": 2.267625,
+        "p95_A": 2.507825,
+        "max_A": 2.569,
+        "within_proposed_1p8_2p6_A": 40,
+        "below_proposed_1p8_A": 0,
+        "above_proposed_2p6_A": 0
+      }
+    },
+    "S": {
+      "unit": "angstrom",
+      "pairs": {
+        "n": 8,
+        "mean_A": 2.3755625,
+        "sample_sd_A": 0.18981822836974482,
+        "min_A": 2.268,
+        "p05_A": 2.27745,
+        "q25_A": 2.29575,
+        "median_A": 2.3085,
+        "q75_A": 2.339125,
+        "p95_A": 2.6702,
+        "max_A": 2.841,
+        "within_proposed_1p8_2p6_A": 7,
+        "below_proposed_1p8_A": 0,
+        "above_proposed_2p6_A": 1
+      },
+      "contacts": {
+        "n": 14,
+        "mean_A": 2.3480714285714286,
+        "sample_sd_A": 0.1576673539623676,
+        "min_A": 2.113,
+        "p05_A": 2.2131,
+        "q25_A": 2.29425,
+        "median_A": 2.33,
+        "q75_A": 2.3445,
+        "p95_A": 2.5693,
+        "max_A": 2.841,
+        "within_proposed_1p8_2p6_A": 13,
+        "below_proposed_1p8_A": 0,
+        "above_proposed_2p6_A": 1
+      },
+      "contact_origins": {
+        "protein_or_polymer": 13,
+        "nonpolymer_ligand": 1
+      },
+      "exclude_1IM5_pair_sensitivity": {
+        "n": 8,
+        "mean_A": 2.3755625,
+        "sample_sd_A": 0.18981822836974482,
+        "min_A": 2.268,
+        "p05_A": 2.27745,
+        "q25_A": 2.29575,
+        "median_A": 2.3085,
+        "q75_A": 2.339125,
+        "p95_A": 2.6702,
+        "max_A": 2.841,
+        "within_proposed_1p8_2p6_A": 7,
+        "below_proposed_1p8_A": 0,
+        "above_proposed_2p6_A": 1
+      }
+    }
+  },
+  "original_reference_sha256": "241389654ed66605b4f743ed3c0f81f27b4b68c0f641e029ec3a53692bd973fa",
+  "reference_unit": "See pairs and contacts separately; source extraction upper bound Zn N/O 2.85 A"
+}

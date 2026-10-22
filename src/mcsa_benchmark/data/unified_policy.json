@@ -1,0 +1,45 @@
+{
+  "version": "0.7.0",
+  "general_metal_distance_floor": false,
+  "mechanism_thresholds_changed": false,
+  "policy_changes": [
+    {
+      "code": "1GSA",
+      "withdrawn_general_tag": "F05_METAL_COORDINATION_TOO_SHORT",
+      "former_minimum_A": 1.7,
+      "old_policy": {
+        "id": "M0199_MG_O_SHORT_CONTACT_GENERAL_V1",
+        "element": "MG",
+        "donor_element": "O",
+        "minimum_distance_A": 1.7,
+        "failure_tag": "F05_METAL_COORDINATION_TOO_SHORT",
+        "scope": "All observed non-water protein and small-molecule oxygen atoms versus all declared Mg atoms. Dedicated coordination lower bound, not a sum-of-vdW-radii clash test.",
+        "basis": "Existing author operational 1.7 A bound transferred to general unchanged; not experimentally calibrated."
+      },
+      "mechanism_thresholds_changed": false
+    }
+  ],
+  "primary_cases": [
+    "1B6B",
+    "1DHP",
+    "1ET0",
+    "1GSA",
+    "1I8T",
+    "1IDT",
+    "1IGS",
+    "1IM5",
+    "1KQP",
+    "1L7N",
+    "1LDM",
+    "1NDP",
+    "1OTH",
+    "1QFE",
+    "1QQ5",
+    "1XEL",
+    "1XVA",
+    "1ZIO",
+    "2GSA",
+    "5ICD"
+  ],
+  "controls_in_primary": false
+}

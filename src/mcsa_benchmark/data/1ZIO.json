@@ -1,0 +1,512 @@
+{
+  "case_id": "M0290_1ZIO",
+  "schema_version": 1,
+  "protein_sequence": "MNLVLMGLPGAGKGTQAEKIVAAYGIPHISTGDMFRAAMKEGTPLGLQAKQYMDRGDLVPDEVTIGIVRERLSKDDCQNGFLLDGFPRTVAQAEALETMLADIGRKLDYVIHIDVRQDVLMERLTGRRICRNCGATYHLIFHPPAKPGVCDKCGGELYQRADDNEATVANRLEVNMKQMKPLVDFYEQKGYLRNINGEQDMEKVFADIRELLGGLAR",
+  "ligands": {
+    "ATP": {
+      "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "formal_charge": -4,
+      "element_order": [
+        "N",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "N2",
+          "C2",
+          "N3",
+          "C3",
+          "C4",
+          "N4",
+          "C5",
+          "N5",
+          "C6",
+          "O1",
+          "C7",
+          "C8",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5",
+          "P2",
+          "O6",
+          "O7",
+          "O8",
+          "P3",
+          "O9",
+          "O10",
+          "O11",
+          "C9",
+          "O12",
+          "C10",
+          "O13"
+        ],
+        [
+          "N34",
+          "C30",
+          "N20",
+          "C29",
+          "N22",
+          "C33",
+          "C32",
+          "N21",
+          "C31",
+          "N35",
+          "C39",
+          "O25",
+          "C40",
+          "C36",
+          "O26",
+          "P42",
+          "O14",
+          "O18",
+          "O28",
+          "P43",
+          "O15",
+          "O19",
+          "O27",
+          "P41",
+          "O13",
+          "O16",
+          "O17",
+          "C37",
+          "O23",
+          "C38",
+          "O24"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "N2_1",
+          "C2_1",
+          "N3_1",
+          "C3_1",
+          "C4_1",
+          "N4_1",
+          "C5_1",
+          "N5_1",
+          "C6_1",
+          "O1_1",
+          "C7_1",
+          "C8_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1",
+          "P2_1",
+          "O6_1",
+          "O7_1",
+          "O8_1",
+          "P3_1",
+          "O9_1",
+          "O10_1",
+          "O11_1",
+          "C9_1",
+          "O12_1",
+          "C10_1",
+          "O13_1"
+        ]
+      ]
+    },
+    "AMP": {
+      "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "formal_charge": -2,
+      "element_order": [
+        "N",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "N2",
+          "C2",
+          "N3",
+          "C3",
+          "C4",
+          "N4",
+          "C5",
+          "N5",
+          "C6",
+          "O1",
+          "C7",
+          "C8",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5",
+          "C9",
+          "O6",
+          "C10",
+          "O7"
+        ],
+        [
+          "N28",
+          "C24",
+          "N16",
+          "C23",
+          "N18",
+          "C27",
+          "C26",
+          "N17",
+          "C25",
+          "N29",
+          "C33",
+          "O21",
+          "C34",
+          "C30",
+          "O22",
+          "P35",
+          "O13",
+          "O14",
+          "O15",
+          "C31",
+          "O19",
+          "C32",
+          "O20"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "N2_1",
+          "C2_1",
+          "N3_1",
+          "C3_1",
+          "C4_1",
+          "N4_1",
+          "C5_1",
+          "N5_1",
+          "C6_1",
+          "O1_1",
+          "C7_1",
+          "C8_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1",
+          "C9_1",
+          "O6_1",
+          "C10_1",
+          "O7_1"
+        ]
+      ]
+    }
+  },
+  "metals": {
+    "Mg": 1,
+    "Zn": 1
+  },
+  "reaction_atoms": {
+    "ATP_Pgamma": 23,
+    "ATP_LG": 22,
+    "ATP_beta_O": [
+      20,
+      21
+    ],
+    "ATP_gamma_O": [
+      24,
+      25,
+      26
+    ],
+    "AMP_Nu": [
+      16,
+      17,
+      18
+    ]
+  },
+  "mechanism_criteria": {
+    "criteria_id": "M0290_1ZIO_REACTANT_AXIS_MG_V1_20261020",
+    "case_id": "M0290_1ZIO",
+    "case_number": 1,
+    "date": "2026-10-20",
+    "status": "FIXED_CASE_SPECIFIC_OPERATIONAL_STANDARD",
+    "development_policy": "Retrospective revision after inspection of existing predictions. Not preregistered. Applies to this case only; the main201 ledger is not overwritten.",
+    "target": {
+      "enzyme": "adenylate kinase",
+      "species": "Geobacillus stearothermophilus",
+      "mcsa_proposal": 1,
+      "mcsa_step": 1,
+      "state": "INITIAL_ATP_AMP_REACTANT_PREORGANIZATION",
+      "reaction": "ATP(4-) + AMP(2-) -> 2 ADP(3-)",
+      "components": {
+        "protein": {
+          "copies": 1,
+          "length": 217
+        },
+        "ATP": {
+          "copies": 1,
+          "formal_charge": -4
+        },
+        "AMP": {
+          "copies": 1,
+          "formal_charge": -2
+        },
+        "Mg": {
+          "copies": 1,
+          "formal_charge": 2
+        },
+        "Zn": {
+          "copies": 1,
+          "formal_charge": 2,
+          "role": "STRUCTURAL_NOT_THIS_GEOMETRY_TASK"
+        }
+      }
+    },
+    "atom_policy": {
+      "Nu": "One of the three nonprotonated, nonbridging oxygens on AMP phosphate.",
+      "center": "ATP gamma phosphorus.",
+      "LG": "The oxygen bridging ATP beta and gamma phosphorus atoms.",
+      "Mg_beta_donor": "One of the two nonbridging oxygens on the same ATP beta phosphate.",
+      "Mg_gamma_donor": "One of the three nonbridging oxygens on the same ATP gamma phosphate.",
+      "joint_rule": "Distance and angle must pass for the same AMP oxygen and the same Pgamma/LG pair. Both metal donors must belong to that same ATP and coordinate the same declared Mg.",
+      "too_short_policy": "Any AMP terminal oxygen closer to Pgamma than the reaction-distance lower bound fails the reactant compression guard. For each ATP Mg donor group, its shortest Mg-O distance must satisfy both bounds; a different oxygen cannot hide an excessively short contact.",
+      "equivalence": "Localized P=O versus P-O(-) drawing does not freeze phosphate oxygen identity for the declared unprotonated input. No alternative substrate copy or arbitrary nearest oxygen is permitted.",
+      "canonical_graph_indices_0_based": {
+        "ATP_Pgamma": 23,
+        "ATP_LG": 22,
+        "ATP_beta_O": [
+          20,
+          21
+        ],
+        "ATP_gamma_O": [
+          24,
+          25,
+          26
+        ],
+        "AMP_Nu": [
+          16,
+          17,
+          18
+        ]
+      }
+    },
+    "cutoffs": {
+      "reaction_distance_A": {
+        "min": 2.5,
+        "max": 4.0,
+        "inclusive": true,
+        "basis_type": "HOMOLOG_REACTANT_CRYSTAL_ANCHOR_PLUS_AUTHOR_OPERATIONAL_TOLERANCE",
+        "reference_ids": [
+          "NAM2024_8RJ6_A",
+          "KRISHNAMURTHY2005"
+        ],
+        "upper_basis": "8RJ6 chain A ATP altloc A with AMP has O1P-PG = 3.582868 A. A 4.0 A ceiling retains this observed ground-state arrangement with approximately 0.42 A operational allowance; it is not an experimental confidence interval.",
+        "lower_basis": "2.5 A is an author-defined compression guard for an intact reactant-preorganization task, not a measured lower quantile. It excludes unusually compressed or bond-like approach geometries from this task without claiming they are necessarily chemically impossible.",
+        "failure_tags": [
+          "REACTION_DISTANCE_TOO_SHORT_FOR_REACTANT_TASK",
+          "REACTION_DISTANCE_TOO_LONG"
+        ]
+      },
+      "attack_angle_deg": {
+        "min": 150.0,
+        "max": 180.0,
+        "inclusive": true,
+        "basis_type": "INLINE_MECHANISM_AND_REACTANT_CRYSTAL_PLUS_AUTHOR_ANGULAR_TOLERANCE",
+        "reference_ids": [
+          "MCSA0290_STEP1",
+          "NAM2024_8RJ6_A"
+        ],
+        "basis": "8RJ6 chain A O1P-PG-O3B = 166.957218 degrees, consistent with the paper's 167 degrees. The 150-degree floor allows up to 30 degrees from collinearity. Supplementary Table S3 reports RS MD mean angle 153.0 +/- 7.1 degrees: legitimate dynamics can cross this boundary. This is a screen for the declared preorganized geometry, not a universal activity threshold or a test of all physically possible bound states.",
+        "failure_tags": [
+          "ATTACK_DIRECTION_MISMATCH",
+          "REACTION_AXIS_JOINT_MISMATCH"
+        ]
+      },
+      "Mg_beta_distance_A": {
+        "min": 1.8,
+        "max": 2.6,
+        "inclusive": true,
+        "basis_type": "STATE_MATCHED_HOMOLOG_COORDINATION_TOPOLOGY_PLUS_AUTHOR_DISTANCE_TOLERANCE",
+        "reference_ids": [
+          "NAM2024_8RJ6_A",
+          "BERRY1998_1ZIO",
+          "PROJECT_MG_O_REFERENCE"
+        ],
+        "basis": "8RJ6 Mg-O1B is approximately 2.022 A. Same-species AP5-1ZIO Mg-O2B is approximately 2.222 A. 1.8-2.6 A is a deliberately broad author-defined direct-contact compatibility window, not a full coordination-geometry certificate.",
+        "failure_tags": [
+          "MG_ATP_BETA_CONTACT_TOO_SHORT",
+          "MG_ATP_BETA_CONTACT_TOO_LONG",
+          "MG_ATP_BETA_NO_COMPATIBLE_DONOR"
+        ]
+      },
+      "Mg_gamma_distance_A": {
+        "min": 1.8,
+        "max": 2.6,
+        "inclusive": true,
+        "basis_type": "STATE_MATCHED_HOMOLOG_COORDINATION_TOPOLOGY_PLUS_AUTHOR_DISTANCE_TOLERANCE",
+        "reference_ids": [
+          "NAM2024_8RJ6_A",
+          "BERRY1998_1ZIO",
+          "PROJECT_MG_O_REFERENCE"
+        ],
+        "basis": "8RJ6 Mg-O2G is approximately 1.903 A. Same-species AP5-1ZIO Mg-O2G is approximately 2.176 A. The same 1.8-2.6 A operational window is applied to both ATP donor groups.",
+        "failure_tags": [
+          "MG_ATP_GAMMA_CONTACT_TOO_SHORT",
+          "MG_ATP_GAMMA_CONTACT_TOO_LONG",
+          "MG_ATP_GAMMA_NO_COMPATIBLE_DONOR"
+        ]
+      }
+    },
+    "aggregation": {
+      "sample_task_pass": "One complete legal tuple simultaneously satisfies all four numeric conditions.",
+      "sample_joint_pass": "sample_task_pass AND the separately recorded basic structural checks pass.",
+      "Top1": "The original model-native confidence rank, not a geometry-selected sample.",
+      "Best5": "At least one entire sample passes; never combine conditions across samples.",
+      "missing_required_atom": "Record missing component/atom or mapping failure explicitly; never impute a zero distance or a success."
+    },
+    "not_required_for_task_pass": [
+      "Direct Mg-AMP coordination: retained as a measured diagram-versus-reference discrepancy.",
+      "Four coordinating waters: absent in the prediction input; no complete octahedral-shell verdict.",
+      "Full Zn site restoration: separate structural-metal task.",
+      "All catalytic-residue contacts, catalytic rates, reaction barriers or transition-state stabilization.",
+      "A ligand RMSD to AP5: AP5 is not separate ATP plus AMP."
+    ],
+    "reference_limits": [
+      "8RJ6 is the E. coli homolog, not the same species as 1ZIO.",
+      "Use only chain A ATP altloc A (occupancy 0.62), AMP and compatible blank-altloc Mg. Do not combine the alternate ADP state or chain B.",
+      "Crystal coordinates support heavy-atom geometry but do not certify the protonation of the benchmark input.",
+      "The 2005 MD used a different enzyme and ligand protonation setup and a modeled hydrated Mg site. Its Mg topology is supporting evidence, not a source of numerical pass/fail quantiles.",
+      "Nam 2024 Supplementary Table S3 uses ATP protonated at O1G in RS simulations; its reported mean distance 3.43 +/- 0.06 A and mean angle 153.0 +/- 7.1 degrees are contextual, not distributions fitted to this fully deprotonated input.",
+      "The M-CSA diagram shows a different Mg-AMP contact. The metal criterion is literature-curated, not literal compliance with every diagram line.",
+      "The project Mg-O distribution was preselected and pooled across chemical contexts; it supports distance scale, not a universal coordination cutoff."
+    ],
+    "sensitivity_only": {
+      "reaction_distance_upper_A": [
+        3.5,
+        3.6,
+        4.0,
+        4.5
+      ],
+      "reaction_distance_lower_A": [
+        2.3,
+        2.5,
+        2.7
+      ],
+      "attack_angle_lower_deg": [
+        140.0,
+        150.0,
+        160.0
+      ],
+      "Mg_distance_upper_A": [
+        2.3,
+        2.4,
+        2.6,
+        2.8
+      ]
+    },
+    "references": {
+      "MCSA0290_STEP1": {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/290/",
+        "locator": "Mechanism proposal 1, Step 1",
+        "supports": "Reacting atoms and in-line phosphoryl transfer; original metal diagram discrepancy preserved."
+      },
+      "NAM2024_8RJ6_A": {
+        "citation": "Nam K et al. Magnesium induced structural reorganization in the active site of adenylate kinase. Science Advances 10, eado5504 (2024).",
+        "doi": "10.1126/sciadv.ado5504",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11313852/",
+        "structure_url": "https://www.rcsb.org/structure/8RJ6",
+        "locator": "Figures 1D and 2A; Supplementary Tables S2 and S3; chain A ATP altloc A",
+        "supports": "Reactant-state reaction axis and beta/gamma Mg donor topology."
+      },
+      "KRISHNAMURTHY2005": {
+        "citation": "Krishnamurthy H et al. Associative mechanism for phosphoryl transfer: A molecular dynamics simulation of Escherichia coli adenylate kinase complexed with its substrates. Proteins 58, 88-100 (2005).",
+        "doi": "10.1002/prot.20301",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15521058/",
+        "locator": "Starting Structure; Force Field; Figure 6; Catalytic Mechanism",
+        "supports": "Supporting beta/gamma Mg coordination and distinction between modeled reactant and shorter transition-state/bond geometries, not the proposed cutoff numbers."
+      },
+      "BERRY1998_1ZIO": {
+        "citation": "Berry MB, Phillips GN Jr. Crystal structures of Bacillus stearothermophilus adenylate kinase with bound Ap5A, Mg2+ Ap5A, and Mn2+ Ap5A reveal an intermediate lid position and six coordinate octahedral geometry for bound Mg2+ and Mn2+. Proteins 32, 276-288 (1998).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9715904/",
+        "structure_url": "https://www.rcsb.org/structure/1ZIO",
+        "supports": "Same-species AP5 analog Mg coordination distances and structural Zn role; not a native ATP-plus-AMP distance standard."
+      },
+      "PROJECT_MG_O_REFERENCE": {
+        "supports": "Existing 317 selected Mg-O contacts from 48 M-CSA/PDB pairs; descriptive median 2.153 A and 5th-95th percentiles 1.931-2.503 A.",
+        "source_sha256": "b57ffe59759a8be2e804ce4e1e38aa2e9381ee4996b3834ecedba6d5ff4c450c"
+      }
+    }
+  },
+  "basic_policy": {
+    "id": "CASE01_BASIC_GEOMETRY_V1",
+    "bond_and_angle_bounds_factors": [
+      0.75,
+      1.25
+    ],
+    "internal_nonbonded_lower_factor": 0.7,
+    "intermolecular_vdw_lower_factor": 0.75,
+    "flatness_max_A": 0.25,
+    "volume_overlap_max": 0.075,
+    "shape_vdw_scale": 0.8,
+    "ligand_protein_max_distance_A": 5.0,
+    "graph_distance_inference_is_diagnostic_only": true,
+    "energy_test": false,
+    "protein_rmsd_is_not_in_this_package": true
+  },
+  "protein_copies": 1,
+  "pdb_id": "1ZIO",
+  "mechanism_type": "adenylate",
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "unified_source": {
+    "source_version": "0.5.0",
+    "source_case_sha256": "f6a4601aa49d593aba63032d3ca2141697ad4d4e0c8bd869ba86a98f7a197add",
+    "source_criteria_id": "M0290_1ZIO_REACTANT_AXIS_MG_V1_20261020",
+    "official_variant": "declared_primary"
+  }
+}

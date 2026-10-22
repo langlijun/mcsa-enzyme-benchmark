@@ -1,0 +1,239 @@
+{
+  "case_id": "M0054_1QFE",
+  "pdb_id": "1QFE",
+  "schema_version": 3,
+  "protein_sequence": "MKTVTVKNLIIGEGMPKIIVSLMGRDINSVKAEALAYREATFDILEWRVDHFMDIASTQSVLTAARVIRDAMPDIPLLFTFRSAKEGGEQTITTQHYLTLNRAAIDSGLVDMIDLELFTGDADVKATVDYAHAHNVYVVMSNHDFHQTPSAEEMVSRLRKMQALGADIPKIAVMPQSKHDVLTLLTATLEMQQHYADRPVITMSMAKEGVISRLAGEVFGSAATFGAVKQASAPGQIAVNDLRSVLMILHNA",
+  "protein_copies": 2,
+  "ligands": {
+    "DHQ_1": {
+      "smiles": "O=C1C[C@@](O)(C(=O)[O-])C[C@@H](O)[C@@H]1O",
+      "formal_charge": -1,
+      "element_order": [
+        "O",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "O1",
+          "C1",
+          "C2",
+          "C3",
+          "O2",
+          "C4",
+          "O3",
+          "O4",
+          "C5",
+          "C6",
+          "O5",
+          "C7",
+          "O6"
+        ],
+        [
+          "O11",
+          "C17",
+          "C18",
+          "C20",
+          "O13",
+          "C16",
+          "O10",
+          "O12",
+          "C19",
+          "C22",
+          "O15",
+          "C21",
+          "O14"
+        ],
+        [
+          "O1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "O2_1",
+          "C4_1",
+          "O3_1",
+          "O4_1",
+          "C5_1",
+          "C6_1",
+          "O5_1",
+          "C7_1",
+          "O6_1"
+        ]
+      ],
+      "copy_group": "DHQ",
+      "group_copies": 2
+    },
+    "DHQ_2": {
+      "smiles": "O=C1C[C@@](O)(C(=O)[O-])C[C@@H](O)[C@@H]1O",
+      "formal_charge": -1,
+      "element_order": [
+        "O",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "O1",
+          "C1",
+          "C2",
+          "C3",
+          "O2",
+          "C4",
+          "O3",
+          "O4",
+          "C5",
+          "C6",
+          "O5",
+          "C7",
+          "O6"
+        ],
+        [
+          "O11",
+          "C17",
+          "C18",
+          "C20",
+          "O13",
+          "C16",
+          "O10",
+          "O12",
+          "C19",
+          "C22",
+          "O15",
+          "C21",
+          "O14"
+        ],
+        [
+          "O1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "O2_1",
+          "C4_1",
+          "O3_1",
+          "O4_1",
+          "C5_1",
+          "C6_1",
+          "O5_1",
+          "C7_1",
+          "O6_1"
+        ]
+      ],
+      "copy_group": "DHQ",
+      "group_copies": 2
+    }
+  },
+  "metals": {},
+  "mechanism_type": "dhqd_lys_carbonyl",
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "mechanism_criteria": {
+    "criteria_id": "M0054_1QFE_NCO_TWO_SITE_V2_20261021",
+    "status": "USER_APPROVED_IMPLEMENTATION",
+    "retrospective": true,
+    "selected_event": "M-CSA 54, mechanism proposal 1, displayed step 2; Lys170 attacks DHQ chemical C3 ketone before covalent addition",
+    "main_axis": {
+      "distance_A": {
+        "min": null,
+        "max": 4.0,
+        "inclusive": true
+      },
+      "angle_deg": {
+        "min": 90.0,
+        "max": 120.0,
+        "inclusive": true
+      },
+      "angle_vertex": "DHQ ketone carbon, not carboxyl carbon",
+      "basis": "Author operational tolerances, supported by carbonyl-addition chemistry and DHQD-specific substrate-reorientation literature; not experimentally calibrated 1QFE reactant limits."
+    },
+    "site_assignment": {
+      "method": "Minimum-total-distance bijection: ligand heavy-atom centroid excluding ketone C/O to the centroid of Lys170 CA/CB. No reaction NZ, ketone C/O, angle or pass score used to select the assignment.",
+      "tie_tolerance_A": 1e-06,
+      "require_unique_assignment": true,
+      "note": "A comparison assignment is not proof of biological occupancy. Report nearest-site occupancy and every alternative."
+    },
+    "aggregation": "Both assigned sites must satisfy the distance and angle on the same N-C-O tuple.",
+    "scope": "Initial heavy-atom approach geometry only; not full dehydration, protonation, reaction face or enzyme activity. General checks are independent.",
+    "legacy_relay_is_hard_gate": false,
+    "distance_lower_bound_is_hard_gate": false,
+    "general_state_note": "Two free DHQ molecules and unmodified Lys170; no preformed protein-substrate bond, no reaction-pair clash exemption.",
+    "water_required": false,
+    "metal_required": false,
+    "references": [
+      {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/54/",
+        "supports": "Selected step and reaction-atom roles"
+      },
+      {
+        "doi": "10.1002/pro.2218",
+        "supports": "Evidence against treating Glu86 as an essential universal triad gate"
+      },
+      {
+        "doi": "10.1021/bi4015506",
+        "supports": "DHQD substrate reorientation; does not supply the numeric pass window"
+      },
+      {
+        "doi": "10.1021/ja00796a058",
+        "supports": "General nucleophilic carbonyl approach, not a validated case-specific cutoff"
+      },
+      {
+        "doi": "10.1042/BJ20140614",
+        "supports": "4CNO substrate analog; not a catalytic positive control"
+      }
+    ],
+    "decision": "User approved the reviewed NCO-only task and packaging after historical results were available. Fixed before package replay; not preregistered."
+  },
+  "reaction_atoms": {
+    "protein_sequence_position_1based": 170,
+    "protein_residue_name": "LYS",
+    "nucleophile_name": "NZ",
+    "anchor_names": [
+      "CA",
+      "CB"
+    ],
+    "carbonyl_C_index": 1,
+    "carbonyl_O_index": 0,
+    "nonreactive_indices": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "diagnostic_residues": {
+    "Glu": 86,
+    "His": 143
+  },
+  "reference_scope": "1QFE is a borohydride-reduced covalent product adduct, not free DHQ or an ordinary product complex.",
+  "unified_source": {
+    "source_version": "0.5.3+1qfe",
+    "source_case_sha256": "5507fe3f49cbce0d796d8f397a7d43b255b06fbe0750a1ad9704d8dfb7e42e8a",
+    "source_criteria_id": "M0054_1QFE_NCO_TWO_SITE_V2_20261021",
+    "official_variant": "declared_primary"
+  }
+}

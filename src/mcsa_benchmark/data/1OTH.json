@@ -1,0 +1,390 @@
+{
+  "case_id": "M0012_1OTH",
+  "pdb_id": "1OTH",
+  "schema_version": 3,
+  "protein_sequence": "KVQLKGRDLLTLKNFTGEEIKYMLWLSADLKFRIKQKGEYLPLLQGKSLGMIFEKRSTRTRLSTETGFALLGGHPCFLTTQDIHLGVNESLTDTARVLSSMADAVLARVYKQSDLDTLAKEASIPIINGLSDLYHPIQILADYLTLQEHYSSLKGLTLSWIGDGNNILHSIMMSAAKFGMHLQAATPKGYEPDASVTKLAEQYAKENGTKLLLTNDPLEAAHGGNVLITDTWISMGREEEKKKRLQAFQGYQVTMKTAKVAASDWTFLHCLPRKPEEVDDEVFYSPRSLVFPEAENRKWTIMAVMVSLLTDYSPQLQKPKF",
+  "protein_copies": 3,
+  "ligands": {
+    "ORN_1": {
+      "smiles": "[NH3+]CCC[C@H]([NH3+])C(=O)[O-]",
+      "formal_charge": 1,
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "N2",
+          "C5",
+          "O1",
+          "O2"
+        ],
+        [
+          "N21",
+          "C19",
+          "C17",
+          "C18",
+          "C20",
+          "N22",
+          "C16",
+          "O14",
+          "O15"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "N2_1",
+          "C5_1",
+          "O1_1",
+          "O2_1"
+        ]
+      ],
+      "copy_group": "ORN",
+      "group_copies": 3
+    },
+    "ORN_2": {
+      "smiles": "[NH3+]CCC[C@H]([NH3+])C(=O)[O-]",
+      "formal_charge": 1,
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "N2",
+          "C5",
+          "O1",
+          "O2"
+        ],
+        [
+          "N21",
+          "C19",
+          "C17",
+          "C18",
+          "C20",
+          "N22",
+          "C16",
+          "O14",
+          "O15"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "N2_1",
+          "C5_1",
+          "O1_1",
+          "O2_1"
+        ]
+      ],
+      "copy_group": "ORN",
+      "group_copies": 3
+    },
+    "ORN_3": {
+      "smiles": "[NH3+]CCC[C@H]([NH3+])C(=O)[O-]",
+      "formal_charge": 1,
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "N2",
+          "C5",
+          "O1",
+          "O2"
+        ],
+        [
+          "N21",
+          "C19",
+          "C17",
+          "C18",
+          "C20",
+          "N22",
+          "C16",
+          "O14",
+          "O15"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "N2_1",
+          "C5_1",
+          "O1_1",
+          "O2_1"
+        ]
+      ],
+      "copy_group": "ORN",
+      "group_copies": 3
+    },
+    "CP_1": {
+      "smiles": "NC(=O)OP(=O)([O-])[O-]",
+      "formal_charge": -2,
+      "element_order": [
+        "N",
+        "C",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "O1",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        [
+          "N9",
+          "C8",
+          "O3",
+          "O7",
+          "P10",
+          "O4",
+          "O5",
+          "O6"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "O1_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "CP",
+      "group_copies": 3
+    },
+    "CP_2": {
+      "smiles": "NC(=O)OP(=O)([O-])[O-]",
+      "formal_charge": -2,
+      "element_order": [
+        "N",
+        "C",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "O1",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        [
+          "N9",
+          "C8",
+          "O3",
+          "O7",
+          "P10",
+          "O4",
+          "O5",
+          "O6"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "O1_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "CP",
+      "group_copies": 3
+    },
+    "CP_3": {
+      "smiles": "NC(=O)OP(=O)([O-])[O-]",
+      "formal_charge": -2,
+      "element_order": [
+        "N",
+        "C",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "O1",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        [
+          "N9",
+          "C8",
+          "O3",
+          "O7",
+          "P10",
+          "O4",
+          "O5",
+          "O6"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "O1_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "CP",
+      "group_copies": 3
+    }
+  },
+  "metals": {},
+  "mechanism_type": "ornithine_carbamoyl",
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "mechanism_criteria": {
+    "criteria_id": "M0012_1OTH_NCO_THREE_SITE_V1_20261021",
+    "legacy_criteria_id": "ON_ACYL_DISTANCE_ANGLE_AUTHOR_V1",
+    "status": "USER_APPROVED_EXISTING_RULE_IMPLEMENTED",
+    "retrospective": true,
+    "target": {
+      "internal_mechanism_id": 2,
+      "step": 1,
+      "current_MCSA_display": "Mechanism Proposal 1 (three stars)",
+      "state": "Heavy-atom preorganization of the declared, protonated ornithine input; deprotonation is not assessed"
+    },
+    "main_axis": {
+      "distance_A": {
+        "min": 2.5,
+        "max": 4.0,
+        "inclusive": true
+      },
+      "angle_deg": {
+        "min": 90.0,
+        "max": 120.0,
+        "inclusive": true
+      },
+      "angle_vertex": "CP carbonyl C; direction atom is carbonyl O, not the C-O-P bridge O",
+      "basis": "Reaction atoms from M-CSA; distance and angular windows are explicitly author-operational, informed by carbonyl-attack geometry rather than directly published hOTC success cutoffs."
+    },
+    "site_assignment": {
+      "method": "Each complete ligand independently chooses the protein copy with minimum full-ligand heavy-atom to full-protein-copy heavy-atom distance, reproducing the existing whole-ligand pocket audit.",
+      "tie_tolerance_A": 1e-06,
+      "force_bijection": false,
+      "reaction_N_C_distance_or_angle_used": false
+    },
+    "aggregation": "Exactly one ORN and one CP at each of the three declared protein-site labels; each same-atom N-C-O tuple must pass. Do not select the best of nine ligand pairs.",
+    "scope": "Selected N-C-O heavy-atom geometry only. No added Cys303, Asp263, metal, water, hydrogen transfer or enzyme-activity gate. General input chemistry and stereochemistry remain independent.",
+    "water_required": false,
+    "metal_required": false,
+    "new_residue_contact_gates": false,
+    "input_state_note": "The fixed native input has protonated terminal NH3+. The selected MRV depicts terminal NH2. User accepted heavy-atom preorganization without verifying deprotonation; no input replacement or new inference.",
+    "references": [
+      {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/12/",
+        "supports": "Selected carbonyl-addition event; internal ID 2, step 1"
+      },
+      {
+        "doi": "10.1074/jbc.273.51.34247",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9852088/",
+        "supports": "Human OTC with a bisubstrate analog, not free-reactant distance thresholds"
+      },
+      {
+        "pmid": "10813810",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10813810/",
+        "supports": "CP and norvaline analog structural context; norvaline lacks the attacking terminal N"
+      },
+      {
+        "doi": "10.1021/acs.biochem.4c00206",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11256359/",
+        "supports": "Human OTC activation and D263/C303 interpretation; not a compulsory contact cutoff"
+      },
+      {
+        "doi": "10.1021/ja00796a058",
+        "url": "https://doi.org/10.1021/ja00796a058",
+        "supports": "Carbonyl nucleophilic approach principle, not this full numerical success window"
+      }
+    ],
+    "decision": "User explicitly approved retaining the existing distance/angle rules and current inputs before this package replay. Historical outcomes were already visible; not preregistered."
+  },
+  "reaction_atoms": {
+    "ORN_terminal_N_index": 0,
+    "CP_carbonyl_C_index": 1,
+    "CP_carbonyl_O_index": 2,
+    "CP_bridge_O_index": 3
+  },
+  "reference_scope": "1OTH PAO is a covalently linked bisubstrate analog, not an exact complete free-reactant reference.",
+  "unified_source": {
+    "source_version": "0.5.2+1oth",
+    "source_case_sha256": "eeba836fc0b7d1722a6a69327f2f0693e008c230eda16f716b1abe7535aa18f3",
+    "source_criteria_id": "M0012_1OTH_NCO_THREE_SITE_V1_20261021",
+    "official_variant": "declared_primary"
+  }
+}

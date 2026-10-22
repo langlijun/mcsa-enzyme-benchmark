@@ -1,0 +1,246 @@
+{
+  "case_id": "M0023_1XVA",
+  "protein_sequence": "VDSVYRTRSLGVAAEGIPDQYADGEAARVWQLYIGDTRSRTAEYKAWLLGLLRQHGCHRVLDVACGTGVDSIMLVEEGFSVTSVDASDKMLKYALKERWNRRKEPAFDKWVIEEANWLTLDKDVPAGDGFDAVICLGNSFAHLPDSKGDQSEHRLALKNIASMVRPGGLLVIDHRNYDYILSTGCAPPGKNIYYKSDLTKDITTSVLTVNNKAHMVTLDYTVQVPGAGRDGAPGFSKFRLSYYPHCLASFTELVQEAFGGRCQHSVLGDFKPYRPGQAYVPCYFIHVLKKTG",
+  "protein_copies": 4,
+  "metals": {},
+  "ligands": {
+    "SAM": {
+      "smiles": "C[S@@+](CC[C@H]([NH3+])C(=O)[O-])C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O",
+      "element_order": [
+        "C",
+        "S",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "S1",
+          "C2",
+          "C3",
+          "C4",
+          "N1",
+          "C5",
+          "O1",
+          "O2",
+          "C6",
+          "C7",
+          "O3",
+          "C8",
+          "N2",
+          "C9",
+          "N3",
+          "C10",
+          "C11",
+          "N4",
+          "N5",
+          "C12",
+          "N6",
+          "C13",
+          "C14",
+          "O4",
+          "C15",
+          "O5"
+        ],
+        [
+          "C41",
+          "S40",
+          "C42",
+          "C44",
+          "C49",
+          "N50",
+          "C32",
+          "O24",
+          "O25",
+          "C43",
+          "C48",
+          "O31",
+          "C47",
+          "N39",
+          "C35",
+          "N27",
+          "C36",
+          "C34",
+          "N38",
+          "N26",
+          "C33",
+          "N28",
+          "C37",
+          "C46",
+          "O30",
+          "C45",
+          "O29"
+        ],
+        [
+          "C1_1",
+          "S1_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "N1_1",
+          "C5_1",
+          "O1_1",
+          "O2_1",
+          "C6_1",
+          "C7_1",
+          "O3_1",
+          "C8_1",
+          "N2_1",
+          "C9_1",
+          "N3_1",
+          "C10_1",
+          "C11_1",
+          "N4_1",
+          "N5_1",
+          "C12_1",
+          "N6_1",
+          "C13_1",
+          "C14_1",
+          "O4_1",
+          "C15_1",
+          "O5_1"
+        ]
+      ]
+    },
+    "glycine": {
+      "smiles": "NCC(=O)[O-]",
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "O1",
+          "O2"
+        ],
+        [
+          "N8",
+          "C9",
+          "C7",
+          "O5",
+          "O6"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "O2_1"
+        ]
+      ]
+    }
+  },
+  "pdb_id": "1XVA",
+  "schema_version": 2,
+  "mechanism_type": "sam_n_methyl",
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "general_extension": "sam_reactant",
+  "nonpolymer_amino_acid_ligands": [
+    "GLY"
+  ],
+  "reaction_atoms": {
+    "acceptor_role": "glycine",
+    "acceptor_N_index": 0,
+    "donor_role": "SAM",
+    "methyl_C_index": 0,
+    "sulfur_index": 1
+  },
+  "mechanism_criteria": {
+    "criteria_id": "M0023_1XVA_NCS_SINGLE_OCCUPANCY_V1_20261021",
+    "retrospective": true,
+    "implementation_date": "2026-10-21",
+    "human_acceptance": "User accepted the reviewed standard before packaging; existing outcomes were already visible.",
+    "target": {
+      "mcsa_id": "M0023",
+      "proposal": 1,
+      "step": 1,
+      "state": "Glycinate plus intact SAM before methyl transfer"
+    },
+    "main_axis": {
+      "distance_A": {
+        "min": 2.5,
+        "max": 3.5,
+        "inclusive": true
+      },
+      "angle_deg": {
+        "min": 140.0,
+        "max": 180.0,
+        "inclusive": true
+      }
+    },
+    "basis": "Literature-informed author operational bounds, not a directly published GNMT success cutoff.",
+    "distance_basis": "Fu et al. modeled glycine N within 3.0 A of the SAM methyl. This was modeling based on SAM/acetate crystals, not a measured glycine cocrystal. Both endpoints here are author tolerances.",
+    "angle_basis": "SN2 alignment; Swiderek et al. report reactant-state mean angles of 162-168 degrees across enzyme simulations. These means are not an acceptance interval; 140 degrees is an author tolerance.",
+    "aggregation": "One complete N-C-S tuple; do not require four occupied sites when only one SAM and one glycine were supplied.",
+    "separation_diagnostic_A": 10.0,
+    "separation_note": "Distance-based diagnostic, not proof of a particular protein pocket assignment.",
+    "water_required": false,
+    "scope": "Single-pair reactant geometry in a tetramer, not full four-site occupancy, protonation dynamics or catalytic activity.",
+    "references": [
+      {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/23/",
+        "use": "Proposal 1 step 1 identifies the reacting atoms and selected basic glycine state"
+      },
+      {
+        "doi": "10.1021/bi961068n",
+        "use": "Same-enzyme SAM/acetate crystal and modeled glycine proximity; not exact glycine pose truth"
+      },
+      {
+        "doi": "10.1021/bi061319k",
+        "use": "SN2 and stabilization of glycine basic form"
+      },
+      {
+        "doi": "10.1021/jacs.7b13655",
+        "url": "https://purehost.bath.ac.uk/ws/files/188638360/finalversion.pdf",
+        "use": "Reactant-state directionality, author manuscript p.10; neither simulated mean angles nor TS distances become hard experimental cutoffs"
+      }
+    ],
+    "reporting_change": "Old three-condition geometry included C-S bond intactness. The axis is now reported separately from that general/state check; legacy conjunction remains diagnostic."
+  },
+  "case_general_requirements": {
+    "SAM_methyl_C_S_A": {
+      "min": 1.4,
+      "max": 2.2,
+      "inclusive": true
+    },
+    "C_S_basis": "Retained author operational intact-reactant covalent-bond window; additional to shared DG geometry checks.",
+    "SAM_stereochemistry_reporter": "rdCIPLabeler.AssignCIPLabels on both declared input and observed 3D chirality",
+    "legacy_CIP_audit": "Compare mismatch atom indices under both algorithms, never compare an old input label against a new observed label.",
+    "RDKit_bounds_note": "GetMoleculeBoundsMatrix may emit a UFFTYPER sulfonium charge warning. No energy calculation is used. Keep explicit C-S state bounds and report the DG S-C bounds for inspection."
+  },
+  "unified_source": {
+    "source_version": "0.5.1+1xva",
+    "source_case_sha256": "89bd37f255cb01a038c826e2041e39303f1594f897f1b425038853e195122177",
+    "source_criteria_id": "M0023_1XVA_NCS_SINGLE_OCCUPANCY_V1_20261021",
+    "official_variant": "declared_primary"
+  }
+}

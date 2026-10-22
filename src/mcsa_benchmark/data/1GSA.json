@@ -1,0 +1,3287 @@
+{
+  "case_id": "M0199_1GSA",
+  "pdb_id": "1GSA",
+  "schema_version": 2,
+  "protein_sequence": "MIKLGIVMDPIANINIKKDSSFAMLLEAQRRGYELHYMEMGDLYLINGEARAHTRTLNVKQNYEEWFSFVGEQDLPLADLDVILMRKDPPFDTEFIYATYILERAEEKGTLIVNKPQSLRDCNEKLFTAWFSDLTPETLVTRNKAQLKAFWEKHSDIILKPLDGMGGASIFRVKEGDPNLGVIAETLTEHGTRYCMAQNYLPAIKDGDKRVLVVDGEPVPYCLARIPQGGETRGNLAAGGRGEPRPLTESDWKIARQIGPTLKEKGLIFVGLDIIGDRLTEINVTSPTCIREIEAEFPVSITGMLMDAIEARLQQQ",
+  "protein_copies": 2,
+  "ligands": {
+    "ATP_1": {
+      "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "element_order": [
+        "N",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "N2",
+          "C2",
+          "N3",
+          "C3",
+          "C4",
+          "N4",
+          "C5",
+          "N5",
+          "C6",
+          "O1",
+          "C7",
+          "C8",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5",
+          "P2",
+          "O6",
+          "O7",
+          "O8",
+          "P3",
+          "O9",
+          "O10",
+          "O11",
+          "C9",
+          "O12",
+          "C10",
+          "O13"
+        ],
+        [
+          "N34",
+          "C30",
+          "N20",
+          "C29",
+          "N22",
+          "C33",
+          "C32",
+          "N21",
+          "C31",
+          "N35",
+          "C39",
+          "O25",
+          "C40",
+          "C36",
+          "O26",
+          "P42",
+          "O14",
+          "O18",
+          "O28",
+          "P43",
+          "O15",
+          "O19",
+          "O27",
+          "P41",
+          "O13",
+          "O16",
+          "O17",
+          "C37",
+          "O23",
+          "C38",
+          "O24"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "N2_1",
+          "C2_1",
+          "N3_1",
+          "C3_1",
+          "C4_1",
+          "N4_1",
+          "C5_1",
+          "N5_1",
+          "C6_1",
+          "O1_1",
+          "C7_1",
+          "C8_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1",
+          "P2_1",
+          "O6_1",
+          "O7_1",
+          "O8_1",
+          "P3_1",
+          "O9_1",
+          "O10_1",
+          "O11_1",
+          "C9_1",
+          "O12_1",
+          "C10_1",
+          "O13_1"
+        ]
+      ],
+      "copy_group": "ATP",
+      "group_copies": 2
+    },
+    "ATP_2": {
+      "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-])[C@@H](O)[C@H]1O",
+      "element_order": [
+        "N",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "C",
+        "N",
+        "C",
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "N2",
+          "C2",
+          "N3",
+          "C3",
+          "C4",
+          "N4",
+          "C5",
+          "N5",
+          "C6",
+          "O1",
+          "C7",
+          "C8",
+          "O2",
+          "P1",
+          "O3",
+          "O4",
+          "O5",
+          "P2",
+          "O6",
+          "O7",
+          "O8",
+          "P3",
+          "O9",
+          "O10",
+          "O11",
+          "C9",
+          "O12",
+          "C10",
+          "O13"
+        ],
+        [
+          "N34",
+          "C30",
+          "N20",
+          "C29",
+          "N22",
+          "C33",
+          "C32",
+          "N21",
+          "C31",
+          "N35",
+          "C39",
+          "O25",
+          "C40",
+          "C36",
+          "O26",
+          "P42",
+          "O14",
+          "O18",
+          "O28",
+          "P43",
+          "O15",
+          "O19",
+          "O27",
+          "P41",
+          "O13",
+          "O16",
+          "O17",
+          "C37",
+          "O23",
+          "C38",
+          "O24"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "N2_1",
+          "C2_1",
+          "N3_1",
+          "C3_1",
+          "C4_1",
+          "N4_1",
+          "C5_1",
+          "N5_1",
+          "C6_1",
+          "O1_1",
+          "C7_1",
+          "C8_1",
+          "O2_1",
+          "P1_1",
+          "O3_1",
+          "O4_1",
+          "O5_1",
+          "P2_1",
+          "O6_1",
+          "O7_1",
+          "O8_1",
+          "P3_1",
+          "O9_1",
+          "O10_1",
+          "O11_1",
+          "C9_1",
+          "O12_1",
+          "C10_1",
+          "O13_1"
+        ]
+      ],
+      "copy_group": "ATP",
+      "group_copies": 2
+    },
+    "GGC_1": {
+      "smiles": "[NH3+][C@@H](CCC(=O)N[C@@H](CS)C(=O)[O-])C(=O)[O-]",
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "N",
+        "C",
+        "C",
+        "S",
+        "C",
+        "O",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "O1",
+          "N2",
+          "C5",
+          "C6",
+          "S1",
+          "C7",
+          "O2",
+          "O3",
+          "C8",
+          "O4",
+          "O5"
+        ],
+        [
+          "N29",
+          "C28",
+          "C26",
+          "C24",
+          "C20",
+          "O14",
+          "N23",
+          "C27",
+          "C25",
+          "S19",
+          "C21",
+          "O15",
+          "O17",
+          "C22",
+          "O16",
+          "O18"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "O1_1",
+          "N2_1",
+          "C5_1",
+          "C6_1",
+          "S1_1",
+          "C7_1",
+          "O2_1",
+          "O3_1",
+          "C8_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "GGC",
+      "group_copies": 2
+    },
+    "GGC_2": {
+      "smiles": "[NH3+][C@@H](CCC(=O)N[C@@H](CS)C(=O)[O-])C(=O)[O-]",
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "N",
+        "C",
+        "C",
+        "S",
+        "C",
+        "O",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "O1",
+          "N2",
+          "C5",
+          "C6",
+          "S1",
+          "C7",
+          "O2",
+          "O3",
+          "C8",
+          "O4",
+          "O5"
+        ],
+        [
+          "N29",
+          "C28",
+          "C26",
+          "C24",
+          "C20",
+          "O14",
+          "N23",
+          "C27",
+          "C25",
+          "S19",
+          "C21",
+          "O15",
+          "O17",
+          "C22",
+          "O16",
+          "O18"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "O1_1",
+          "N2_1",
+          "C5_1",
+          "C6_1",
+          "S1_1",
+          "C7_1",
+          "O2_1",
+          "O3_1",
+          "C8_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "GGC",
+      "group_copies": 2
+    },
+    "GLY_1": {
+      "smiles": "[NH3+]CC(=O)[O-]",
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "O1",
+          "O2"
+        ],
+        [
+          "N10",
+          "C9",
+          "C8",
+          "O6",
+          "O7"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "O2_1"
+        ]
+      ],
+      "copy_group": "GLY",
+      "group_copies": 2
+    },
+    "GLY_2": {
+      "smiles": "[NH3+]CC(=O)[O-]",
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "O1",
+          "O2"
+        ],
+        [
+          "N10",
+          "C9",
+          "C8",
+          "O6",
+          "O7"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "O2_1"
+        ]
+      ],
+      "copy_group": "GLY",
+      "group_copies": 2
+    }
+  },
+  "metals": {
+    "MG": 4
+  },
+  "mechanism_type": "glutathione_synthesis",
+  "general_policy_id": "GENERAL_GEOMETRY_V1",
+  "mechanism_criteria": {
+    "criteria_id": "M0199_1GSA_DIMER_ORGANIZATION_V3_20261021",
+    "retrospective": true,
+    "mcsa": {
+      "entry": 199,
+      "proposal": 1,
+      "web_step": 1,
+      "legacy_step_label": 2,
+      "correction": "Web alpha-phosphate text conflicts with ADP release and gamma-phosphoryl transfer literature. Evaluate terminal Pgamma. Legacy step label is not used as the executable event."
+    },
+    "target_state": "UNLINKED_ATP_GAMMA_GLU_CYS_GLYCINE_REACTANTS_TWO_DECLARED_SITES",
+    "assembly_scope": "Two complete declared sites in a homodimer condition. PISA A2 is listed alongside author-assigned A4; this is not a claim that tetrameric assembly is dispensable.",
+    "main_axis": {
+      "distance_max_A": 3.5,
+      "angle_min_deg": 150.0,
+      "distance_min_A": null,
+      "inclusive": true
+    },
+    "metal_core": {
+      "required_edges": [
+        "Mg1_Glu",
+        "Mg1_Asp",
+        "Mg2_Glu",
+        "Mg2_Asn"
+      ],
+      "same_physical_Glu_oxygen_bridges_both_Mg": true,
+      "long_Glu_contact_is_gate": false,
+      "Mg_Mg_is_gate": false,
+      "maximum_positive_deviation_A": 0.35,
+      "maximum_Mg_O_A": 2.8,
+      "two_sided_reference_deviation_is_diagnostic_only": true
+    },
+    "metal_atp": {
+      "each_Mg_any_of_groups": [
+        "alpha",
+        "beta",
+        "gamma"
+      ],
+      "analog_topology_diagnostic": {
+        "Mg1_required_groups": [
+          "alpha",
+          "beta"
+        ],
+        "Mg2_any_of_groups": [
+          "beta",
+          "gamma"
+        ],
+        "affects_primary_pass": false
+      },
+      "same_ATP_copy_as_reaction_axis": true,
+      "only_nonbridging_phosphate_oxygens": true,
+      "basis": "Each metal must contact a nonbridging phosphate oxygen of the same ATP. This is a minimal operational metal-nucleotide coupling test, not a calibrated complete reactant topology. Exact ADP-state alpha/beta patterns are diagnostic only; SO4 is not an exact ATP gamma atom reference.",
+      "maximum_Mg_O_A": 2.8
+    },
+    "revision_note": "Unified0.7.0 removes the general metal-distance lower gate by user request. Mechanism geometry and cutoffs are unchanged.",
+    "aggregate": "Both declared sites satisfy reaction axis, two-Mg organization and same-ATP proximity; general is reported independently.",
+    "site_assignment": {
+      "ligand_margin_A": 1.0,
+      "Mg_role_cost_tie_A2": 0.1,
+      "basis": "Protein-fitted analog anchors, not reaction distances or pass scores. No forced ligand/site occupancy."
+    },
+    "numerical_evidence": "AUTHOR_OPERATIONAL_WINDOWS_GUIDED_BY_MECHANISM_AND_ANALOG_STRUCTURE",
+    "matched_reactant_calibration": false,
+    "full_six_coordination_or_water_required": false,
+    "glycine_attack_evaluated": false,
+    "energy_or_activity_evaluated": false,
+    "sensitivity": {
+      "axis_max_A": [
+        3.5,
+        4.0
+      ],
+      "axis_min_deg": [
+        150,
+        140
+      ],
+      "Mg_O_max_A": [
+        2.6,
+        2.8,
+        3.0
+      ],
+      "donor_delta_A": [
+        0.25,
+        0.35,
+        0.6
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.ebi.ac.uk/thornton-srv/m-csa/entry/199/",
+        "supports": "Reacting components, metal donor residues and event order; text P label needs correction."
+      },
+      {
+        "url": "https://doi.org/10.1021/bi9605245",
+        "supports": "Same enzyme ADP/GSH/SO4/Mg architecture, not complete forward-reactant state."
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3065366/",
+        "supports": "Gamma-phosphoryl transfer and acyl-phosphate in human GS; not bacterial GS geometry calibration."
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3902929/",
+        "supports": "Another enzyme D38N Michaelis structure: O-P 3.0 A / 168 degrees. Not GS-specific cutoff."
+      },
+      {
+        "url": "https://doi.org/10.1371/journal.pone.0022767",
+        "supports": "Another phosphatase structure: O-P 2.6 A / 170 degrees; cross-system direction anchor only."
+      }
+    ],
+    "stage_ownership": "Required metal organization remains mechanism. Metal lower-distance diagnostics cannot fail general or joint by themselves.",
+    "source_stage_ownership_before_unification": {
+      "revision_note": "V3 follows the explicit user request to classify metal-O overcompression in general only. The 1.7 A lower bound is unchanged. Mechanism is now organization/contact assessment, not two-sided reference-distance recovery. Old v0.6.0 release preserved.",
+      "stage_ownership": "Mechanism: required site/partners and proximity upper limits. General: metal-O compression below 1.7 A. Signed reference deviations and legacy symmetric recovery remain diagnostics; compression is not a second mechanism veto.",
+      "general_metal_policy_id": "M0199_MG_O_SHORT_CONTACT_GENERAL_V1"
+    }
+  },
+  "site_reference": {
+    "source": "1GSA A, ADP/GSH/SO4 analog-state reference; not reactant pose ground truth",
+    "sha256": "d3526480abef6fe6257498644411f6a4dc992997e9daf6550778cc43b68bee37",
+    "CA": [
+      {
+        "sequence_position": 1,
+        "xyz": [
+          31.543,
+          -6.042,
+          49.551
+        ]
+      },
+      {
+        "sequence_position": 2,
+        "xyz": [
+          29.212,
+          -3.412,
+          51.038
+        ]
+      },
+      {
+        "sequence_position": 3,
+        "xyz": [
+          29.767,
+          0.008,
+          49.505
+        ]
+      },
+      {
+        "sequence_position": 4,
+        "xyz": [
+          29.053,
+          2.616,
+          52.146
+        ]
+      },
+      {
+        "sequence_position": 5,
+        "xyz": [
+          28.932,
+          6.31,
+          51.321
+        ]
+      },
+      {
+        "sequence_position": 6,
+        "xyz": [
+          29.198,
+          9.178,
+          53.807
+        ]
+      },
+      {
+        "sequence_position": 7,
+        "xyz": [
+          28.035,
+          12.751,
+          53.381
+        ]
+      },
+      {
+        "sequence_position": 8,
+        "xyz": [
+          30.003,
+          14.845,
+          55.893
+        ]
+      },
+      {
+        "sequence_position": 9,
+        "xyz": [
+          31.684,
+          18.188,
+          56.553
+        ]
+      },
+      {
+        "sequence_position": 10,
+        "xyz": [
+          35.261,
+          18.392,
+          55.18
+        ]
+      },
+      {
+        "sequence_position": 11,
+        "xyz": [
+          37.364,
+          15.457,
+          56.39
+        ]
+      },
+      {
+        "sequence_position": 12,
+        "xyz": [
+          40.475,
+          17.53,
+          56.035
+        ]
+      },
+      {
+        "sequence_position": 13,
+        "xyz": [
+          39.243,
+          19.643,
+          58.95
+        ]
+      },
+      {
+        "sequence_position": 14,
+        "xyz": [
+          38.194,
+          16.998,
+          61.505
+        ]
+      },
+      {
+        "sequence_position": 15,
+        "xyz": [
+          39.967,
+          16.061,
+          64.698
+        ]
+      },
+      {
+        "sequence_position": 16,
+        "xyz": [
+          40.369,
+          12.279,
+          64.503
+        ]
+      },
+      {
+        "sequence_position": 17,
+        "xyz": [
+          40.758,
+          12.065,
+          68.275
+        ]
+      },
+      {
+        "sequence_position": 18,
+        "xyz": [
+          37.168,
+          13.154,
+          68.888
+        ]
+      },
+      {
+        "sequence_position": 19,
+        "xyz": [
+          35.339,
+          12.671,
+          65.654
+        ]
+      },
+      {
+        "sequence_position": 20,
+        "xyz": [
+          32.697,
+          9.97,
+          65.536
+        ]
+      },
+      {
+        "sequence_position": 21,
+        "xyz": [
+          32.161,
+          9.876,
+          61.701
+        ]
+      },
+      {
+        "sequence_position": 22,
+        "xyz": [
+          35.849,
+          8.966,
+          61.49
+        ]
+      },
+      {
+        "sequence_position": 23,
+        "xyz": [
+          35.628,
+          6.196,
+          64.123
+        ]
+      },
+      {
+        "sequence_position": 24,
+        "xyz": [
+          32.7,
+          4.745,
+          62.088
+        ]
+      },
+      {
+        "sequence_position": 25,
+        "xyz": [
+          34.76,
+          4.794,
+          58.81
+        ]
+      },
+      {
+        "sequence_position": 26,
+        "xyz": [
+          37.719,
+          2.931,
+          60.553
+        ]
+      },
+      {
+        "sequence_position": 27,
+        "xyz": [
+          35.279,
+          0.203,
+          61.557
+        ]
+      },
+      {
+        "sequence_position": 28,
+        "xyz": [
+          33.647,
+          -0.03,
+          58.111
+        ]
+      },
+      {
+        "sequence_position": 29,
+        "xyz": [
+          37.151,
+          -0.346,
+          56.591
+        ]
+      },
+      {
+        "sequence_position": 30,
+        "xyz": [
+          38.179,
+          -2.921,
+          59.199
+        ]
+      },
+      {
+        "sequence_position": 31,
+        "xyz": [
+          35.145,
+          -4.942,
+          57.987
+        ]
+      },
+      {
+        "sequence_position": 32,
+        "xyz": [
+          36.112,
+          -4.633,
+          54.275
+        ]
+      },
+      {
+        "sequence_position": 33,
+        "xyz": [
+          33.531,
+          -2.128,
+          52.983
+        ]
+      },
+      {
+        "sequence_position": 34,
+        "xyz": [
+          34.343,
+          0.107,
+          50.062
+        ]
+      },
+      {
+        "sequence_position": 35,
+        "xyz": [
+          34.077,
+          3.725,
+          51.323
+        ]
+      },
+      {
+        "sequence_position": 36,
+        "xyz": [
+          32.753,
+          6.559,
+          49.123
+        ]
+      },
+      {
+        "sequence_position": 37,
+        "xyz": [
+          33.263,
+          10.075,
+          50.476
+        ]
+      },
+      {
+        "sequence_position": 38,
+        "xyz": [
+          30.891,
+          12.927,
+          49.671
+        ]
+      },
+      {
+        "sequence_position": 39,
+        "xyz": [
+          30.378,
+          16.535,
+          50.799
+        ]
+      },
+      {
+        "sequence_position": 40,
+        "xyz": [
+          27.02,
+          18.398,
+          50.266
+        ]
+      },
+      {
+        "sequence_position": 41,
+        "xyz": [
+          28.168,
+          19.987,
+          46.969
+        ]
+      },
+      {
+        "sequence_position": 42,
+        "xyz": [
+          28.862,
+          16.571,
+          45.348
+        ]
+      },
+      {
+        "sequence_position": 43,
+        "xyz": [
+          25.25,
+          15.432,
+          45.394
+        ]
+      },
+      {
+        "sequence_position": 44,
+        "xyz": [
+          22.828,
+          16.401,
+          42.698
+        ]
+      },
+      {
+        "sequence_position": 45,
+        "xyz": [
+          19.605,
+          15.485,
+          40.975
+        ]
+      },
+      {
+        "sequence_position": 46,
+        "xyz": [
+          19.265,
+          15.095,
+          37.192
+        ]
+      },
+      {
+        "sequence_position": 47,
+        "xyz": [
+          15.717,
+          14.298,
+          36.193
+        ]
+      },
+      {
+        "sequence_position": 48,
+        "xyz": [
+          14.924,
+          12.937,
+          39.618
+        ]
+      },
+      {
+        "sequence_position": 49,
+        "xyz": [
+          17.886,
+          10.536,
+          39.672
+        ]
+      },
+      {
+        "sequence_position": 50,
+        "xyz": [
+          20.094,
+          11.19,
+          42.705
+        ]
+      },
+      {
+        "sequence_position": 51,
+        "xyz": [
+          23.734,
+          11.012,
+          41.718
+        ]
+      },
+      {
+        "sequence_position": 52,
+        "xyz": [
+          27.067,
+          12.161,
+          43.212
+        ]
+      },
+      {
+        "sequence_position": 53,
+        "xyz": [
+          30.697,
+          12.664,
+          42.487
+        ]
+      },
+      {
+        "sequence_position": 54,
+        "xyz": [
+          32.33,
+          10.423,
+          45.086
+        ]
+      },
+      {
+        "sequence_position": 55,
+        "xyz": [
+          35.903,
+          9.771,
+          45.919
+        ]
+      },
+      {
+        "sequence_position": 56,
+        "xyz": [
+          36.867,
+          6.242,
+          47.072
+        ]
+      },
+      {
+        "sequence_position": 57,
+        "xyz": [
+          38.305,
+          6.704,
+          50.539
+        ]
+      },
+      {
+        "sequence_position": 58,
+        "xyz": [
+          40.969,
+          5.025,
+          52.551
+        ]
+      },
+      {
+        "sequence_position": 59,
+        "xyz": [
+          41.244,
+          6.157,
+          56.288
+        ]
+      },
+      {
+        "sequence_position": 60,
+        "xyz": [
+          43.901,
+          5.463,
+          58.914
+        ]
+      },
+      {
+        "sequence_position": 61,
+        "xyz": [
+          44.587,
+          6.569,
+          62.449
+        ]
+      },
+      {
+        "sequence_position": 62,
+        "xyz": [
+          47.542,
+          8.796,
+          61.512
+        ]
+      },
+      {
+        "sequence_position": 63,
+        "xyz": [
+          47.649,
+          12.411,
+          62.64
+        ]
+      },
+      {
+        "sequence_position": 64,
+        "xyz": [
+          49.831,
+          13.558,
+          59.697
+        ]
+      },
+      {
+        "sequence_position": 65,
+        "xyz": [
+          47.622,
+          11.9,
+          57.098
+        ]
+      },
+      {
+        "sequence_position": 66,
+        "xyz": [
+          44.338,
+          10.309,
+          58.084
+        ]
+      },
+      {
+        "sequence_position": 67,
+        "xyz": [
+          42.617,
+          9.912,
+          54.697
+        ]
+      },
+      {
+        "sequence_position": 68,
+        "xyz": [
+          43.479,
+          9.431,
+          51.064
+        ]
+      },
+      {
+        "sequence_position": 69,
+        "xyz": [
+          41.274,
+          9.299,
+          48.028
+        ]
+      },
+      {
+        "sequence_position": 70,
+        "xyz": [
+          42.105,
+          6.367,
+          45.78
+        ]
+      },
+      {
+        "sequence_position": 71,
+        "xyz": [
+          39.948,
+          7.39,
+          42.826
+        ]
+      },
+      {
+        "sequence_position": 72,
+        "xyz": [
+          36.816,
+          9.342,
+          42.002
+        ]
+      },
+      {
+        "sequence_position": 73,
+        "xyz": [
+          33.737,
+          8.741,
+          39.938
+        ]
+      },
+      {
+        "sequence_position": 74,
+        "xyz": [
+          30.277,
+          10.017,
+          39.243
+        ]
+      },
+      {
+        "sequence_position": 75,
+        "xyz": [
+          27.709,
+          7.359,
+          40.098
+        ]
+      },
+      {
+        "sequence_position": 76,
+        "xyz": [
+          23.993,
+          7.101,
+          40.911
+        ]
+      },
+      {
+        "sequence_position": 77,
+        "xyz": [
+          23.653,
+          6.957,
+          44.693
+        ]
+      },
+      {
+        "sequence_position": 78,
+        "xyz": [
+          21.425,
+          3.852,
+          44.345
+        ]
+      },
+      {
+        "sequence_position": 79,
+        "xyz": [
+          24.717,
+          2.097,
+          43.558
+        ]
+      },
+      {
+        "sequence_position": 80,
+        "xyz": [
+          25.723,
+          2.32,
+          47.244
+        ]
+      },
+      {
+        "sequence_position": 81,
+        "xyz": [
+          24.229,
+          0.014,
+          49.828
+        ]
+      },
+      {
+        "sequence_position": 82,
+        "xyz": [
+          24.308,
+          2.405,
+          52.787
+        ]
+      },
+      {
+        "sequence_position": 83,
+        "xyz": [
+          24.841,
+          6.225,
+          52.966
+        ]
+      },
+      {
+        "sequence_position": 84,
+        "xyz": [
+          25.64,
+          7.697,
+          56.412
+        ]
+      },
+      {
+        "sequence_position": 85,
+        "xyz": [
+          24.253,
+          11.237,
+          56.577
+        ]
+      },
+      {
+        "sequence_position": 86,
+        "xyz": [
+          26.711,
+          12.808,
+          59.011
+        ]
+      },
+      {
+        "sequence_position": 87,
+        "xyz": [
+          26.436,
+          16.551,
+          58.039
+        ]
+      },
+      {
+        "sequence_position": 88,
+        "xyz": [
+          26.556,
+          18.79,
+          61.108
+        ]
+      },
+      {
+        "sequence_position": 89,
+        "xyz": [
+          23.791,
+          21.183,
+          62.111
+        ]
+      },
+      {
+        "sequence_position": 90,
+        "xyz": [
+          22.429,
+          23.839,
+          61.629
+        ]
+      },
+      {
+        "sequence_position": 91,
+        "xyz": [
+          19.183,
+          22.494,
+          60.498
+        ]
+      },
+      {
+        "sequence_position": 92,
+        "xyz": [
+          18.617,
+          24.801,
+          57.605
+        ]
+      },
+      {
+        "sequence_position": 93,
+        "xyz": [
+          16.845,
+          24.485,
+          54.256
+        ]
+      },
+      {
+        "sequence_position": 94,
+        "xyz": [
+          20.068,
+          23.249,
+          52.544
+        ]
+      },
+      {
+        "sequence_position": 95,
+        "xyz": [
+          20.048,
+          20.327,
+          54.954
+        ]
+      },
+      {
+        "sequence_position": 96,
+        "xyz": [
+          16.375,
+          19.687,
+          54.036
+        ]
+      },
+      {
+        "sequence_position": 97,
+        "xyz": [
+          17.105,
+          19.849,
+          50.281
+        ]
+      },
+      {
+        "sequence_position": 98,
+        "xyz": [
+          19.856,
+          17.267,
+          50.726
+        ]
+      },
+      {
+        "sequence_position": 99,
+        "xyz": [
+          17.376,
+          14.871,
+          52.395
+        ]
+      },
+      {
+        "sequence_position": 100,
+        "xyz": [
+          15.159,
+          14.863,
+          49.235
+        ]
+      },
+      {
+        "sequence_position": 101,
+        "xyz": [
+          18.218,
+          13.911,
+          47.182
+        ]
+      },
+      {
+        "sequence_position": 102,
+        "xyz": [
+          19.052,
+          11.17,
+          49.662
+        ]
+      },
+      {
+        "sequence_position": 103,
+        "xyz": [
+          15.396,
+          10.116,
+          49.529
+        ]
+      },
+      {
+        "sequence_position": 104,
+        "xyz": [
+          15.486,
+          9.468,
+          45.722
+        ]
+      },
+      {
+        "sequence_position": 105,
+        "xyz": [
+          18.384,
+          7.017,
+          46.298
+        ]
+      },
+      {
+        "sequence_position": 106,
+        "xyz": [
+          16.467,
+          5.443,
+          49.213
+        ]
+      },
+      {
+        "sequence_position": 107,
+        "xyz": [
+          13.539,
+          4.684,
+          46.886
+        ]
+      },
+      {
+        "sequence_position": 108,
+        "xyz": [
+          15.942,
+          2.826,
+          44.626
+        ]
+      },
+      {
+        "sequence_position": 109,
+        "xyz": [
+          16.835,
+          0.698,
+          47.722
+        ]
+      },
+      {
+        "sequence_position": 110,
+        "xyz": [
+          19.874,
+          2.377,
+          49.398
+        ]
+      },
+      {
+        "sequence_position": 111,
+        "xyz": [
+          19.769,
+          2.352,
+          53.249
+        ]
+      },
+      {
+        "sequence_position": 112,
+        "xyz": [
+          20.079,
+          5.911,
+          54.643
+        ]
+      },
+      {
+        "sequence_position": 113,
+        "xyz": [
+          21.298,
+          6.317,
+          58.262
+        ]
+      },
+      {
+        "sequence_position": 114,
+        "xyz": [
+          19.357,
+          8.243,
+          59.396
+        ]
+      },
+      {
+        "sequence_position": 115,
+        "xyz": [
+          16.15,
+          8.08,
+          57.338
+        ]
+      },
+      {
+        "sequence_position": 116,
+        "xyz": [
+          15.586,
+          11.334,
+          55.311
+        ]
+      },
+      {
+        "sequence_position": 117,
+        "xyz": [
+          11.911,
+          11.613,
+          56.094
+        ]
+      },
+      {
+        "sequence_position": 118,
+        "xyz": [
+          12.564,
+          11.219,
+          59.836
+        ]
+      },
+      {
+        "sequence_position": 119,
+        "xyz": [
+          15.389,
+          13.886,
+          59.669
+        ]
+      },
+      {
+        "sequence_position": 120,
+        "xyz": [
+          12.794,
+          16.378,
+          58.48
+        ]
+      },
+      {
+        "sequence_position": 121,
+        "xyz": [
+          10.124,
+          15.168,
+          60.955
+        ]
+      },
+      {
+        "sequence_position": 122,
+        "xyz": [
+          12.377,
+          14.967,
+          64.046
+        ]
+      },
+      {
+        "sequence_position": 123,
+        "xyz": [
+          13.971,
+          18.312,
+          64.759
+        ]
+      },
+      {
+        "sequence_position": 124,
+        "xyz": [
+          16.477,
+          17.887,
+          67.661
+        ]
+      },
+      {
+        "sequence_position": 125,
+        "xyz": [
+          14.665,
+          20.3,
+          69.925
+        ]
+      },
+      {
+        "sequence_position": 126,
+        "xyz": [
+          10.995,
+          19.986,
+          68.838
+        ]
+      },
+      {
+        "sequence_position": 127,
+        "xyz": [
+          10.786,
+          16.206,
+          68.655
+        ]
+      },
+      {
+        "sequence_position": 128,
+        "xyz": [
+          10.788,
+          16.391,
+          72.551
+        ]
+      },
+      {
+        "sequence_position": 129,
+        "xyz": [
+          7.159,
+          17.555,
+          72.126
+        ]
+      },
+      {
+        "sequence_position": 130,
+        "xyz": [
+          6.3,
+          13.916,
+          71.355
+        ]
+      },
+      {
+        "sequence_position": 131,
+        "xyz": [
+          7.639,
+          12.825,
+          74.844
+        ]
+      },
+      {
+        "sequence_position": 132,
+        "xyz": [
+          6.539,
+          15.72,
+          77.126
+        ]
+      },
+      {
+        "sequence_position": 133,
+        "xyz": [
+          6.198,
+          13.3,
+          80.017
+        ]
+      },
+      {
+        "sequence_position": 134,
+        "xyz": [
+          9.993,
+          12.883,
+          80.022
+        ]
+      },
+      {
+        "sequence_position": 135,
+        "xyz": [
+          11.095,
+          16.502,
+          79.273
+        ]
+      },
+      {
+        "sequence_position": 136,
+        "xyz": [
+          11.169,
+          19.686,
+          81.467
+        ]
+      },
+      {
+        "sequence_position": 137,
+        "xyz": [
+          8.365,
+          22.272,
+          81.151
+        ]
+      },
+      {
+        "sequence_position": 138,
+        "xyz": [
+          8.838,
+          23.483,
+          77.555
+        ]
+      },
+      {
+        "sequence_position": 139,
+        "xyz": [
+          7.322,
+          26.452,
+          75.764
+        ]
+      },
+      {
+        "sequence_position": 140,
+        "xyz": [
+          8.013,
+          27.221,
+          72.095
+        ]
+      },
+      {
+        "sequence_position": 141,
+        "xyz": [
+          6.815,
+          30.755,
+          71.27
+        ]
+      },
+      {
+        "sequence_position": 142,
+        "xyz": [
+          7.56,
+          34.041,
+          69.422
+        ]
+      },
+      {
+        "sequence_position": 143,
+        "xyz": [
+          5.998,
+          36.247,
+          72.114
+        ]
+      },
+      {
+        "sequence_position": 144,
+        "xyz": [
+          8.028,
+          37.908,
+          74.769
+        ]
+      },
+      {
+        "sequence_position": 145,
+        "xyz": [
+          4.844,
+          38.159,
+          76.875
+        ]
+      },
+      {
+        "sequence_position": 146,
+        "xyz": [
+          4.628,
+          34.378,
+          77.112
+        ]
+      },
+      {
+        "sequence_position": 147,
+        "xyz": [
+          8.342,
+          34.118,
+          77.826
+        ]
+      },
+      {
+        "sequence_position": 148,
+        "xyz": [
+          8.015,
+          36.646,
+          80.706
+        ]
+      },
+      {
+        "sequence_position": 149,
+        "xyz": [
+          5.065,
+          34.827,
+          82.156
+        ]
+      },
+      {
+        "sequence_position": 150,
+        "xyz": [
+          6.939,
+          31.406,
+          81.959
+        ]
+      },
+      {
+        "sequence_position": 151,
+        "xyz": [
+          9.855,
+          33.057,
+          83.733
+        ]
+      },
+      {
+        "sequence_position": 152,
+        "xyz": [
+          7.584,
+          34.435,
+          86.503
+        ]
+      },
+      {
+        "sequence_position": 153,
+        "xyz": [
+          6.065,
+          30.971,
+          87.033
+        ]
+      },
+      {
+        "sequence_position": 154,
+        "xyz": [
+          9.436,
+          29.108,
+          87.037
+        ]
+      },
+      {
+        "sequence_position": 155,
+        "xyz": [
+          11.989,
+          31.699,
+          88.37
+        ]
+      },
+      {
+        "sequence_position": 156,
+        "xyz": [
+          14.93,
+          30.066,
+          86.661
+        ]
+      },
+      {
+        "sequence_position": 157,
+        "xyz": [
+          14.656,
+          29.313,
+          82.935
+        ]
+      },
+      {
+        "sequence_position": 158,
+        "xyz": [
+          16.849,
+          28.233,
+          79.976
+        ]
+      },
+      {
+        "sequence_position": 159,
+        "xyz": [
+          16.084,
+          29.969,
+          76.642
+        ]
+      },
+      {
+        "sequence_position": 160,
+        "xyz": [
+          17.507,
+          28.496,
+          73.42
+        ]
+      },
+      {
+        "sequence_position": 161,
+        "xyz": [
+          17.187,
+          28.541,
+          69.571
+        ]
+      },
+      {
+        "sequence_position": 162,
+        "xyz": [
+          15.685,
+          25.578,
+          67.664
+        ]
+      },
+      {
+        "sequence_position": 163,
+        "xyz": [
+          18.366,
+          25.065,
+          65.027
+        ]
+      },
+      {
+        "sequence_position": 164,
+        "xyz": [
+          21.827,
+          24.857,
+          66.631
+        ]
+      },
+      {
+        "sequence_position": 165,
+        "xyz": [
+          23.677,
+          22.324,
+          68.682
+        ]
+      },
+      {
+        "sequence_position": 166,
+        "xyz": [
+          26.808,
+          22.507,
+          70.907
+        ]
+      },
+      {
+        "sequence_position": 167,
+        "xyz": [
+          25.503,
+          25.209,
+          73.307
+        ]
+      },
+      {
+        "sequence_position": 168,
+        "xyz": [
+          24.635,
+          27.698,
+          70.56
+        ]
+      },
+      {
+        "sequence_position": 169,
+        "xyz": [
+          22.823,
+          30.658,
+          72.119
+        ]
+      },
+      {
+        "sequence_position": 170,
+        "xyz": [
+          21.822,
+          29.115,
+          75.536
+        ]
+      },
+      {
+        "sequence_position": 171,
+        "xyz": [
+          20.796,
+          31.822,
+          78.032
+        ]
+      },
+      {
+        "sequence_position": 172,
+        "xyz": [
+          19.829,
+          31.143,
+          81.64
+        ]
+      },
+      {
+        "sequence_position": 173,
+        "xyz": [
+          17.451,
+          33.759,
+          83.076
+        ]
+      },
+      {
+        "sequence_position": 174,
+        "xyz": [
+          17.547,
+          33.353,
+          86.811
+        ]
+      },
+      {
+        "sequence_position": 175,
+        "xyz": [
+          15.715,
+          35.477,
+          89.385
+        ]
+      },
+      {
+        "sequence_position": 176,
+        "xyz": [
+          16.523,
+          39.213,
+          89.107
+        ]
+      },
+      {
+        "sequence_position": 177,
+        "xyz": [
+          18.294,
+          38.955,
+          85.718
+        ]
+      },
+      {
+        "sequence_position": 178,
+        "xyz": [
+          18.042,
+          42.484,
+          84.111
+        ]
+      },
+      {
+        "sequence_position": 179,
+        "xyz": [
+          17.953,
+          41.055,
+          80.571
+        ]
+      },
+      {
+        "sequence_position": 180,
+        "xyz": [
+          14.728,
+          39.045,
+          79.849
+        ]
+      },
+      {
+        "sequence_position": 181,
+        "xyz": [
+          13.566,
+          41.675,
+          77.366
+        ]
+      },
+      {
+        "sequence_position": 182,
+        "xyz": [
+          16.707,
+          41.964,
+          75.28
+        ]
+      },
+      {
+        "sequence_position": 183,
+        "xyz": [
+          17.278,
+          38.122,
+          75.402
+        ]
+      },
+      {
+        "sequence_position": 184,
+        "xyz": [
+          13.727,
+          37.52,
+          74.062
+        ]
+      },
+      {
+        "sequence_position": 185,
+        "xyz": [
+          14.159,
+          40.267,
+          71.397
+        ]
+      },
+      {
+        "sequence_position": 186,
+        "xyz": [
+          17.478,
+          38.618,
+          70.469
+        ]
+      },
+      {
+        "sequence_position": 187,
+        "xyz": [
+          16.217,
+          34.97,
+          70.259
+        ]
+      },
+      {
+        "sequence_position": 188,
+        "xyz": [
+          12.857,
+          35.675,
+          68.575
+        ]
+      },
+      {
+        "sequence_position": 189,
+        "xyz": [
+          14.363,
+          38.467,
+          66.392
+        ]
+      },
+      {
+        "sequence_position": 190,
+        "xyz": [
+          11.734,
+          40.874,
+          67.657
+        ]
+      },
+      {
+        "sequence_position": 191,
+        "xyz": [
+          9.012,
+          38.308,
+          67.58
+        ]
+      },
+      {
+        "sequence_position": 192,
+        "xyz": [
+          9.525,
+          36.924,
+          64.089
+        ]
+      },
+      {
+        "sequence_position": 193,
+        "xyz": [
+          11.268,
+          33.661,
+          65.074
+        ]
+      },
+      {
+        "sequence_position": 194,
+        "xyz": [
+          10.22,
+          30.922,
+          67.519
+        ]
+      },
+      {
+        "sequence_position": 195,
+        "xyz": [
+          12.521,
+          30.084,
+          70.44
+        ]
+      },
+      {
+        "sequence_position": 196,
+        "xyz": [
+          12.285,
+          27.458,
+          73.19
+        ]
+      },
+      {
+        "sequence_position": 197,
+        "xyz": [
+          12.143,
+          28.143,
+          76.961
+        ]
+      },
+      {
+        "sequence_position": 198,
+        "xyz": [
+          12.49,
+          25.328,
+          79.511
+        ]
+      },
+      {
+        "sequence_position": 199,
+        "xyz": [
+          12.706,
+          25.413,
+          83.289
+        ]
+      },
+      {
+        "sequence_position": 200,
+        "xyz": [
+          16.314,
+          25.147,
+          84.47
+        ]
+      },
+      {
+        "sequence_position": 201,
+        "xyz": [
+          17.385,
+          21.747,
+          85.758
+        ]
+      },
+      {
+        "sequence_position": 202,
+        "xyz": [
+          19.859,
+          22.047,
+          88.732
+        ]
+      },
+      {
+        "sequence_position": 203,
+        "xyz": [
+          21.085,
+          18.51,
+          88.036
+        ]
+      },
+      {
+        "sequence_position": 204,
+        "xyz": [
+          23.196,
+          19.876,
+          85.145
+        ]
+      },
+      {
+        "sequence_position": 205,
+        "xyz": [
+          25.892,
+          20.166,
+          87.848
+        ]
+      },
+      {
+        "sequence_position": 206,
+        "xyz": [
+          26.17,
+          16.364,
+          87.734
+        ]
+      },
+      {
+        "sequence_position": 207,
+        "xyz": [
+          26.451,
+          16.478,
+          83.909
+        ]
+      },
+      {
+        "sequence_position": 208,
+        "xyz": [
+          24.439,
+          16.58,
+          80.685
+        ]
+      },
+      {
+        "sequence_position": 209,
+        "xyz": [
+          24.57,
+          12.85,
+          79.799
+        ]
+      },
+      {
+        "sequence_position": 210,
+        "xyz": [
+          24.865,
+          11.874,
+          76.141
+        ]
+      },
+      {
+        "sequence_position": 211,
+        "xyz": [
+          23.094,
+          8.506,
+          75.844
+        ]
+      },
+      {
+        "sequence_position": 212,
+        "xyz": [
+          23.62,
+          6.73,
+          72.512
+        ]
+      },
+      {
+        "sequence_position": 213,
+        "xyz": [
+          20.885,
+          4.518,
+          70.977
+        ]
+      },
+      {
+        "sequence_position": 214,
+        "xyz": [
+          21.719,
+          2.079,
+          68.186
+        ]
+      },
+      {
+        "sequence_position": 215,
+        "xyz": [
+          18.497,
+          0.952,
+          66.416
+        ]
+      },
+      {
+        "sequence_position": 216,
+        "xyz": [
+          16.263,
+          1.392,
+          69.411
+        ]
+      },
+      {
+        "sequence_position": 217,
+        "xyz": [
+          18.823,
+          -0.296,
+          71.763
+        ]
+      },
+      {
+        "sequence_position": 218,
+        "xyz": [
+          20.53,
+          1.947,
+          74.358
+        ]
+      },
+      {
+        "sequence_position": 219,
+        "xyz": [
+          24.336,
+          1.559,
+          74.508
+        ]
+      },
+      {
+        "sequence_position": 220,
+        "xyz": [
+          25.006,
+          0.764,
+          78.288
+        ]
+      },
+      {
+        "sequence_position": 221,
+        "xyz": [
+          27.548,
+          3.509,
+          79.125
+        ]
+      },
+      {
+        "sequence_position": 222,
+        "xyz": [
+          27.074,
+          7.209,
+          78.55
+        ]
+      },
+      {
+        "sequence_position": 223,
+        "xyz": [
+          29.253,
+          10.334,
+          78.743
+        ]
+      },
+      {
+        "sequence_position": 224,
+        "xyz": [
+          28.224,
+          12.989,
+          81.313
+        ]
+      },
+      {
+        "sequence_position": 225,
+        "xyz": [
+          29.246,
+          16.457,
+          80.186
+        ]
+      },
+      {
+        "sequence_position": 226,
+        "xyz": [
+          30.067,
+          18.778,
+          83.086
+        ]
+      },
+      {
+        "sequence_position": 227,
+        "xyz": [
+          30.022,
+          22.599,
+          82.382
+        ]
+      },
+      {
+        "sequence_position": 228,
+        "xyz": [
+          33.375,
+          24.199,
+          83.188
+        ]
+      },
+      {
+        "sequence_position": 229,
+        "xyz": [
+          34.257,
+          27.295,
+          85.122
+        ]
+      },
+      {
+        "sequence_position": 230,
+        "xyz": [
+          32.045,
+          30.172,
+          84.116
+        ]
+      },
+      {
+        "sequence_position": 231,
+        "xyz": [
+          29.85,
+          28.148,
+          81.777
+        ]
+      },
+      {
+        "sequence_position": 232,
+        "xyz": [
+          26.217,
+          27.393,
+          81.671
+        ]
+      },
+      {
+        "sequence_position": 233,
+        "xyz": [
+          26.85,
+          24.936,
+          78.809
+        ]
+      },
+      {
+        "sequence_position": 234,
+        "xyz": [
+          27.711,
+          21.271,
+          79.497
+        ]
+      },
+      {
+        "sequence_position": 235,
+        "xyz": [
+          28.487,
+          20.667,
+          75.772
+        ]
+      },
+      {
+        "sequence_position": 236,
+        "xyz": [
+          32.018,
+          19.472,
+          74.929
+        ]
+      },
+      {
+        "sequence_position": 237,
+        "xyz": [
+          31.712,
+          22.075,
+          72.159
+        ]
+      },
+      {
+        "sequence_position": 238,
+        "xyz": [
+          31.406,
+          24.846,
+          74.767
+        ]
+      },
+      {
+        "sequence_position": 239,
+        "xyz": [
+          34.307,
+          23.442,
+          76.845
+        ]
+      },
+      {
+        "sequence_position": 240,
+        "xyz": [
+          32.343,
+          20.817,
+          78.88
+        ]
+      },
+      {
+        "sequence_position": 241,
+        "xyz": [
+          34.304,
+          18.0,
+          80.595
+        ]
+      },
+      {
+        "sequence_position": 242,
+        "xyz": [
+          33.259,
+          14.434,
+          79.752
+        ]
+      },
+      {
+        "sequence_position": 243,
+        "xyz": [
+          32.963,
+          11.616,
+          82.188
+        ]
+      },
+      {
+        "sequence_position": 244,
+        "xyz": [
+          31.969,
+          8.065,
+          80.888
+        ]
+      },
+      {
+        "sequence_position": 245,
+        "xyz": [
+          29.534,
+          6.359,
+          83.312
+        ]
+      },
+      {
+        "sequence_position": 246,
+        "xyz": [
+          27.261,
+          3.319,
+          83.251
+        ]
+      },
+      {
+        "sequence_position": 247,
+        "xyz": [
+          23.649,
+          4.192,
+          82.626
+        ]
+      },
+      {
+        "sequence_position": 248,
+        "xyz": [
+          21.76,
+          4.759,
+          85.829
+        ]
+      },
+      {
+        "sequence_position": 249,
+        "xyz": [
+          18.337,
+          3.261,
+          86.211
+        ]
+      },
+      {
+        "sequence_position": 250,
+        "xyz": [
+          16.397,
+          6.426,
+          85.096
+        ]
+      },
+      {
+        "sequence_position": 251,
+        "xyz": [
+          18.713,
+          6.51,
+          82.045
+        ]
+      },
+      {
+        "sequence_position": 252,
+        "xyz": [
+          17.483,
+          3.052,
+          81.108
+        ]
+      },
+      {
+        "sequence_position": 253,
+        "xyz": [
+          13.886,
+          4.026,
+          81.692
+        ]
+      },
+      {
+        "sequence_position": 254,
+        "xyz": [
+          14.031,
+          7.074,
+          79.382
+        ]
+      },
+      {
+        "sequence_position": 255,
+        "xyz": [
+          16.095,
+          5.416,
+          76.655
+        ]
+      },
+      {
+        "sequence_position": 256,
+        "xyz": [
+          13.65,
+          2.444,
+          76.553
+        ]
+      },
+      {
+        "sequence_position": 257,
+        "xyz": [
+          10.597,
+          4.679,
+          76.309
+        ]
+      },
+      {
+        "sequence_position": 258,
+        "xyz": [
+          12.124,
+          6.385,
+          73.253
+        ]
+      },
+      {
+        "sequence_position": 259,
+        "xyz": [
+          13.989,
+          3.351,
+          71.785
+        ]
+      },
+      {
+        "sequence_position": 260,
+        "xyz": [
+          11.056,
+          1.831,
+          69.809
+        ]
+      },
+      {
+        "sequence_position": 261,
+        "xyz": [
+          10.032,
+          5.133,
+          68.189
+        ]
+      },
+      {
+        "sequence_position": 262,
+        "xyz": [
+          13.516,
+          5.718,
+          66.892
+        ]
+      },
+      {
+        "sequence_position": 263,
+        "xyz": [
+          13.654,
+          2.197,
+          65.448
+        ]
+      },
+      {
+        "sequence_position": 264,
+        "xyz": [
+          10.231,
+          2.542,
+          63.943
+        ]
+      },
+      {
+        "sequence_position": 265,
+        "xyz": [
+          11.225,
+          5.792,
+          62.271
+        ]
+      },
+      {
+        "sequence_position": 266,
+        "xyz": [
+          14.611,
+          4.523,
+          60.926
+        ]
+      },
+      {
+        "sequence_position": 267,
+        "xyz": [
+          16.579,
+          6.707,
+          63.287
+        ]
+      },
+      {
+        "sequence_position": 268,
+        "xyz": [
+          19.219,
+          4.037,
+          63.601
+        ]
+      },
+      {
+        "sequence_position": 269,
+        "xyz": [
+          21.942,
+          6.126,
+          65.388
+        ]
+      },
+      {
+        "sequence_position": 270,
+        "xyz": [
+          20.596,
+          8.68,
+          67.916
+        ]
+      },
+      {
+        "sequence_position": 271,
+        "xyz": [
+          22.156,
+          10.71,
+          70.728
+        ]
+      },
+      {
+        "sequence_position": 272,
+        "xyz": [
+          19.784,
+          11.508,
+          73.615
+        ]
+      },
+      {
+        "sequence_position": 273,
+        "xyz": [
+          20.744,
+          14.296,
+          75.993
+        ]
+      },
+      {
+        "sequence_position": 274,
+        "xyz": [
+          19.499,
+          13.592,
+          79.6
+        ]
+      },
+      {
+        "sequence_position": 275,
+        "xyz": [
+          19.995,
+          16.015,
+          82.526
+        ]
+      },
+      {
+        "sequence_position": 276,
+        "xyz": [
+          19.048,
+          14.272,
+          85.775
+        ]
+      },
+      {
+        "sequence_position": 277,
+        "xyz": [
+          15.939,
+          12.401,
+          84.852
+        ]
+      },
+      {
+        "sequence_position": 278,
+        "xyz": [
+          14.711,
+          14.748,
+          82.087
+        ]
+      },
+      {
+        "sequence_position": 279,
+        "xyz": [
+          15.224,
+          14.409,
+          78.349
+        ]
+      },
+      {
+        "sequence_position": 280,
+        "xyz": [
+          16.317,
+          17.823,
+          76.95
+        ]
+      },
+      {
+        "sequence_position": 281,
+        "xyz": [
+          16.96,
+          17.114,
+          73.221
+        ]
+      },
+      {
+        "sequence_position": 282,
+        "xyz": [
+          17.241,
+          14.233,
+          70.637
+        ]
+      },
+      {
+        "sequence_position": 283,
+        "xyz": [
+          20.269,
+          14.453,
+          68.257
+        ]
+      },
+      {
+        "sequence_position": 284,
+        "xyz": [
+          19.535,
+          12.642,
+          65.056
+        ]
+      },
+      {
+        "sequence_position": 285,
+        "xyz": [
+          21.905,
+          14.406,
+          62.539
+        ]
+      },
+      {
+        "sequence_position": 286,
+        "xyz": [
+          25.561,
+          13.917,
+          63.647
+        ]
+      },
+      {
+        "sequence_position": 287,
+        "xyz": [
+          25.743,
+          12.847,
+          67.381
+        ]
+      },
+      {
+        "sequence_position": 288,
+        "xyz": [
+          29.161,
+          12.254,
+          68.72
+        ]
+      },
+      {
+        "sequence_position": 289,
+        "xyz": [
+          30.815,
+          11.062,
+          72.029
+        ]
+      },
+      {
+        "sequence_position": 290,
+        "xyz": [
+          31.64,
+          7.526,
+          70.634
+        ]
+      },
+      {
+        "sequence_position": 291,
+        "xyz": [
+          35.435,
+          7.882,
+          71.266
+        ]
+      },
+      {
+        "sequence_position": 292,
+        "xyz": [
+          35.327,
+          8.999,
+          74.849
+        ]
+      },
+      {
+        "sequence_position": 293,
+        "xyz": [
+          32.889,
+          6.242,
+          75.9
+        ]
+      },
+      {
+        "sequence_position": 294,
+        "xyz": [
+          34.755,
+          3.575,
+          73.956
+        ]
+      },
+      {
+        "sequence_position": 295,
+        "xyz": [
+          38.091,
+          4.555,
+          75.506
+        ]
+      },
+      {
+        "sequence_position": 296,
+        "xyz": [
+          36.825,
+          3.946,
+          78.963
+        ]
+      },
+      {
+        "sequence_position": 297,
+        "xyz": [
+          34.663,
+          0.827,
+          78.496
+        ]
+      },
+      {
+        "sequence_position": 298,
+        "xyz": [
+          34.654,
+          -2.533,
+          76.713
+        ]
+      },
+      {
+        "sequence_position": 299,
+        "xyz": [
+          31.917,
+          -1.609,
+          74.182
+        ]
+      },
+      {
+        "sequence_position": 300,
+        "xyz": [
+          32.259,
+          -1.093,
+          70.41
+        ]
+      },
+      {
+        "sequence_position": 301,
+        "xyz": [
+          29.508,
+          1.315,
+          69.481
+        ]
+      },
+      {
+        "sequence_position": 302,
+        "xyz": [
+          30.727,
+          1.446,
+          65.852
+        ]
+      },
+      {
+        "sequence_position": 303,
+        "xyz": [
+          30.509,
+          -2.329,
+          65.755
+        ]
+      },
+      {
+        "sequence_position": 304,
+        "xyz": [
+          26.929,
+          -2.121,
+          67.095
+        ]
+      },
+      {
+        "sequence_position": 305,
+        "xyz": [
+          26.105,
+          0.365,
+          64.367
+        ]
+      },
+      {
+        "sequence_position": 306,
+        "xyz": [
+          27.605,
+          -1.744,
+          61.518
+        ]
+      },
+      {
+        "sequence_position": 307,
+        "xyz": [
+          25.805,
+          -4.836,
+          62.882
+        ]
+      },
+      {
+        "sequence_position": 308,
+        "xyz": [
+          22.537,
+          -2.936,
+          62.817
+        ]
+      },
+      {
+        "sequence_position": 309,
+        "xyz": [
+          23.245,
+          -1.677,
+          59.237
+        ]
+      },
+      {
+        "sequence_position": 310,
+        "xyz": [
+          24.054,
+          -5.219,
+          58.066
+        ]
+      },
+      {
+        "sequence_position": 311,
+        "xyz": [
+          20.816,
+          -6.559,
+          59.642
+        ]
+      },
+      {
+        "sequence_position": 312,
+        "xyz": [
+          18.917,
+          -3.711,
+          57.94
+        ]
+      },
+      {
+        "sequence_position": 313,
+        "xyz": [
+          20.485,
+          -4.792,
+          54.616
+        ]
+      },
+      {
+        "sequence_position": 314,
+        "xyz": [
+          19.411,
+          -8.459,
+          54.878
+        ]
+      }
+    ],
+    "ATP_anchor": [
+      20.97236842105263,
+      22.928631578947368,
+      79.22652631578947
+    ],
+    "GGC_anchor": [
+      29.02638461538461,
+      16.24338461538462,
+      66.0726923076923
+    ],
+    "Mg1": [
+      22.615,
+      19.096,
+      73.757
+    ],
+    "Mg2": [
+      22.051,
+      18.827,
+      70.199
+    ],
+    "Mg_Mg_A": 3.6124535983179142,
+    "donor_distances_A": {
+      "Mg1_Glu": 1.9580707341666685,
+      "Mg1_Asp": 2.0119845923863333,
+      "Mg2_Glu": 2.1979440393240295,
+      "Mg2_Asn": 2.2518752185678483
+    },
+    "long_contacts_diagnostic_A": {
+      "Mg2_Glu_other_O": 2.6170427967459737,
+      "Mg2_ADP_O1B": 2.683304306261218
+    },
+    "named_donor_coordinates": {
+      "273:OD1": [
+        22.44,
+        15.356,
+        73.94
+      ],
+      "273:OD2": [
+        22.159,
+        17.361,
+        74.668
+      ],
+      "281:OE1": [
+        19.751,
+        19.684,
+        71.107
+      ],
+      "281:OE2": [
+        21.348,
+        18.872,
+        72.281
+      ],
+      "283:OD1": [
+        21.185,
+        17.022,
+        69.168
+      ]
+    }
+  },
+  "reaction_atoms": {
+    "Pgamma_index": 23,
+    "leaving_oxygen_index": 22,
+    "GGC_nucleophile_indices": [
+      11,
+      12
+    ],
+    "ATP_assignment_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29,
+      30
+    ],
+    "GGC_assignment_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "phosphate_oxygen_indices": {
+      "alpha": [
+        16,
+        17
+      ],
+      "beta": [
+        20,
+        21
+      ],
+      "gamma": [
+        24,
+        25,
+        26
+      ]
+    }
+  },
+  "metal_distance_diagnostic_policy": {
+    "id": "M0199_MG_O_SHORT_CONTACT_GENERAL_V1",
+    "element": "MG",
+    "donor_element": "O",
+    "minimum_distance_A": 1.7,
+    "failure_tag": "F05_METAL_COORDINATION_TOO_SHORT",
+    "scope": "All observed non-water protein and small-molecule oxygen atoms versus all declared Mg atoms. Dedicated coordination lower bound, not a sum-of-vdW-radii clash test.",
+    "basis": "Existing author operational 1.7 A bound transferred to general unchanged; not experimentally calibrated.",
+    "affects_general_pass": false,
+    "mode": "diagnostic_only"
+  },
+  "unified_source": {
+    "source_version": "0.6.1",
+    "source_case_sha256": "6067222103851cb824f367a9b50f6bb8a29d443745c92e22977d2f30441907f6",
+    "source_criteria_id": "M0199_1GSA_DIMER_ORGANIZATION_V3_20261021",
+    "official_variant": "dimer_two_sets_4Mg"
+  }
+}
