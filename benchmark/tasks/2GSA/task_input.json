@@ -1,0 +1,93 @@
+{
+  "case_id": "M0195_2GSA",
+  "pdb_id": "2GSA",
+  "protein_sequence": "FKTIKSDEIFAAAQKLMPGGVSSPVRAFKSVGGQPIVFDRVKDAYAWDVDGNRYIDYVGTWGPAICGHAHPEVIEALKVAMEKGTSFGAPCALENVLAEMVNDAVPSIEMVRFVNSGTEACMAVLRLMRAYTGRDKIIKFEGCYHGHADMFLVKAGSGVATLGLPSSPGVPKKTTANTLTTPYNDLEAVKALFAENPGEIAGVILEPIVGNSGFIVPDAGFLEGLREITLEHDALLVFDEVMTGFRIAYGGVQEKFGVTPDLTTLGKIIGGGLPVGAYGGKREIMQLVAPAGPMYQAGTLSGNPLAMTAGIKTLELLRQPGTYEYLDQITKRLSDGLLAIAQETGHAACGGQVSGMFGFFFTEGPVHNYEDAKKSDLQKFSRFHRGMLEQGIYLAPSQFEAGFTSLAHTEEDIDATLAAARTVMSAL",
+  "protein_copies": 2,
+  "metals": {},
+  "ligands": {
+    "PMP_1": {
+      "smiles": "Cc1ncc(COP(=O)(O)O)c(CN)c1O",
+      "element_order": [
+        "C",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [],
+      "copy_group": "PMP",
+      "group_copies": 2
+    },
+    "PMP_2": {
+      "smiles": "Cc1ncc(COP(=O)(O)O)c(CN)c1O",
+      "element_order": [
+        "C",
+        "C",
+        "N",
+        "C",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [],
+      "copy_group": "PMP",
+      "group_copies": 2
+    },
+    "GSA_1": {
+      "smiles": "[NH3+][C@H](C=O)CCC(=O)[O-]",
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [],
+      "copy_group": "GSA",
+      "group_copies": 2
+    },
+    "GSA_2": {
+      "smiles": "[NH3+][C@H](C=O)CCC(=O)[O-]",
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [],
+      "copy_group": "GSA",
+      "group_copies": 2
+    }
+  },
+  "scope": "Model-neutral task input; not a model-native inference file. Chemical roles and formal charges remain encoded in the frozen definition.",
+  "frozen_definition_sha256": "49a1001ff55096fbd80a8ab7db7ae2f1e2203f5018aba992056f0e7eeb86415c"
+}

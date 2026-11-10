@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-10",
+  "tests_passed": 414,
+  "tests_skipped": 0,
+  "fresh_replay_samples": 400,
+  "scientific_payload_differences": 0,
+  "all_80_baseline_cells_match_fresh_replay": true,
+  "same_sample_pass_totals": {
+    "mechanism": 165,
+    "general": 164,
+    "joint": 87
+  },
+  "coordinate_hashes_checked": true,
+  "wheel_code_and_config_files_identical_to_source": 63,
+  "wheel_sha256": "b88c6cd15f90cc453798f698106aca3485243d3f93217bfc3bacb5681c7924eb",
+  "scoring_version": "0.7.0",
+  "new_prediction_jobs": 0,
+  "coordinate_archive_public": false
+}

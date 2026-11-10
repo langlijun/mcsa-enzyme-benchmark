@@ -7,6 +7,21 @@ mechanism and general structural checks. This repository packages the reviewed
 [中文说明](README_zh.md) | [Methods and scope](docs/methods.md) |
 [Case catalog](docs/cases.md) | [Reproduction](docs/reproduction.md)
 
+## Public benchmark snapshot
+
+The 2026-11-10 snapshot provides the evaluator under the [MIT license](LICENSE),
+20 [model-neutral task inputs](benchmark/tasks), frozen case definitions,
+[task-complexity tiers](docs/task_complexity.md), and
+[five-sample baseline counts](benchmark/baseline_counts.csv).
+The scoring version remains **0.7.0**; no cutoff, input state, or stage verdict
+was changed by this documentation and metadata release.
+
+Task-complexity version **1.0** assigns 2 Easy, 11 Medium and 7 Hard tasks.
+These are author-defined qualitative task categories, not validated prediction
+difficulty or training-novelty labels. MSA/template support is reported separately.
+Read the [release scope](docs/publication.md) and
+[third-party notices](THIRD_PARTY_NOTICES.md) before reusing baseline data.
+
 ## What is evaluated?
 
 Given a predicted mmCIF and a registered case, the evaluator checks the declared
@@ -99,11 +114,13 @@ The first command runs fixture-independent tests and explicitly reports skipped
 structure-dependent tests. The second requires the private reviewed fixtures
 and must finish without skips. Neither command downloads structures.
 
-Prediction CIFs, unpublished model results, historical Excel files, server
-configuration and article PDFs are **not included**. The repository therefore
-supports evaluation of compatible new inputs but is not yet a complete public
-data release. Full replication of the original panel requires the separately
-maintained input archive. See [data and licensing status](docs/data_policy.md).
+Prediction CIFs, historical Excel files, server configuration and article PDFs
+are **not included**. Aggregate baseline counts are public; replaying the original
+400 structures still requires the separately maintained coordinate archive.
+New predictions can be generated from the published task definitions and scored
+with this evaluator. The original model-native inputs, MSA/template files and
+inference environments are not a bundled inference pipeline.
+See [data and licensing status](docs/data_policy.md).
 
 ## Scientific scope
 
@@ -132,6 +149,7 @@ docs/                    Input contracts, scope, reproduction and case catalog
 
 Keep code changes separate from scientific rule changes. See
 [contributing](CONTRIBUTING.md) before changing a cutoff, atom mapping or input
-contract. An open-source license and public data release have not yet been
-selected by the maintainer; no new redistribution grant is made here.
+contract. The MIT license covers original software and documentation, not
+third-party coordinates, model outputs, weights, or articles. AF3-derived
+baseline information retains its applicable output terms.
 

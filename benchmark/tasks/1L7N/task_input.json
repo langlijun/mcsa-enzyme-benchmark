@@ -1,0 +1,71 @@
+{
+  "case_id": "M0727_1L7N",
+  "pdb_id": "1L7N",
+  "protein_sequence": "MEKKKKLILFDFDSTLVNNETIDEIAREAGVEEEVKKITKEAMEGKLNFEQSLRKRVSLLKDLPIEKVEKAIKRITPTEGAEETIKELKNRGYVVAVVSGGFDIAVNKIKEKLGLDYAFANRLIVKDGKLTGDVEGEVLKENAKGEILEKIAKIEGINLEDTVAVGDGANDISMFKKAGLKIAFCAKPILKEKADICIEKRDLREILKYIK",
+  "protein_copies": 1,
+  "metals": {
+    "MG": 1
+  },
+  "ligands": {
+    "PLS": {
+      "smiles": "[NH3+][C@@H](COP(=O)([O-])[O-])C(=O)[O-]",
+      "formal_charge": -2,
+      "element_order": [
+        "N",
+        "C",
+        "C",
+        "O",
+        "P",
+        "O",
+        "O",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "C2",
+          "O1",
+          "P1",
+          "O2",
+          "O3",
+          "O4",
+          "C3",
+          "O5",
+          "O6"
+        ],
+        [
+          "N16",
+          "C15",
+          "C14",
+          "O12",
+          "P17",
+          "O8",
+          "O10",
+          "O11",
+          "C13",
+          "O7",
+          "O9"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "P1_1",
+          "O2_1",
+          "O3_1",
+          "O4_1",
+          "C3_1",
+          "O5_1",
+          "O6_1"
+        ]
+      ]
+    }
+  },
+  "scope": "Model-neutral task input; not a model-native inference file. Chemical roles and formal charges remain encoded in the frozen definition.",
+  "frozen_definition_sha256": "4c671dfc10625f5d0ac0fcbf768a075dfe7a797407701b499030606018ac8c3b"
+}

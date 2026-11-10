@@ -1,0 +1,11 @@
+By using this information, you agree to AlphaFold 3 Output Terms of Use found at
+https://github.com/google-deepmind/alphafold3/blob/main/OUTPUT_TERMS_OF_USE.md.
+To request access to the AlphaFold 3 model parameters, follow the process set out at
+https://github.com/google-deepmind/alphafold3. You may only use these if received
+directly from Google. Use is subject to terms of use available at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+
+Applicability: the AF3-derived portions of the accompanying baseline analyses.
+Modification: original predictions were evaluated with benchmark version 0.7.0
+and aggregated into mechanism, general and same-sample joint passing counts.
+The predicted coordinates and model weights are not distributed in this snapshot.

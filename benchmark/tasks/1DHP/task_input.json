@@ -1,0 +1,171 @@
+{
+  "case_id": "M0267_1DHP",
+  "pdb_id": "1DHP",
+  "protein_sequence": "MFTGSIVAIVTPMDEKGNVCRASLKKLIDYHVASGTSAIVSVGTTGESATLNHDEHADVVMMTLDLADGRIPVIAGTGANATAEAISLTQRFNDSGIVGCLTVTPYYNRPSQEGLYQHFKAIAEHTDLPQILYNVPSRTGCDLLPETVGRLAKVKNIIGIKEATGNLTRVNQIKELVSDDFVLLSGDDASALDFMQLGGHGVISVTANVAARDMAQMCKLAAEGHFAEARVINQRLMPLHNKLFVEPNPIPVKWACKELGLVATDTLRLPMTPITDSGRETVRAALKHAGLL",
+  "protein_copies": 4,
+  "metals": {},
+  "ligands": {
+    "PYR_1": {
+      "smiles": "CC(=O)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "O2",
+          "O3"
+        ],
+        [
+          "C9",
+          "C8",
+          "O5",
+          "C7",
+          "O4",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "O2_1",
+          "O3_1"
+        ]
+      ],
+      "copy_group": "PYR",
+      "group_copies": 4
+    },
+    "PYR_2": {
+      "smiles": "CC(=O)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "O2",
+          "O3"
+        ],
+        [
+          "C9",
+          "C8",
+          "O5",
+          "C7",
+          "O4",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "O2_1",
+          "O3_1"
+        ]
+      ],
+      "copy_group": "PYR",
+      "group_copies": 4
+    },
+    "PYR_3": {
+      "smiles": "CC(=O)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "O2",
+          "O3"
+        ],
+        [
+          "C9",
+          "C8",
+          "O5",
+          "C7",
+          "O4",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "O2_1",
+          "O3_1"
+        ]
+      ],
+      "copy_group": "PYR",
+      "group_copies": 4
+    },
+    "PYR_4": {
+      "smiles": "CC(=O)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "O2",
+          "O3"
+        ],
+        [
+          "C9",
+          "C8",
+          "O5",
+          "C7",
+          "O4",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "O2_1",
+          "O3_1"
+        ]
+      ],
+      "copy_group": "PYR",
+      "group_copies": 4
+    }
+  },
+  "scope": "Model-neutral task input; not a model-native inference file. Chemical roles and formal charges remain encoded in the frozen definition.",
+  "frozen_definition_sha256": "9f2784c0ee2da3c89a569f3facd93c74624af7d24a9af964beaa3b78b97ee50f"
+}

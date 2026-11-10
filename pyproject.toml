@@ -7,6 +7,7 @@ name = "mcsa-enzyme-benchmark"
 version = "0.7.0"
 description = "Independent mechanism and general geometry evaluation of enzyme complexes"
 readme = "README.md"
+license = {file = "LICENSE"}
 requires-python = ">=3.12"
 dependencies = ["gemmi==0.7.5", "numpy==2.3.5", "scipy==1.18.1", "rdkit==2026.3.6"]
 

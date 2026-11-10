@@ -1,0 +1,66 @@
+{
+  "case_id": "M0036_1QQ5",
+  "pdb_id": "1QQ5",
+  "protein_sequence": "MIKAVVFDAYGTLFDVQSVADATERAYPGRGEYITQVWRQKQLEYSWLRALMGRYADFWSVTREALAYTLGTLGLEPDESFLADMAQAYNRLTPYPDAAQCLAELAPLKRAILSNGAPDMLQALVANAGLTDSFDAVISVDAKRVFKPHPDSYALVEEVLGVTPAEVLFVSSNGFDVGGAKNFGFSVARVARLSQEALARELVSGTIAPLTMFKALRMREETYAEAPDFVVPALGDLPRLVRGMAGAHLAPAV",
+  "protein_copies": 2,
+  "metals": {},
+  "ligands": {
+    "substrate": {
+      "smiles": "C[C@H](Cl)C(=O)[O-]",
+      "formal_charge": -1,
+      "element_order": [
+        "C",
+        "C",
+        "Cl",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "CL1",
+          "C3",
+          "O1",
+          "O2"
+        ],
+        [
+          "C9",
+          "C10",
+          "CL7",
+          "C8",
+          "O5",
+          "O6"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "CL1_1",
+          "C3_1",
+          "O1_1",
+          "O2_1"
+        ]
+      ]
+    }
+  },
+  "input_contract": {
+    "mechanism_proposal": 1,
+    "step": 1,
+    "state": "Intact (S)-2-chloropropanoate before Asp8 nucleophilic substitution",
+    "protein_copies": 2,
+    "protein_length_per_copy": 253,
+    "substrate_smiles": "C[C@H](Cl)C(=O)[O-]",
+    "substrate_copies": 1,
+    "substrate_formal_charge": -1,
+    "required_input_stereochemistry": {
+      "SMILES_atom_index_1": "S"
+    },
+    "metals": [],
+    "cofactors": [],
+    "input_protein_substrate_covalent_bond": false,
+    "attacking_water_required_for_selected_step": false
+  },
+  "scope": "Model-neutral task input; not a model-native inference file. Chemical roles and formal charges remain encoded in the frozen definition.",
+  "frozen_definition_sha256": "d8951cfaad3896488d4dbaaf92b3103c905a55ea200dbf6e5335d5e24d8ddd09"
+}

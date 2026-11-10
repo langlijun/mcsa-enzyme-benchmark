@@ -2,6 +2,15 @@
 
 这是已审20例评价器`0.7.0`的独立代码仓库，不运行AF3等结构预测模型。
 
+## 公开内容与分层
+
+2026-11-10快照提供MIT许可代码、[20例模型中立输入](benchmark/tasks)、
+冻结判据、[任务复杂度分层v1](docs/task_complexity.md)和
+[逐例五样本基线计数](benchmark/baseline_counts.csv)。
+分层为2例Easy、11例Medium、7例Hard，依据任务中声明的位点及化学关系组织要求，
+由作者逐例定义；不是已独立验证的模型预测难度，也不以本批通过率划分。
+MSA、模板及化学状态参考另列。此次不改变评分版本、输入化学状态、判据或结果。
+
 ## 两阶段分开
 
 Mechanism检查所选M-CSA步骤的反应原子距离、方向、特定位点及金属组织。
@@ -49,9 +58,11 @@ python tools/run_tests.py --fixtures /path/to/reviewed-data-archive
 
 ## 发布范围
 
-本仓库不包含预测CIF、未发表结果、Excel、文献PDF、个人路径或服务器凭据。
-当前不是完整公共数据发布；400份结果的完整复现需要另行提供经许可的数据归档。
-暂不擅自选择开源许可证，也不改变第三方数据或文献的许可。
+本仓库公开代码、标准任务输入、分层与汇总结果，不包含预测CIF、Excel、文献PDF、
+个人路径或服务器凭据。完整复算原400份结构仍需单独的坐标归档，
+不能将已公开的汇总结果说成完整坐标已发布。
+原创代码使用MIT许可；第三方资料及AF3派生结果不因此改用MIT，
+详见[许可与数据范围](docs/data_policy.md)和[第三方声明](THIRD_PARTY_NOTICES.md)。
 
 20例判据和文献依据见[case目录](docs/cases.md)，使用说明见[英文README](README.md)，
 方法范围见[Methods](docs/methods.md)，批量格式见[复现说明](docs/reproduction.md)。

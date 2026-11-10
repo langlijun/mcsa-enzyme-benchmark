@@ -1,0 +1,17 @@
+{
+  "evaluator_version": "0.7.0",
+  "cases": 20,
+  "models": 4,
+  "samples": 400,
+  "case_model_groups": 80,
+  "samples_per_case_model": 5,
+  "unit": "Per-sample passing counts; not native Top1",
+  "totals": {
+    "mechanism_pass": 165,
+    "general_pass": 164,
+    "joint_pass": 87
+  },
+  "joint_is_same_sample_intersection": true,
+  "source_counts_sha256": "8c84ab92f7db410c0488e04ff00a16b5db7124a9327900a5cbfb9df762e79df8",
+  "attribution": "See THIRD_PARTY_NOTICES.md and benchmark/notices for AF3-derived entries."
+}

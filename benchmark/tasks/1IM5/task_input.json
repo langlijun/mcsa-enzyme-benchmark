@@ -1,0 +1,74 @@
+{
+  "case_id": "M0716_1IM5",
+  "pdb_id": "1IM5",
+  "protein_sequence": "MPEEALIVVDMQRDFMPGGALPVPEGDKIIPKVNEYIRKFKEKGALIVATRDWHPENHISFRERGGPWPRHCVQNTPGAEFVVDLPEDAVIISKATEPDKEAYSGFEGTDLAKILRGNGVKRVYICGVATEYCVRATALDALKHGFEVYLLRDAVKGIKPEDEERALEEMKSRGIKIVQF",
+  "protein_copies": 1,
+  "metals": {
+    "Zn": 1
+  },
+  "ligands": {
+    "substrate": {
+      "smiles": "NC(=O)c1cccnc1",
+      "formal_charge": 0,
+      "element_order": [
+        "N",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C"
+      ],
+      "atom_name_templates": [
+        [
+          "N1",
+          "C1",
+          "O1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "N2",
+          "C6"
+        ],
+        [
+          "N15",
+          "C9",
+          "O7",
+          "C14",
+          "C13",
+          "C12",
+          "C10",
+          "N8",
+          "C11"
+        ],
+        [
+          "N1_1",
+          "C1_1",
+          "O1_1",
+          "C2_1",
+          "C3_1",
+          "C4_1",
+          "C5_1",
+          "N2_1",
+          "C6_1"
+        ]
+      ]
+    }
+  },
+  "input_contract": {
+    "state": "Intact nicotinamide reactant, before acyl-enzyme formation",
+    "protein_length": 180,
+    "protein_copies": 1,
+    "substrate_copies": 1,
+    "metal_copies": {
+      "Zn": 1
+    },
+    "water_required": false,
+    "protein_ligand_covalent_link_required": false
+  },
+  "scope": "Model-neutral task input; not a model-native inference file. Chemical roles and formal charges remain encoded in the frozen definition.",
+  "frozen_definition_sha256": "9f9ac9ad9d670f1bd55c8410338a3af6bcc14307d719e9e7027c14a95b25731f"
+}

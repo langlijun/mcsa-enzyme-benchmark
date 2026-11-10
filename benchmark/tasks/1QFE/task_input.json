@@ -1,0 +1,147 @@
+{
+  "case_id": "M0054_1QFE",
+  "pdb_id": "1QFE",
+  "protein_sequence": "MKTVTVKNLIIGEGMPKIIVSLMGRDINSVKAEALAYREATFDILEWRVDHFMDIASTQSVLTAARVIRDAMPDIPLLFTFRSAKEGGEQTITTQHYLTLNRAAIDSGLVDMIDLELFTGDADVKATVDYAHAHNVYVVMSNHDFHQTPSAEEMVSRLRKMQALGADIPKIAVMPQSKHDVLTLLTATLEMQQHYADRPVITMSMAKEGVISRLAGEVFGSAATFGAVKQASAPGQIAVNDLRSVLMILHNA",
+  "protein_copies": 2,
+  "metals": {},
+  "ligands": {
+    "DHQ_1": {
+      "smiles": "O=C1C[C@@](O)(C(=O)[O-])C[C@@H](O)[C@@H]1O",
+      "formal_charge": -1,
+      "element_order": [
+        "O",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "O1",
+          "C1",
+          "C2",
+          "C3",
+          "O2",
+          "C4",
+          "O3",
+          "O4",
+          "C5",
+          "C6",
+          "O5",
+          "C7",
+          "O6"
+        ],
+        [
+          "O11",
+          "C17",
+          "C18",
+          "C20",
+          "O13",
+          "C16",
+          "O10",
+          "O12",
+          "C19",
+          "C22",
+          "O15",
+          "C21",
+          "O14"
+        ],
+        [
+          "O1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "O2_1",
+          "C4_1",
+          "O3_1",
+          "O4_1",
+          "C5_1",
+          "C6_1",
+          "O5_1",
+          "C7_1",
+          "O6_1"
+        ]
+      ],
+      "copy_group": "DHQ",
+      "group_copies": 2
+    },
+    "DHQ_2": {
+      "smiles": "O=C1C[C@@](O)(C(=O)[O-])C[C@@H](O)[C@@H]1O",
+      "formal_charge": -1,
+      "element_order": [
+        "O",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O",
+        "C",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "O1",
+          "C1",
+          "C2",
+          "C3",
+          "O2",
+          "C4",
+          "O3",
+          "O4",
+          "C5",
+          "C6",
+          "O5",
+          "C7",
+          "O6"
+        ],
+        [
+          "O11",
+          "C17",
+          "C18",
+          "C20",
+          "O13",
+          "C16",
+          "O10",
+          "O12",
+          "C19",
+          "C22",
+          "O15",
+          "C21",
+          "O14"
+        ],
+        [
+          "O1_1",
+          "C1_1",
+          "C2_1",
+          "C3_1",
+          "O2_1",
+          "C4_1",
+          "O3_1",
+          "O4_1",
+          "C5_1",
+          "C6_1",
+          "O5_1",
+          "C7_1",
+          "O6_1"
+        ]
+      ],
+      "copy_group": "DHQ",
+      "group_copies": 2
+    }
+  },
+  "scope": "Model-neutral task input; not a model-native inference file. Chemical roles and formal charges remain encoded in the frozen definition.",
+  "frozen_definition_sha256": "4bde2c61ea385cb52cc7c45a4aa6db80e8a8bd57120fefdaed97998367233f88"
+}

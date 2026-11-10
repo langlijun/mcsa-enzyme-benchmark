@@ -1,0 +1,525 @@
+{
+  "case_id": "M0305_1ET0",
+  "pdb_id": "1ET0",
+  "protein_sequence": "MFLINGHKQESLAVSDRATQFGDGCFTTARVIDGKVSLLSAHIQRLQDACQRLMISCDFWPQLEQEMKTLAAEQQNGVLKVVISRGSGGRGYSTLNSGPATRILSVTAYPAHYDRLRNEGITLALSPVRLGRNPHLAGIKHLNRLEQVLIRSHLEQTNADEALVLDSEGWVTECCAANLFWRKGNVVYTPRLDQAGVNGIMRQFCIRLLAQSSYQLVEVQASLEESLQADEMVICNALMPVMPVCACGDVSFSSATLYEYLAPLCERPN",
+  "protein_copies": 2,
+  "metals": {},
+  "ligands": {
+    "ADC_1": {
+      "smiles": "C=C(O[C@@H]1C=C(C(=O)[O-])C=C[C@H]1[NH3+])C(=O)[O-]",
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "O2",
+          "O3",
+          "C7",
+          "C8",
+          "C9",
+          "N1",
+          "C10",
+          "O4",
+          "O5"
+        ],
+        [
+          "C18",
+          "C20",
+          "O15",
+          "C24",
+          "C22",
+          "C21",
+          "C17",
+          "O12",
+          "O14",
+          "C19",
+          "C23",
+          "C25",
+          "N26",
+          "C16",
+          "O11",
+          "O13"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "C4_1",
+          "C5_1",
+          "C6_1",
+          "O2_1",
+          "O3_1",
+          "C7_1",
+          "C8_1",
+          "C9_1",
+          "N1_1",
+          "C10_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "ADC",
+      "group_copies": 2
+    },
+    "ADC_2": {
+      "smiles": "C=C(O[C@@H]1C=C(C(=O)[O-])C=C[C@H]1[NH3+])C(=O)[O-]",
+      "element_order": [
+        "C",
+        "C",
+        "O",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "C",
+        "N",
+        "C",
+        "O",
+        "O"
+      ],
+      "atom_name_templates": [
+        [
+          "C1",
+          "C2",
+          "O1",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "O2",
+          "O3",
+          "C7",
+          "C8",
+          "C9",
+          "N1",
+          "C10",
+          "O4",
+          "O5"
+        ],
+        [
+          "C18",
+          "C20",
+          "O15",
+          "C24",
+          "C22",
+          "C21",
+          "C17",
+          "O12",
+          "O14",
+          "C19",
+          "C23",
+          "C25",
+          "N26",
+          "C16",
+          "O11",
+          "O13"
+        ],
+        [
+          "C1_1",
+          "C2_1",
+          "O1_1",
+          "C3_1",
+          "C4_1",
+          "C5_1",
+          "C6_1",
+          "O2_1",
+          "O3_1",
+          "C7_1",
+          "C8_1",
+          "C9_1",
+          "N1_1",
+          "C10_1",
+          "O4_1",
+          "O5_1"
+        ]
+      ],
+      "copy_group": "ADC",
+      "group_copies": 2
+    }
+  },
+  "polymer_modifications": [
+    {
+      "position": 140,
+      "residue_name": "LLP",
+      "parent_residue_name": "LYS",
+      "atoms": [
+        {
+          "name": "N1",
+          "element": "N",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C2",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C2'",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C3",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "O3",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C4",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C4'",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C5",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C6",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C5'",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "OP4",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "P",
+          "element": "P",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "OP1",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "OP2",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "OP3",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "N",
+          "element": "N",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "CA",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": "S"
+        },
+        {
+          "name": "CB",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "CG",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "CD",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "CE",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "NZ",
+          "element": "N",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "C",
+          "element": "C",
+          "formal_charge": 0,
+          "CIP": null
+        },
+        {
+          "name": "O",
+          "element": "O",
+          "formal_charge": 0,
+          "CIP": null
+        }
+      ],
+      "bonds": [
+        {
+          "atoms": [
+            "N1",
+            "C2"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "N1",
+            "C6"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C2",
+            "C2'"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C2",
+            "C3"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C3",
+            "O3"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C3",
+            "C4"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C4",
+            "C4'"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C4",
+            "C5"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C4'",
+            "NZ"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C5",
+            "C6"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C5",
+            "C5'"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C5'",
+            "OP4"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "OP4",
+            "P"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "P",
+            "OP1"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "P",
+            "OP2"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "P",
+            "OP3"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "N",
+            "CA"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CA",
+            "CB"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CA",
+            "C"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CB",
+            "CG"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CG",
+            "CD"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CD",
+            "CE"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "CE",
+            "NZ"
+          ],
+          "order": "SING",
+          "stereo": "N"
+        },
+        {
+          "atoms": [
+            "C",
+            "O"
+          ],
+          "order": "DOUB",
+          "stereo": "N"
+        }
+      ],
+      "source_CCD_sha256": "3e414b697f7ed70d6f1e2e82563c9c7983e0112c40beffb6fc1d5cb2e74b83a0"
+    }
+  ],
+  "input_state_contract": {
+    "ADC_amino_group": "NH3+",
+    "mechanism_drawing_amino_group": "NH2",
+    "LLP_formal_charge": 0,
+    "input_changed": false,
+    "observed_electronic_or_protonation_state_verified": false,
+    "limitation": "Geometry of the declared input; activated microstate and proton transfer are not established. No additional waters or unrequested input changes."
+  },
+  "scope": "Model-neutral task input; not a model-native inference file. Chemical roles and formal charges remain encoded in the frozen definition.",
+  "frozen_definition_sha256": "199177658fda6317e83d36966c3f29cebd76a0b388ce1433d03d46d2573d77fc"
+}
