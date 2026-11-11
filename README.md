@@ -9,12 +9,15 @@ mechanism and general structural checks. This repository packages the reviewed
 
 ## Public benchmark snapshot
 
-The 2026-11-10 snapshot provides the evaluator under the [MIT license](LICENSE),
+The 2026-11-11 snapshot provides the evaluator under the [MIT license](LICENSE),
 20 [model-neutral task inputs](benchmark/tasks), frozen case definitions,
 [task-complexity tiers](docs/task_complexity.md), and
 [five-sample baseline counts](benchmark/baseline_counts.csv).
+The 400 prediction structures are in [benchmark/predictions](benchmark/predictions),
+with a repository-local [sample manifest](benchmark/prediction_manifest400.json).
+Evaluating these data requires no external dataset directory.
 The scoring version remains **0.7.0**; no cutoff, input state, or stage verdict
-was changed by this documentation and metadata release.
+was changed by this coordinate-data and documentation release.
 
 Task-complexity version **1.0** assigns 2 Easy, 11 Medium and 7 Hard tasks.
 These are author-defined qualitative task categories, not validated prediction
@@ -105,6 +108,12 @@ regression comparison and technical-error handling.
 
 ## Tests and data availability
 
+Replay the repository's own 400 predictions from the repository root:
+
+```bash
+mcsa-benchmark-panel --manifest benchmark/prediction_manifest400.json --data-root . --output results/benchmark20
+```
+
 ```bash
 python tools/run_tests.py
 python tools/run_tests.py --fixtures /path/to/reviewed-data-archive
@@ -114,10 +123,11 @@ The first command runs fixture-independent tests and explicitly reports skipped
 structure-dependent tests. The second requires the private reviewed fixtures
 and must finish without skips. Neither command downloads structures.
 
-Prediction CIFs, historical Excel files, server configuration and article PDFs
-are **not included**. Aggregate baseline counts are public; replaying the original
-400 structures still requires the separately maintained coordinate archive.
-New predictions can be generated from the published task definitions and scored
+Prediction CIFs, task inputs and the 400-row sample manifest are included.
+Historical Excel files, server configuration and article PDFs are not included.
+The optional perturbation-test fixtures above are distinct from the 400 primary
+predictions and are not required by the repository-data replay command.
+New predictions can be generated from the task definitions and scored
 with this evaluator. The original model-native inputs, MSA/template files and
 inference environments are not a bundled inference pipeline.
 See [data and licensing status](docs/data_policy.md).
@@ -141,6 +151,9 @@ atom roles, exclusions and numerical rules are stored with each case definition.
 ```text
 src/mcsa_benchmark/       API, CLI, common checks and case evaluators
 src/mcsa_benchmark/data/  Frozen case definitions, evidence and criteria hashes
+benchmark/tasks/         Twenty standalone task inputs
+benchmark/predictions/   Four models x five predictions for each task
+benchmark/prediction_manifest400.json  Repository-local sample paths and ranks
 tests/                   Configuration, synthetic and optional fixture tests
 tools/                   Test runner and release checks
 examples/                Synthetic example; not a biological validation case

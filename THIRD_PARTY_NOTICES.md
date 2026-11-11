@@ -13,12 +13,14 @@ complete target-state truth. Small reference-derived assignment anchors are
 part of the recorded scientific evidence; original sources retain their terms.
 No article PDFs or experimental coordinate files are included in this snapshot.
 
-## AlphaFold 3 derived baseline information
+## AlphaFold 3 predictions and derived baseline information
 
 The AF3 entries in `benchmark/baseline_counts.csv` and `baseline_summary.json`
 are analyses derived from AlphaFold 3 predictions. The modifications consist of
 computing the benchmark checks and aggregating five samples per task. They are
 not experimental measurements and are not endorsed by Google or Isomorphic Labs.
+The corresponding AF3 CIFs in `benchmark/predictions/` retain their original
+coordinate-file contents; only their archive locations have been reorganized.
 AF3-derived information is provided under and subject to the
 [AlphaFold 3 Output Terms of Use](benchmark/notices/AF3_OUTPUT_TERMS_OF_USE.md),
 not the repository MIT license. Other entries in these mixed-model tables do not
@@ -36,7 +38,7 @@ https://doi.org/10.1038/s41586-024-07487-w
 ## Other prediction models
 
 Baseline rows explicitly identify Boltz2, Chai1 and Protenix separately.
-This snapshot distributes numerical benchmark analyses, not their model weights
-or predicted coordinate files. No new rights in those models or outputs are
+This snapshot contains their registered prediction CIFs and numerical benchmark
+analyses, not their model weights. No new rights in those models or outputs are
 granted by the evaluator code license. Model and dependency attribution must be
 retained in any subsequent coordinate release.

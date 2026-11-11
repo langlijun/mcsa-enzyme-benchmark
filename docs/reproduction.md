@@ -41,10 +41,27 @@ Technical errors remain in denominators and status counts; if no sample passes
 and a stage has ERROR, its Best5 status is ERROR, not a claim that every geometry
 failed. This is descriptive aggregation, not independent-sample inference.
 
-## Replay of the reviewed private archive
+## Replay of repository data
 
-The separately maintained archive has `validation/primary400.json`, coordinate
-fixtures and `results/full_results_400.json`. These files are not shipped here.
+The repository contains all 400 primary prediction files. The manifest uses
+paths inside this repository, with no links or lookups into another dataset.
+From the repository root:
+
+```bash
+mcsa-benchmark-panel \
+  --manifest benchmark/prediction_manifest400.json \
+  --data-root . \
+  --output results/benchmark20
+```
+
+The frozen aggregate reference is `benchmark/baseline_counts.csv`. Its rows
+refer to the same 20 tasks and five samples per model.
+
+## Optional full-payload regression fixtures
+
+The historical regression archive additionally has `validation/primary400.json`,
+perturbation/reference fixtures and `results/full_results_400.json`. These
+optional regression fixtures are not needed to evaluate the repository data.
 
 ```bash
 python tools/run_tests.py --fixtures /path/to/archive --json results_tests.json

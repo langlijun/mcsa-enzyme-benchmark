@@ -11,6 +11,7 @@ results/
 validation/
 data_private/
 *.cif
+!benchmark/predictions/**/*.cif
 *.cif.gz
 *.pdb
 *.pdb.gz

@@ -8,9 +8,10 @@ imply that all underlying prediction or reference coordinates are distributed.
 Included: evaluator source, reviewed case definitions and evidence references,
 configuration hashes, test code, synthetic examples, usage documentation,
 20 model-neutral task inputs, author-defined task-complexity tiers, separately
-reported information support, and aggregate five-sample baseline counts.
+reported information support, aggregate five-sample baseline counts, 400 primary
+prediction CIFs and a repository-local sample manifest.
 
-Not included: predicted or experimental coordinate files, model weights, MSA or
+Not included: experimental coordinate files, model weights, MSA or
 template databases, article PDFs, full sample evaluation tables, spreadsheets,
 server scripts, credentials, personal paths, or full development archives.
 
@@ -22,8 +23,8 @@ analyses of model predictions, not original experimental observations. AF3-deriv
 information is accompanied by its output terms and modification notice in
 `benchmark/notices/`; see [third-party notices](../THIRD_PARTY_NOTICES.md).
 
-Future data releases should use a versioned external archive with checksums,
-input contracts, native-rank provenance, attribution and a clear license. A
-code-only repository cannot claim that the entire 400-structure experiment is
-publicly reproducible before the required data are released.
+The prediction manifest records hashes, native ranks and paths inside the
+repository. This benchmark's data and evaluator can be distributed together;
+no external dataset is needed for its primary 400-structure evaluation.
+The original model inference environment is not reproduced by this data release.
 

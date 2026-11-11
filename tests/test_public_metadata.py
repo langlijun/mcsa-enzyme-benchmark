@@ -68,7 +68,19 @@ class PublicMetadataTests(unittest.TestCase):
     def test_manifest_hashes(self):
         for relative, expected in self.manifest['files'].items():
             self.assertEqual(sha(ROOT/relative),expected,relative)
-        self.assertFalse(self.manifest['coordinate_files_included'])
+        self.assertTrue(self.manifest['coordinate_files_included'])
+
+    def test_prediction_data_are_repository_local(self):
+        from mcsa_benchmark.panel import validate_manifest
+        path=ROOT/self.manifest['coordinate_manifest']
+        rows=read(path)
+        self.assertEqual(len(validate_manifest(rows,ROOT)),400)
+        self.assertEqual(len({r['code'] for r in rows}),20)
+        self.assertFalse(self.manifest['external_dataset_required'])
+        for row in rows:
+            self.assertTrue(row['input_file'].startswith('benchmark/predictions/'))
+            self.assertTrue(row['task_input_file'].startswith('benchmark/tasks/'))
+            self.assertEqual(sha(ROOT/row['task_input_file']),row['task_input_sha256'])
 
     def test_no_scoring_module_imports_tiers(self):
         for path in (ROOT/'src/mcsa_benchmark').rglob('*.py'):

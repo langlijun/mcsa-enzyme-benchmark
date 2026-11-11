@@ -47,6 +47,12 @@ Best5要求至少一份完整样本通过；联合Best5不允许跨样本拼接�
 
 ## 测试与复现
 
+从仓库根目录直接评价仓库内的400份预测，不需要其他数据目录：
+
+```bash
+mcsa-benchmark-panel --manifest benchmark/prediction_manifest400.json --data-root . --output results/benchmark20
+```
+
 ```bash
 python tools/run_tests.py
 python tools/run_tests.py --fixtures /path/to/reviewed-data-archive
@@ -58,9 +64,10 @@ python tools/run_tests.py --fixtures /path/to/reviewed-data-archive
 
 ## 发布范围
 
-本仓库公开代码、标准任务输入、分层与汇总结果，不包含预测CIF、Excel、文献PDF、
-个人路径或服务器凭据。完整复算原400份结构仍需单独的坐标归档，
-不能将已公开的汇总结果说成完整坐标已发布。
+本仓库包含代码、标准任务输入、400份预测CIF、原生排名、分层与汇总结果。
+坐标保存在benchmark/predictions，路径及排名保存在benchmark/prediction_manifest400.json，
+所有数据路径均相对于仓库根目录。不包含Excel、文献PDF、个人路径或服务器凭据。
+可选的历史扰动测试夹具与这400份主样本不同，不是运行上述评价命令的依赖。
 原创代码使用MIT许可；第三方资料及AF3派生结果不因此改用MIT，
 详见[许可与数据范围](docs/data_policy.md)和[第三方声明](THIRD_PARTY_NOTICES.md)。
 

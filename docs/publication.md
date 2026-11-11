@@ -21,8 +21,8 @@ not automatically interchangeable native model configuration files.
 
 The public baseline gives M/G/J passing counts out of five predictions for each
 of 20 tasks and four models. J is the same-sample intersection. These are not
-Top1 counts. The baseline belongs to the 20-task frozen protocol, not a direct
-name-based extract of the broader 200-case evaluation.
+Top1 counts. The baseline belongs to the frozen 20-task protocol and the
+explicitly declared input state for each task.
 
 ## Validation and its boundary
 
@@ -32,9 +32,11 @@ baseline with zero differences. This is evaluation replay, not new cofolding
 inference or independent validation of catalytic activity. Test and replay
 receipts are summarized in the public manifest.
 
-The 400 coordinates and the original model-native inference files are not
-included here. Complete public reproduction of those original predictions is
-therefore not claimed. No model weights, private server settings, manuscript
+The 400 prediction coordinates and their native ranks are included under
+`benchmark/predictions/` and `benchmark/prediction_manifest400.json`. The
+evaluator reads repository-local files only. The original model-native inference
+workflow is not bundled, so rerunning the prediction models is not claimed.
+No model weights, private server settings, manuscript
 drafts, full publication PDFs or unrelated research data are released.
 
 ## Suggested manuscript wording
@@ -50,5 +52,5 @@ checks are reported independently, together with their same-structure
 intersection. Code, task inputs, tier annotations and aggregate baseline results
 are available at https://github.com/langlijun/mcsa-enzyme-benchmark.
 
-Only use that availability sentence for a snapshot actually present in the
-public repository. It does not state that the coordinate archive is public.
+Only describe data as publicly available after the commit or release containing
+the corresponding files is present in the public repository.

@@ -1,0 +1,19 @@
+{
+  "data_root": ".",
+  "manifest": "benchmark/prediction_manifest400.json",
+  "task_inputs": "benchmark/tasks",
+  "predictions": "benchmark/predictions",
+  "cases": 20,
+  "samples": 400,
+  "all_paths_relative_to_repository_root": true,
+  "external_dataset_required": false,
+  "evaluate": [
+    "mcsa-benchmark-panel",
+    "--manifest",
+    "benchmark/prediction_manifest400.json",
+    "--data-root",
+    ".",
+    "--output",
+    "results/benchmark20"
+  ]
+}

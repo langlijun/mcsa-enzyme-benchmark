@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-10",
+  "snapshot_date": "2026-11-11",
   "evaluator_version": "0.7.0",
   "source_scoring_commit": "02d2a5fc28e50e9889b76ea76515bd72b02b6897",
   "task_complexity_version": "1.0",
@@ -13,7 +13,7 @@
   },
   "scoring_changed": false,
   "code_license": "MIT",
-  "coordinate_files_included": false,
+  "coordinate_files_included": true,
   "model_native_inference_pipeline_included": false,
   "historical_acceptance": {
     "date": "2026-11-09",
@@ -69,7 +69,9 @@
     "benchmark/tasks/2GSA/task_input.json": "9450e810189a1660e6c837368481e3406e0fa19555952ecfd95924e2856d0fd4",
     "benchmark/tasks/5ICD/protein.fasta": "472d2eab2483c265a776bb20a0a84bd83e09f5631fa549eaaff6a41032e81a06",
     "benchmark/tasks/5ICD/task_input.json": "4e315891a5cbdf707c9f8e91fdbbff746ac11c9fcbcfc694f5279f950dde0b51",
-    "benchmark/validation.json": "eefed005ea0826ebaef61c22235c3c92ce1249721f1278ee1be8b526ba18ffcc"
+    "benchmark/validation.json": "eefed005ea0826ebaef61c22235c3c92ce1249721f1278ee1be8b526ba18ffcc",
+    "benchmark/prediction_manifest400.json": "a9a6f66a87a182e864e4a1e2d1032eb6db2131148a691fd36732cc487456fced",
+    "benchmark/data_access.json": "97d2023d6b97b740a3e9c80a86de3bbcfc62c0ae1c81055698d812059c04876a"
   },
   "publication_validation": {
     "date": "2026-11-10",
@@ -89,5 +91,19 @@
     "scoring_version": "0.7.0",
     "new_prediction_jobs": 0,
     "coordinate_archive_public": false
+  },
+  "coordinate_manifest": "benchmark/prediction_manifest400.json",
+  "prediction_structures": 400,
+  "external_dataset_required": false,
+  "coordinate_data_validation": {
+    "date": "2026-11-11",
+    "repository_local_samples": 400,
+    "external_dataset_reads": 0,
+    "scientific_payload_differences": 0,
+    "all_80_baseline_cells_match_fresh_replay": true,
+    "full_suite_tests_passed": 415,
+    "full_suite_tests_skipped": 0,
+    "full_suite_uses_optional_historical_test_fixtures": true,
+    "scoring_code_and_criteria_changed": false
   }
 }
